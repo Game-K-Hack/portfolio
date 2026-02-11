@@ -19,11 +19,14 @@
 <template>
     <Circle color="#FFFFFF" :size="2000" pos="-200:50%" />
     <Circle color="#FFAE00" :size="2000" pos="800:0%" />
-    <Circle color="#1EFF00" :size="2000" pos="1800:120%" />
-    <Circle color="#00AAFF" :size="2000" pos="3000:-10%" />
-    <Circle color="#FF0004" :size="2000" pos="4200:110%" />
-    <Circle color="#1EFF00" :size="2000" pos="5400:-20%" />
-    <Circle color="#FFAE00" :size="2000" pos="6600:100%" />
+    <Circle color="#1EFF00" :size="2000" pos="2000:120%" />
+    <Circle color="#00AAFF" :size="2000" pos="3400:-10%" />
+    <Circle color="#FF0004" :size="2000" pos="4600:102%" />
+    <Circle color="#1EFF00" :size="2000" pos="6000:-30%" />
+    <Circle color="#FFAE00" :size="2000" pos="7400:100%" />
+    <Circle color="#00AAFF" :size="2000" pos="8600:-10%" />
+    <Circle color="#FF0004" :size="2000" pos="10000:102%" />
+    <Circle color="#1EFF00" :size="2000" pos="11400:-30%" />
 
     <Navbar :ids="['projects', 'xpp', 'skills', 'studies']"></Navbar>
 
@@ -94,6 +97,10 @@
                     </h1>
 
                     <p class="font-extralight text-justify text-xl whitespace-pre-line" v-html="formatBold($t(i.description))"></p>
+
+                    <div class="block sm:hidden w-full mx-2.5 pt-10">
+                        <div class="h-1 w-[80%] my-2 mx-auto bg-timeline-rod"></div>
+                    </div>
                 </div>
             </template>
 
@@ -102,15 +109,15 @@
     </Section>
 
     <Section id="skills">
-        <div v-for="category in SKILLS" :key="category.id" class="mx-[5%] pt-5 pb-25">
+        <div v-for="category in SKILLS" :key="category.id" class="mx-0 sm:mx-[5%] pt-5 pb-25">
             <h1 class="text-2xl font-medium">{{ $t(`skills.${category.id}`) }}</h1>
             <div class="flex flex-col gap-6 pt-8">
-                <div v-if="!Array.isArray(category.items[0])" class="flex flex-row flex-wrap px-8 lg:px-20 gap-6">
+                <div v-if="!Array.isArray(category.items[0])" class="flex flex-row flex-wrap px-0 sm:px-8 lg:px-20 gap-6">
                     <Skill v-for="skillId in category.items" :key="skillId?.toString()" :id="skillId?.toString()" />
                 </div>
                 <template v-else>
                     <div v-for="(subGroup, idx) in category.items" :key="idx" 
-                        class="flex flex-row flex-wrap px-8 lg:px-20 gap-6">
+                        class="flex flex-row flex-wrap px-0 sm:px-8 lg:px-20 gap-6">
                         <Skill v-for="skillId in subGroup" :key="skillId" :id="skillId" />
                     </div>
                 </template>
