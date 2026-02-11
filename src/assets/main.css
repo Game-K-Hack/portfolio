@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Incosolata;
+  src: url(./Inconsolata.ttf);
+}
+
+@font-face {
+  font-family: SNPro;
+  src: url(./SNPro.ttf);
+}
+
+@layer base {
+  :focus-visible {
+    outline: none; /* Désactive l'outline 'auto' par défaut */
+  }
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --color-text: var(--text);
+  --color-background: var(--background);
+
+  --color-background-readme: var(--background-readme);
+  --bgColor-default: var(--background-readme);
+
+  --color-card: var(--card);
+  --color-color-border: var(--color-border);
+
+  --color-bgcircle-white: var(--bgcircle-white);
+  --color-bgcircle-yellow: var(--bgcircle-yellow);
+  --color-bgcircle-green: var(--bgcircle-green);
+  --color-bgcircle-blue: var(--bgcircle-blue);
+  --color-bgcircle-red: var(--bgcircle-red);
+
+  --color-timeline-point: var(--timeline-point);
+  --color-timeline-rod: var(--timeline-rod);
+
+  --font-sans: "Incosolata";
+}
+
+:root {
+  --background: #fcf6e8;
+}
+
+.dark {
+  --text: #fcf6e8;
+  --background: #050514;
+
+  --background-readme: #212830;
+
+  --card: rgb(180, 180, 255, 0.1);
+  --color-border: rgb(255, 255, 255, 0.4);
+
+  --bgcircle-white: radial-gradient(circle,rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  --bgcircle-yellow: #FFAE00;
+  --bgcircle-green: #1EFF00;
+  --bgcircle-blue: #00AAFF;
+  --bgcircle-red: #FF0004;
+
+  --timeline-point: #dc4747;
+  --timeline-rod: #ffffff60;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}

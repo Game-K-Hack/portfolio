@@ -1,0 +1,52 @@
+LICENCE D'UTILISATION - INSPECTEUR CRACKER (ICL 1.0)
+
+PRÉAMBULE
+Inspecteur Cracker est un logiciel open-source destiné à des fins éducatives. Il fournit une interface facilitée pour l'utilisation de l'outil bkcrack, lequel implémente une attaque connue sur le chiffrement traditionnel PKWARE (ZipCrypto). Le présent texte fixe les conditions d'utilisation, de distribution et de responsabilité applicables au logiciel « Inspecteur Cracker » (ci-après « le Logiciel »).
+
+1. DÉFINITIONS
+« Logiciel » : le code source, les binaires, la documentation, les scripts, fichiers de configuration et tout autre composant fournis par Game-K-Hack sous cette licence.
+« Titulaire » : Game-K-Hack, détenteur initial des droits d'auteur.
+« Utilisateur » : toute personne physique ou morale qui reçoit, utilise, copie, modifie ou redistribue le Logiciel.
+
+2. OBJET DE LA LICENCE
+Le Titulaire accorde à l'Utilisateur, sous réserve du respect des présentes conditions, un droit non exclusif, mondial, libre de redevance pour utiliser, copier, modifier, fusionner, publier, distribuer, sub-licencier et/ou vendre des copies du Logiciel.
+
+3. CONDITIONS GÉNÉRALES
+    3.1 Attribution : Toute redistribution du Logiciel, en tout ou en partie, doit conserver la présente licence (ce fichier) et mentionner explicitement le Titulaire (Game-K-Hack) en tant qu'auteur originel.
+    3.2 Source : Le code source complet doit rester disponible lors de toute distribution publique du Logiciel sous forme modifiée ou non.
+    3.3 Marque : Le nom « Inspecteur Cracker » et tout logo associé restent la propriété du Titulaire. L'utilisation du nom ou du logo à des fins commerciales ou marketing requiert une autorisation écrite préalable du Titulaire.
+
+4. USAGE AUTORISÉ ET RESTRICTIONS
+    4.1 Usage autorisé : Le Logiciel est fourni principalement à des fins éducatives, de recherche en sécurité, d'audit autorisé et de restauration de données pour lesquelles l'Utilisateur détient des droits légaux.
+    4.2 Interdiction d'usage illicite : L'Utilisateur s'engage à ne pas utiliser le Logiciel pour accéder, altérer, décrypter, supprimer ou exfiltrer des données sans l'autorisation explicite du propriétaire légitime des données. Toute utilisation du Logiciel pour commettre des infractions pénales, des violations de la vie privée, des intrusions non autorisées ou toute autre activité illégale est strictement interdite.
+    4.3 Respect des lois : L'Utilisateur est seul responsable de s'assurer que son utilisation du Logiciel respecte toutes les lois, régulations et politiques applicables (nationales et internationales), y compris, sans s'y limiter, les lois en matière d'accès non autorisé, de confidentialité, de protection des données et d'exportation.
+
+5. AUCUNE GARANTIE
+Le Logiciel est fourni « en l'état », sans garantie d'aucune sorte, expresse ou implicite. Le Titulaire ne garantit pas que le Logiciel est adapté à un usage particulier, exempt d'erreurs, sécurisé ou conforme à des besoins spécifiques.
+
+6. LIMITATION DE RESPONSABILITÉ
+En aucun cas le Titulaire, ses contributeurs ou ayants droit ne pourront être tenus responsables de tout dommage direct, indirect, incidental, spécial, accessoire, punitif ou consécutif, y compris mais non limité à la perte de profits, la perte de données, l'interruption d'activité ou autres pertes commerciales résultant de l'utilisation ou de l'incapacité d'utiliser le Logiciel, même si le Titulaire a été informé de la possibilité de tels dommages.
+
+7. INDEMNISATION
+L'Utilisateur accepte d'indemniser, défendre et dégager de toute responsabilité le Titulaire et ses contributeurs contre toutes réclamations, pertes, responsabilités, dommages, coûts et dépenses (y compris frais d'avocat raisonnables) résultant de ou liés à : (a) son utilisation du Logiciel en violation de la présente licence ou de la loi ; (b) toute redistribution du Logiciel par l'Utilisateur ; (c) toute réclamation selon laquelle le Logiciel a été utilisé pour commettre un acte illégal.
+
+8. RÉCUPÉRATION DE MOTS DE PASSE ET UTILISATION
+Le Logiciel intègre des techniques susceptibles d'être utilisées pour la récupération d'informations (ex. récupération d'état interne, attaques par clair connu). Ces usages comportent des risques juridiques et éthiques. L'Utilisateur doit s'assurer d'avoir toutes les autorisations nécessaires avant de tenter toute opération sur des données ou des archives qui ne lui appartiennent pas.
+
+9. RÉSILIATION
+La présente licence prendra automatiquement fin sans préavis si l'Utilisateur enfreint l'une des conditions. En cas de résiliation, l'Utilisateur doit cesser toute utilisation du Logiciel et détruire toutes les copies en sa possession, sauf disposition légale contraire.
+
+10. MODIFICATIONS ET CONTRIBUTIONS
+Les contributions (patches, améliorations) soumises par des tiers peuvent être acceptées par le Titulaire sous les termes qu'il jugera appropriés. Le Titulaire se réserve le droit d'incorporer ou non ces contributions dans les versions officielles du Logiciel.
+
+11. EXPORTATION
+L'Utilisateur est responsable du respect des lois d'exportation visant les logiciels et technologies de cryptographie applicables à son pays. Il est interdit d'exporter le Logiciel vers des pays ou des personnes faisant l'objet d'un embargo ou d'une restriction sans autorisation gouvernementale appropriée.
+
+12. LOI APPLICABLE ET JURIDICTION
+La présente licence est régie par le droit français. Tout litige relatif à son interprétation ou son exécution sera soumis aux tribunaux compétents de Paris, France, sauf disposition impérative contraire.
+
+13. CONTACT
+Pour toute question relative à cette licence, à l'utilisation du Logiciel ou pour demander une autorisation spéciale, contactez : Game-K-Hack (pseudo GitHub)
+
+14. ACCEPTATION
+En téléchargeant, installant, copiant, modifiant ou en redistribuant le Logiciel, l'Utilisateur reconnaît avoir lu, compris et accepté les termes de la présente Licence d'Utilisation - Inspecteur Cracker (ICL 1.0).

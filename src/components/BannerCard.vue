@@ -1,0 +1,41 @@
+<script setup>
+    import { ICONS } from '@/data/icons';
+    import { CYBER } from '@/data/cyber';
+</script>
+
+<template>
+    <!-- <Detail :id="id" type="cyber" :icons="icons" :links="links"></Detail> -->
+
+    <div :id="id" @click="openModal" class="flex flex-row rounded-[2.5rem] bg-card p-5 my-6 border border-solid border-transparent hover:border-color-border hover:cursor-pointer">
+        <div class="w-[20%]">
+            <img class="h-25 max-h-25 w-auto max-w-[unset] m-auto" :src="'./icons/' + ICONS[id]?.icon"/>
+        </div>
+        <div class="flex w-[90%] justify-around">
+            <template v-for="key in ['rank', 'room', 'level', 'badge']">
+                <div class="flex flex-col justify-center gap-2" v-if="CYBER[id][key] !== undefined">
+                    <p class="text-4xl font-bold text-center">{{ CYBER[id][key].value }}</p>
+                    <p class="text-xl font-medium text-center">{{ CYBER[id][key].name }}</p>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>
+
+<script>
+    import Detail from './Detail.vue';
+
+    export default {
+        components: {
+            Detail
+        },
+        props: {
+            id: { type: String, default: "" },
+            link: { type: String, default: "" }, 
+        },
+        methods: {
+            openModal() {
+                window.open(CYBER[this.id].url, '_blank').focus();
+            },
+        }
+    }
+</script>
