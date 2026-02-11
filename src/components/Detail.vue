@@ -67,7 +67,7 @@
         class="w-[80%] mx-[10%] mt-5 rounded-2xl p-0 shadow-2xl bg-background-readme text-text backdrop:bg-black/50">
         <div class="p-6">
             <div class="flex justify-between items-center mb-4">
-                <h1 class="uppercase text-7xl font-thin">{{ $t(`${type}.${id}.title`) }}</h1>
+                <h1 class="uppercase text-6xl font-thin">{{ $t(`${type}.${id}.title`) }}</h1>
                 <div class="flex flex-row gap-2.5">
                     <Skill v-for="icon in icons" :id="icon" :enabledHover="false" />
                 </div>

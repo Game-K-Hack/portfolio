@@ -8,7 +8,7 @@
     <div :id="id" @click="openModal" class="flex flex-col rounded-[2.5rem] bg-card p-2.5 gap-2.5 pb-3.75 border border-solid border-transparent hover:border-color-border hover:cursor-pointer sm:w-[600px] md:w-[600px] lg:w-[470px] 2xl:w-[500px]">
         <img class="rounded-4xl" :src="`./projects/${id}/%DEFAULTBANNER%.png`"/>
         <div class="flex flex-row justify-between px-8">
-            <h1 class="font-bold text-3xl w-full">{{ $t(`projects.${id}.title`) }}</h1>
+            <h1 class="font-bold text-2xl w-full">{{ $t(`projects.${id}.title`) }}</h1>
             <div class="flex flex-row justify-end gap-2">
                 <img v-for="i in icons" class="max-w-7.5 max-h-7.5" :src="'./icons/' + ICONS[i]?.icon"/>
             </div>

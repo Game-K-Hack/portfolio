@@ -51,8 +51,8 @@
             <div class="grid grid-cols-[min-content_min-content_auto] mx-[5%] pt-12.5">
                 <template v-for="(i, index) in $tm('xpp.items')" :key="index">
                     <div class="flex flex-col flex-nowrapl w-auto col-1">
-                        <p class="text-end whitespace-nowrap w-full font-light text-2xl">{{ $t(i.date) }}</p>
-                        <p class="text-end whitespace-nowrap w-full font-light text-2xl">
+                        <p class="text-end whitespace-nowrap w-full font-light text-xl">{{ $t(i.date) }}</p>
+                        <p class="text-end whitespace-nowrap w-full font-light text-xl">
                             <a :href="$t(i.company.url)">
                                 <u><b>{{ $t(i.company.name) }}</b></u>
                             </a> ({{ $t(i.company.location) }})
@@ -69,8 +69,8 @@
                         <div class="w-1 h-[calc(100%-24px-4px)] my-2 mx-auto bg-timeline-rod"></div>
                     </div>
                     <div class="w-full col-3">
-                        <h1 class="text-3xl font-bold">{{ $t(i.type) }}: {{ $t(i.name) }}</h1>
-                        <p class="p-5 font-extralight text-justify text-2xl whitespace-pre-line pb-20" v-html="formatBold($t(i.description))"></p>
+                        <h1 class="text-2xl font-bold">{{ $t(i.type) }}: {{ $t(i.name) }}</h1>
+                        <p class="p-5 font-extralight text-justify text-xl whitespace-pre-line pb-20" v-html="formatBold($t(i.description))"></p>
                     </div>
                 </template>
                 <div class="w-5 h-1 bg-timeline-rod col-2 mx-auto mb-25"></div>
@@ -79,7 +79,7 @@
 
         <Section id="skills">
             <div v-for="category in SKILLS" :key="category.id" class="mx-[5%] pt-5 pb-25">
-                <h1 class="text-3xl font-medium">{{ $t(`skills.${category.id}`) }}</h1>
+                <h1 class="text-2xl font-medium">{{ $t(`skills.${category.id}`) }}</h1>
                 <div class="flex flex-col gap-6 pt-8">
                     <div v-if="!Array.isArray(category.items[0])" class="flex flex-row flex-wrap px-8 lg:px-20 gap-6">
                         <Skill v-for="skillId in category.items" :key="skillId?.toString()" :id="skillId?.toString()" />
@@ -98,14 +98,14 @@
             <div class="grid grid-cols-[min-content_min-content_auto] mx-[5%] pt-12.5">
                 <template v-for="(i, index) in $tm('studies.items')" :key="index">
                     <div class="flex flex-col flex-nowrapl w-auto col-1">
-                        <p class="text-end whitespace-nowrap w-full font-light text-2xl">{{ $t(i.date) }}</p>
+                        <p class="text-end whitespace-nowrap w-full font-light text-xl">{{ $t(i.date) }}</p>
                     </div>
                     <div class="w-5 mx-2.5 mt-2 col-2">
                         <div class="w-5 h-5 rounded-full bg-timeline-point"></div>
                         <div class="w-1 h-[calc(100%-24px-4px)] my-2 mx-auto bg-timeline-rod"></div>
                     </div>
-                    <div class="w-full col-3 font-extralight text-2xl whitespace-nowrap">
-                        <h1 class="text-3xl font-bold">{{ $t(i.type) }}: {{ $t(i.name) }}</h1>
+                    <div class="w-full col-3 font-extralight text-xl whitespace-nowrap">
+                        <h1 class="text-2xl font-bold">{{ $t(i.type) }}: {{ $t(i.name) }}</h1>
                         <p class="text-start" v-if="i.option" v-html="formatBold($t(i.option))"></p>
                         <p class="text-start pb-20">
                             <a :href="$t(i.school.url)"><u><b>{{ $t(i.school.name) }}</b></u></a> ({{ $t(i.school.location) }})
