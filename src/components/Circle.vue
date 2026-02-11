@@ -1,5 +1,21 @@
+<style scoped>
+    .gradient-circle {
+        position: absolute;
+        /* Empêche le cercle de bloquer les clics sur les boutons en dessous */
+        pointer-events: none;
+        border-radius: 50%;
+        z-index: 0;
+        /* On utilise transform pour centrer parfaitement le point de spawn */
+        transform: translate(-50%, -50%);
+        /* Gradient utilisant les variables définies dans positionStyle */
+        background: radial-gradient(circle closest-side, var(--circle-color-start), var(--circle-color-end));
+        /* Optimisation GPU */
+        will-change: transform;
+    }
+</style>
+
 <template>
-  <div class="gradient-circle" :style="positionStyle"></div>
+    <div class="gradient-circle" :style="positionStyle"></div>
 </template>
 
 <script>
@@ -34,19 +50,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-    .gradient-circle {
-        position: absolute;
-        /* Empêche le cercle de bloquer les clics sur les boutons en dessous */
-        pointer-events: none;
-        border-radius: 50%;
-        z-index: 0;
-        /* On utilise transform pour centrer parfaitement le point de spawn */
-        transform: translate(-50%, -50%);
-        /* Gradient utilisant les variables définies dans positionStyle */
-        background: radial-gradient(circle closest-side, var(--circle-color-start), var(--circle-color-end));
-        /* Optimisation GPU */
-        will-change: transform;
-    }
-</style>

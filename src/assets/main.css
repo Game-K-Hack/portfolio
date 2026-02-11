@@ -16,6 +16,12 @@
   }
 }
 
+@layer components {
+  .text-classic {
+    @apply text-sm md:text-base lg:text-lg 2xl:text-2xl;
+  }
+}
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
@@ -69,4 +75,8 @@ html, body {
   overflow-x: clip;
   background-color: var(--color-background);
   color: var(--color-text);
+}
+
+#app {
+  position: relative; /* https://stackoverflow.com/a/14271049 */
 }
