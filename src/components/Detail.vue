@@ -5,7 +5,6 @@
     import 'github-markdown-css/github-markdown.css';
     import { ICONS } from '@/data/icons';
 
-    // 1. Définition des Props
     const props = defineProps({
         id: { type: String, default: "modal-readme" },
         type: { type: String, default: "projects" },
@@ -13,14 +12,11 @@
         links: { type: Array, default: () => [] },
     });
 
-    // 2. État réactif
     const markdownText = ref('');
-    const dialogRef = ref(null); // Référence directe au DOM de l'élément <dialog>
+    const dialogRef = ref(null);
 
-    // 3. Logique de chargement du Markdown
     const loadMarkdown = async () => {
         try {
-            // On utilise la prop readme pour construire dynamiquement l'URL
             const response = await fetch(`./${props.type}/${props.id}/README.md`);
             if (!response.ok) throw new Error('Fichier non trouvé');
             let text = await response.text();
@@ -34,16 +30,8 @@
         }
     };
 
-    // 4. Computed pour le rendu HTML
-    const outputHtml = computed(() => {
-        return marked.parse(markdownText.value || '');
-    });
-
-    // 5. Gestion de la modale (avec ref plutôt que getElementById)
-    const openModal = () => {
-        dialogRef.value?.showModal();
-    };
-
+    const outputHtml = computed(() => { return marked.parse(markdownText.value || ''); });
+    const openModal = () => { dialogRef.value?.showModal(); };
     const closeModal = () => {
         dialogRef.value?.close();
         
@@ -54,12 +42,7 @@
         window.scrollTo(0, parseInt(scrollY || '0') * -1);
     };
 
-    // 6. Cycle de vie et Watchers
-    onMounted(() => {
-        loadMarkdown();
-    });
-
-    // Exposer les méthodes pour pouvoir les appeler depuis le parent via ref
+    onMounted(() => { loadMarkdown(); });
     defineExpose({ openModal, closeModal });
 </script>
 
@@ -96,6 +79,15 @@
     .custom-markdown-style {
         background-color: transparent !important;
         color: inherit !important;
+    }
+
+    /* Résolution du problème de résolution d'image dans les README, montré par Google Lighthouse, résolu par Gemini */
+    /* https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio?utm_source=lighthouse&utm_medium=devtools&hl=fr */
+    .custom-markdown-style :deep(img) {
+        max-width: 100%;
+        height: auto;        /* Force le respect du ratio d'origine */
+        object-fit: contain; /* Évite la déformation si une taille fixe est imposée */
+        aspect-ratio: auto;  /* Indique au navigateur de suivre le ratio du fichier */
     }
 </style>
 
