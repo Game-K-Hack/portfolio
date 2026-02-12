@@ -33,16 +33,17 @@
     <Header avatar="./avatar.png" :title="$t('name')" :resume="$t('description')"></Header>
 
     <Section id="projects">
-        <div class="flex flex-row flex-wrap pt-5 gap-12 justify-evenly mb-25">
+        <div class="mx-[2%] flex flex-row flex-wrap pt-5 gap-12 justify-around mb-25">
             <ProjectCard id="realprice" :icons="['android', 'kotlin']" :links="[
-                { url: 'https://github.com/MathieuMarthy/RealPrice', icon: 'githublink.png' },
-                { url: 'https://play.google.com/store/apps/details?id=com.app.realprice', icon: 'googleplay.png' }
+                { url: 'https://github.com/MathieuMarthy/RealPrice', icon: 'githublink' },
+                { url: 'https://play.google.com/store/apps/details?id=com.app.realprice', icon: 'googleplay' }
             ]"></ProjectCard>
             <ProjectCard id="i20" :icons="['windowsembedded7', 'cpp']"></ProjectCard>
             <ProjectCard id="bkcrackgui" :icons="['qt', 'python']" :links="[
-                { url: 'https://github.com/Game-K-Hack/bkcrack-gui', icon: 'githublink.png' }
+                { url: 'https://github.com/Game-K-Hack/bkcrack-gui', icon: 'githublink' }
             ]"></ProjectCard>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Game-K-Hack?tab=repositories" class="p-2.5 m-auto px-10 border-2 border-dashed text-center hover:cursor-pointer hover:border-solid rounded-[2.5rem] sm:w-150 md:w-150 lg:w-117.5 2xl:w-125">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Game-K-Hack?tab=repositories" 
+                class="flex items-center justify-center p-2.5 px-10 border-2 border-dashed text-center text-classic hover:cursor-pointer hover:border-solid rounded-[2.5rem] sm:w-150 md:w-150 lg:w-117.5 2xl:w-125">
                 Voir plus
             </a>
         </div>
@@ -53,11 +54,11 @@
             <template v-for="(i, index) in $tm('xpp.items')" :key="index">
                 
                 <div class="hidden lg:flex flex-col flex-nowrap w-auto col-start-1">
-                    <p class="text-end whitespace-nowrap w-full font-light text-classic">{{ $t(i.date) }}</p>
+                    <p class="text-end whitespace-nowrap w-full font-light text-classic">{{ i.date }}</p>
                     <p class="text-end whitespace-nowrap w-full font-light text-classic">
-                        <a :href="$t(i.company.url)" target="_blank">
-                            <u><b>{{ $t(i.company.name) }}</b></u>
-                        </a> ({{ $t(i.company.location) }})
+                        <a :href="i.company.url" target="_blank">
+                            <u><b>{{ i.company.name }}</b></u>
+                        </a> ({{ i.company.location }})
                     </p>
 
                     <div class="hidden lg:flex flex-row flex-nowrap gap-2.5 mt-2 mb-2 lg:justify-end">
@@ -76,12 +77,12 @@
                 <div class="w-full pb-20 col-start-2 lg:col-start-3">
                     
                     <div class="flex lg:hidden flex-row flex-wrap gap-x-5 mb-2 items-center">
-                        <span class="text-classic font-light whitespace-nowrap">{{ $t(i.date) }}</span>
+                        <span class="text-classic font-light whitespace-nowrap">{{ i.date }}</span>
                         <span class="text-classic font-light">
-                            <a :href="$t(i.company.url)">
-                                <u><b>{{ $t(i.company.name) }}</b></u>
+                            <a :href="i.company.url">
+                                <u><b>{{ i.company.name }}</b></u>
                             </a> 
-                            <span class="ml-1">({{ $t(i.company.location) }})</span>
+                            <span class="ml-1">({{ i.company.location }})</span>
                         </span>
                     </div>
 
@@ -93,10 +94,10 @@
                     </div>
 
                     <h4 class="text-classic-p1 font-bold leading-tight">
-                        {{ $t(i.type) }}: {{ $t(i.name) }}
+                        {{ i.type }}: {{ i.name }}
                     </h4>
 
-                    <p class="font-extralight text-justify whitespace-pre-line text-classic" v-html="formatBold($t(i.description))"></p>
+                    <p class="font-extralight text-justify whitespace-pre-line text-classic" v-html="formatBold(i.description)"></p>
 
                     <div class="block sm:hidden w-full mx-2.5 pt-10">
                         <div class="h-1 w-[80%] my-2 mx-auto bg-timeline-rod"></div>
@@ -130,7 +131,7 @@
             <template v-for="(i, index) in $tm('studies.items')" :key="index">
                 
                 <div class="hidden lg:flex flex-col flex-nowrap w-auto col-start-1">
-                    <p class="text-end whitespace-nowrap w-full font-light text-classic">{{ $t(i.date) }}</p>
+                    <p class="text-end whitespace-nowrap w-full font-light text-classic">{{ i.date }}</p>
                 </div>
 
                 <div class="w-5 mx-2.5 mt-1.5 col-start-2">
@@ -141,17 +142,17 @@
                 <div class="w-full col-start-3 font-extralight text-classic">
                     
                     <p class="lg:hidden text-classic-m1 font-medium opacity-70 mb-1 leading-none">
-                        {{ $t(i.date) }}
+                        {{ i.date }}
                     </p>
 
-                    <h4 class="text-classic-p1 font-bold leading-tight">{{ $t(i.type) }}: {{ $t(i.name) }}</h4>
+                    <h4 class="text-classic-p1 font-bold leading-tight">{{ i.type }}: {{ i.name }}</h4>
                     
-                    <p class="text-start mt-2" v-if="i.option" v-html="formatBold($t(i.option))"></p>
+                    <p class="text-start mt-2" v-if="i.option" v-html="formatBold(i.option)"></p>
                     
                     <p class="text-start pb-20 mt-1">
-                        <a :href="$t(i.school.url)" target="_blank">
-                            <u><b>{{ $t(i.school.name) }}</b></u>
-                        </a> ({{ $t(i.school.location) }})
+                        <a :href="i.school.url" target="_blank">
+                            <u><b>{{ i.school.name }}</b></u>
+                        </a> ({{ i.school.location }})
                     </p>
                 </div>
             </template>

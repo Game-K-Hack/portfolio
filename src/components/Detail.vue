@@ -3,6 +3,7 @@
     import { marked } from 'marked';
     import Skill from '../components/Skill.vue';
     import 'github-markdown-css/github-markdown.css';
+    import { ICONS } from '@/data/icons';
 
     // 1. Définition des Props
     const props = defineProps({
@@ -78,7 +79,7 @@
             <div class="flex flex-row gap-2">
                 <span class="w-5"></span>
                 <a target="_blank" rel="noopener noreferrer" v-for="i in links" :href="i.url" class="w-auto mt-5">
-                    <img class="w-auto h-10 max-w-none" :src="`/icons/${i.icon}`" :alt="i.icon"/>
+                    <img class="w-auto h-10 max-w-none" :src="'./icons/' + ICONS[i.icon]?.icon" :alt="ICONS[i.icon]?.name"/>
                 </a>
             </div>
 

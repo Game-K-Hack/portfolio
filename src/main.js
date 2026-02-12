@@ -5,7 +5,8 @@ import { createI18n } from 'vue-i18n';
 import App from './App.vue'
 
 const i18nData = {
-    locale: navigator.language.split('-')[0], 
+    legacy: false,
+    locale: navigator.language.split('-')[0],
     fallbackLocale: 'en',
     messages: {
         fr: {
@@ -39,7 +40,7 @@ const i18nData = {
                     }, {
                         date: "6 Janvier | 11 Juillet, 2025", 
                         company: { name: "Algam", location: "Thouaré-sur-Loire", url: "https://www.algam.net" }, 
-                        icons: ["php", "javascript", "jobscheduler7"], 
+                        icons: ["php", "javascript", "jobscheduler7", "talend", "talaxie"], 
                         type: "CDD", 
                         name: "Analyste Développeur Flux", 
                         description: "- Modification et maintenance de flux de données (CSV, JSON, SQL)\n\n- Développement initial d’un [b]module de connexion API[/b]\n\n- Réalisation de tests de [b]sécurité sur un logiciel[/b] de gestion des RH"
