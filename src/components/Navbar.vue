@@ -49,28 +49,35 @@
         },
         watch: {
             openburger(isOpen) {
-                const body = document.body;
                 if (isOpen) {
-                    const y = window.scrollY;
-                    body.style.position = 'fixed';
-                    body.style.top = `-${y}px`;
-                    body.style.width = '100%';
+                    // Empêche le scroll sans déplacer la page
+                    document.body.style.overflow = 'hidden';
                 } else {
-                    const scrollY = body.style.top;
-                    body.style.position = '';
-                    body.style.top = '';
-                    body.style.width = '';
-                    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+                    // Libère le scroll
+                    document.body.style.overflow = '';
                 }
             }
         },
         methods: {
             scrollToSection(id) {
+                // 1. On ferme le menu
                 this.openburger = false;
+                
+                // 2. On attend que le menu soit fermé et le scroll libéré
                 this.$nextTick(() => {
                     const element = document.getElementById(id);
                     if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
+                        // Calculer l'offset si ta navbar est fixe pour ne pas cacher le titre
+                        const offset = 80; // Ajuste selon la hauteur de ta navbar
+                        const bodyRect = document.body.getBoundingClientRect().top;
+                        const elementRect = element.getBoundingClientRect().top;
+                        const elementPosition = elementRect - bodyRect;
+                        const offsetPosition = elementPosition - offset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
                     }
                 });
             }
