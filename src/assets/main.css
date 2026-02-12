@@ -3,11 +3,13 @@
 @font-face {
   font-family: Incosolata;
   src: url(./Inconsolata.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: SNPro;
   src: url(./SNPro.ttf);
+  font-display: swap;
 }
 
 @layer base {
