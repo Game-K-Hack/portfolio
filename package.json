@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
+    "@unhead/vue": "^2.1.4",
     "github-markdown-css": "^5.9.0",
     "marked": "^17.0.1",
     "tailwindcss": "^4.1.18",

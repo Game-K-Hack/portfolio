@@ -10,7 +10,7 @@
         <div class="flex flex-row justify-between px-8">
             <h2 class="font-bold text-classic-p1 w-full">{{ $t(`projects.${id}.title`) }}</h2>
             <div class="flex flex-row justify-end gap-2">
-                <img v-for="i in icons" class="max-w-7.5 max-h-7.5" :src="'./icons/' + ICONS[i]?.icon" :alt="ICONS[id]?.name"/>
+                <img v-for="i in icons" class="max-w-7.5 max-h-7.5" :src="'./icons/' + ICONS[i]?.icon" :alt="ICONS[i]?.name"/>
             </div>
         </div>
         <p class="text-justify line-clamp-2">{{ $t(`projects.${id}.description`) }}</p>

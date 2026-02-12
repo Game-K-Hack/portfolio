@@ -9,6 +9,23 @@
     import SubSection from "./components/SubSection.vue";
     import BannerCard from "./components/BannerCard.vue";
     import Navbar from "./components/Navbar.vue";
+    import { useHead } from '@unhead/vue';
+    import { useI18n } from 'vue-i18n';
+
+    const { t } = useI18n();
+
+    useHead({
+        title: () => t('name') + ' | ' + t('job_title'), 
+        meta: [
+            {
+                name: 'description',
+                content: () => t('meta_description'),
+            },{
+                property: 'og:title',
+                content: () => t('name') + ' | Portfolio',
+            }
+        ],
+    });
 
     const formatBold = (text) => {
         if (!text) return '';
@@ -93,9 +110,7 @@
                             :class="{ 'rounded-[5px]': ICONS[iconKey]?.rounded }">
                     </div>
 
-                    <h4 class="text-classic-p1 font-bold leading-tight">
-                        {{ i.type }}: {{ i.name }}
-                    </h4>
+                    <h3 class="text-classic-p1 font-bold leading-tight">{{ i.type }}: {{ i.name }}</h3>
 
                     <p class="font-extralight text-justify whitespace-pre-line text-classic" v-html="formatBold(i.description)"></p>
 
@@ -145,7 +160,7 @@
                         {{ i.date }}
                     </p>
 
-                    <h4 class="text-classic-p1 font-bold leading-tight">{{ i.type }}: {{ i.name }}</h4>
+                    <h3 class="text-classic-p1 font-bold leading-tight">{{ i.type }}: {{ i.name }}</h3>
                     
                     <p class="text-start mt-2" v-if="i.option" v-html="formatBold(i.option)"></p>
                     

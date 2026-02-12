@@ -1,8 +1,8 @@
-import './assets/main.css'
-
-import { createApp } from 'vue'
+import './assets/main.css';
+import { createApp } from 'vue';
 import { createI18n } from 'vue-i18n';
-import App from './App.vue'
+import App from './App.vue';
+import { createHead } from '@unhead/vue/client'
 
 const i18nData = {
     legacy: false,
@@ -11,6 +11,8 @@ const i18nData = {
     messages: {
         fr: {
             name: "Kélian", 
+            job_title: "Développeur informatique",
+            meta_description: "Développeur informatique passionné, curieux, autonome et autodidacte, je maîtrise plusieurs langages. Explorez mes projets pour mieux me connaître.", 
             description: "Développeur informatique passionné depuis l’âge de 12 ans, j’ai progressivement acquis des compétences dans des domaines variés. Curieux, autonome et autodidacte, je maîtrise plusieurs langages et je m’adapte facilement à tout type d’environnement. Je continue de me former activement en cybersécurité, afin d’approfondir et d’actualiser constamment mes connaissances.", 
             projects: {
                 title: "Mes Projets", 
@@ -127,8 +129,10 @@ const i18nData = {
 };
 
 const i18n = createI18n(i18nData);
+const head = createHead();
 const app = createApp(App);
 app.use(i18n);
+app.use(head);
 app.mount('#app');
 
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
