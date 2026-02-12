@@ -30,7 +30,9 @@
 </template>
 
 <script>
-    import Detail from './Detail.vue';
+    import { defineAsyncComponent } from 'vue';
+
+    const Detail = defineAsyncComponent(() => import('./Detail.vue'));
 
     export default {
         components: {

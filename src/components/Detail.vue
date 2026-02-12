@@ -1,5 +1,5 @@
 <script setup>
-    import { ref, computed, onMounted } from 'vue';
+    import { ref, computed } from 'vue';
     import { marked } from 'marked';
     import Skill from '../components/Skill.vue';
     import 'github-markdown-css/github-markdown.css';
@@ -16,6 +16,7 @@
     const dialogRef = ref(null);
 
     const loadMarkdown = async () => {
+        if (markdownText.value) return;
         try {
             const response = await fetch(`./${props.type}/${props.id}/README.md`);
             if (!response.ok) throw new Error('Fichier non trouvé');
@@ -42,8 +43,7 @@
         window.scrollTo(0, parseInt(scrollY || '0') * -1);
     };
 
-    onMounted(() => { loadMarkdown(); });
-    defineExpose({ openModal, closeModal });
+    defineExpose({ openModal, closeModal, loadMarkdown });
 </script>
 
 <template>

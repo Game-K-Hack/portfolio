@@ -82,7 +82,8 @@
                         <img class="w-7.5 h-7.5" v-for="iconKey in i.icons" :key="iconKey"
                             :src="'./icons/' + ICONS[iconKey]?.icon"
                             :alt="ICONS[iconKey]?.name"
-                            :class="{ 'rounded-[5px]': ICONS[iconKey]?.rounded }">
+                            :class="{ 'rounded-[5px]': ICONS[iconKey]?.rounded }"
+                            width="30" height="30"/>
                     </div>
                 </div>
 
@@ -107,7 +108,8 @@
                         <img class="w-7.5 h-7.5" v-for="iconKey in i.icons" :key="iconKey"
                             :src="'./icons/' + ICONS[iconKey]?.icon"
                             :alt="ICONS[iconKey]?.name"
-                            :class="{ 'rounded-[5px]': ICONS[iconKey]?.rounded }">
+                            :class="{ 'rounded-[5px]': ICONS[iconKey]?.rounded }"
+                            width="30" height="30"/>
                     </div>
 
                     <h3 class="text-classic-p1 font-bold leading-tight">{{ i.type }}: {{ i.name }}</h3>
