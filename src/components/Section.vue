@@ -1,6 +1,6 @@
 <template>
     <div :id="id" class="mx-[5%] pt-25">
-        <h1 class="uppercase text-4xl sm:text-6xl font-thin">{{ $t(`${id}.title`) }}</h1>
+        <h2 class="uppercase text-4xl sm:text-6xl font-thin">{{ $t(`${id}.title`) }}</h2>
         <slot />
     </div>
 </template>

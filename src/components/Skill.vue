@@ -9,7 +9,7 @@
         <img class="w-7.5 h-7.5" :src="'./icons/' + ICONS[id]?.icon" :class="{
             'rounded-[5px]': ICONS[id]?.rounded
         }" :alt="ICONS[id]?.name"/>
-        <h1 class="text-classic-p1 w-full font-normal">{{ ICONS[id]?.name }}</h1>
+        <h3 class="text-classic-p1 w-full font-normal">{{ ICONS[id]?.name }}</h3>
     </div>
 </template>
 

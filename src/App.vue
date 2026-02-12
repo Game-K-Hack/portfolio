@@ -92,9 +92,9 @@
                             :class="{ 'rounded-[5px]': ICONS[iconKey]?.rounded }">
                     </div>
 
-                    <h1 class="text-classic-p1 font-bold leading-tight">
+                    <h4 class="text-classic-p1 font-bold leading-tight">
                         {{ $t(i.type) }}: {{ $t(i.name) }}
-                    </h1>
+                    </h4>
 
                     <p class="font-extralight text-justify whitespace-pre-line text-classic" v-html="formatBold($t(i.description))"></p>
 
@@ -110,7 +110,7 @@
 
     <Section id="skills">
         <div v-for="category in SKILLS" :key="category.id" class="mx-0 sm:mx-[5%] pt-5 pb-25">
-            <h1 class="text-classic-p1 font-medium">{{ $t(`skills.${category.id}`) }}</h1>
+            <h3 class="text-classic-p1 font-medium">{{ $t(`skills.${category.id}`) }}</h3>
             <div class="flex flex-col gap-6 pt-8">
                 <div v-if="!Array.isArray(category.items[0])" class="flex flex-row flex-wrap px-0 sm:px-8 lg:px-20 gap-6">
                     <Skill v-for="skillId in category.items" :key="skillId?.toString()" :id="skillId?.toString()" />
@@ -144,7 +144,7 @@
                         {{ $t(i.date) }}
                     </p>
 
-                    <h1 class="text-classic-p1 font-bold leading-tight">{{ $t(i.type) }}: {{ $t(i.name) }}</h1>
+                    <h4 class="text-classic-p1 font-bold leading-tight">{{ $t(i.type) }}: {{ $t(i.name) }}</h4>
                     
                     <p class="text-start mt-2" v-if="i.option" v-html="formatBold($t(i.option))"></p>
                     
