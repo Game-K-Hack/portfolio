@@ -16,7 +16,7 @@
             <img class="absolute w-37.5 rounded-[50%]" :src="avatar">
         </div>
         <h1 v-if="title.length > 0" class="text-center text-classic-p4 font-['SNPro']">{{ title }}</h1>
-        <p class="text-justify font-extralight text-classic">{{ resume }}</p>
+        <p class="text-justify font-extralight text-classic-p1">{{ resume }}</p>
     </div>
 </template>
 
