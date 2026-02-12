@@ -60,7 +60,7 @@
                         </a> ({{ $t(i.company.location) }})
                     </p>
 
-                    <div class="hidden lg:flex flex-row flex-wrap gap-2.5 mt-2 mb-2 lg:justify-end">
+                    <div class="hidden lg:flex flex-row flex-nowrap gap-2.5 mt-2 mb-2 lg:justify-end">
                         <img class="w-7.5 h-7.5" v-for="iconKey in i.icons" :key="iconKey"
                             :src="'./icons/' + ICONS[iconKey]?.icon"
                             :alt="ICONS[iconKey]?.icon"

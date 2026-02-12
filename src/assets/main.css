@@ -17,32 +17,36 @@
 }
 
 @layer components {
-  .text-classic-m1 {
+  .text-classic-m2 {
     @apply text-[10px] md:text-xs lg:text-sm xl:text-base 2xl:text-lg;
   }
 
-  .text-classic {
+  .text-classic-m1 {
     @apply text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl;
   }
 
-  .text-classic-p1 {
+  .text-classic {
     @apply text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
   }
 
-  .text-classic-p2 {
+  .text-classic-p1 {
     @apply text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl;
   }
 
-  .text-classic-p3 {
+  .text-classic-p2 {
     @apply text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl;
   }
 
-  .text-classic-p4 {
+  .text-classic-p3 {
     @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl;
   }
 
-  .text-classic-p4n2 {
+  .text-classic-p4 {
     @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl;
+  }
+
+  .text-classic-p4n2 {
+    @apply text-2xl lg:text-4xl 2xl:text-6xl;
   }
 }
 
