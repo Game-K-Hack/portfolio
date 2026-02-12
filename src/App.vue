@@ -63,7 +63,7 @@
                     <div class="hidden lg:flex flex-row flex-nowrap gap-2.5 mt-2 mb-2 lg:justify-end">
                         <img class="w-7.5 h-7.5" v-for="iconKey in i.icons" :key="iconKey"
                             :src="'./icons/' + ICONS[iconKey]?.icon"
-                            :alt="ICONS[iconKey]?.icon"
+                            :alt="ICONS[iconKey]?.name"
                             :class="{ 'rounded-[5px]': ICONS[iconKey]?.rounded }">
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                     <div class="flex lg:hidden flex-row flex-wrap gap-2.5 lg:justify-start">
                         <img class="w-7.5 h-7.5" v-for="iconKey in i.icons" :key="iconKey"
                             :src="'./icons/' + ICONS[iconKey]?.icon"
-                            :alt="ICONS[iconKey]?.icon"
+                            :alt="ICONS[iconKey]?.name"
                             :class="{ 'rounded-[5px]': ICONS[iconKey]?.rounded }">
                     </div>
 

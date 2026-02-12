@@ -8,7 +8,7 @@
 
     <div :id="id" @click="openModal" class="flex flex-col md:flex-row rounded-[2.5rem] bg-card p-5 my-6 border border-solid border-transparent hover:border-color-border hover:cursor-pointer">
         <div class="w-full md:w-[20%]">
-            <img class="h-20 max-h-20 w-auto max-w-[unset] m-auto" :src="'./icons/' + ICONS[id]?.icon"/>
+            <img class="h-20 max-h-20 w-auto max-w-[unset] m-auto" :src="'./icons/' + ICONS[id]?.icon" :alt="ICONS[id]?.name"/>
         </div>
         <div class="hidden md:flex w-[90%] justify-around">
             <template v-for="key in ['rank', 'room', 'level', 'badge']">
