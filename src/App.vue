@@ -53,8 +53,8 @@
             <template v-for="(i, index) in $tm('xpp.items')" :key="index">
                 
                 <div class="hidden lg:flex flex-col flex-nowrap w-auto col-start-1">
-                    <p class="text-end whitespace-nowrap w-full font-light text-xl">{{ $t(i.date) }}</p>
-                    <p class="text-end whitespace-nowrap w-full font-light text-xl">
+                    <p class="text-end whitespace-nowrap w-full font-light text-classic">{{ $t(i.date) }}</p>
+                    <p class="text-end whitespace-nowrap w-full font-light text-classic">
                         <a :href="$t(i.company.url)" target="_blank">
                             <u><b>{{ $t(i.company.name) }}</b></u>
                         </a> ({{ $t(i.company.location) }})
@@ -70,14 +70,14 @@
 
                 <div class="hidden sm:block w-5 mx-2.5 mt-1.5 col-start-1 lg:col-start-2">
                     <div class="w-5 h-5 rounded-full bg-timeline-point"></div>
-                    <div class="w-1 h-[calc(100%-20px-12px)] my-2 mx-auto bg-timeline-rod"></div>
+                    <div class="w-1 h-[calc(100%-20px-8px)] my-2 mx-auto bg-timeline-rod"></div>
                 </div>
 
                 <div class="w-full pb-20 col-start-2 lg:col-start-3">
                     
                     <div class="flex lg:hidden flex-row flex-wrap gap-x-5 mb-2 items-center">
-                        <span class="text-xl font-light whitespace-nowrap">{{ $t(i.date) }}</span>
-                        <span class="text-xl font-light">
+                        <span class="text-classic font-light whitespace-nowrap">{{ $t(i.date) }}</span>
+                        <span class="text-classic font-light">
                             <a :href="$t(i.company.url)">
                                 <u><b>{{ $t(i.company.name) }}</b></u>
                             </a> 
@@ -92,11 +92,11 @@
                             :class="{ 'rounded-[5px]': ICONS[iconKey]?.rounded }">
                     </div>
 
-                    <h1 class="text-2xl font-bold leading-tight">
+                    <h1 class="text-classic-p1 font-bold leading-tight">
                         {{ $t(i.type) }}: {{ $t(i.name) }}
                     </h1>
 
-                    <p class="font-extralight text-justify text-xl whitespace-pre-line" v-html="formatBold($t(i.description))"></p>
+                    <p class="font-extralight text-justify whitespace-pre-line text-classic" v-html="formatBold($t(i.description))"></p>
 
                     <div class="block sm:hidden w-full mx-2.5 pt-10">
                         <div class="h-1 w-[80%] my-2 mx-auto bg-timeline-rod"></div>
@@ -110,7 +110,7 @@
 
     <Section id="skills">
         <div v-for="category in SKILLS" :key="category.id" class="mx-0 sm:mx-[5%] pt-5 pb-25">
-            <h1 class="text-2xl font-medium">{{ $t(`skills.${category.id}`) }}</h1>
+            <h1 class="text-classic-p1 font-medium">{{ $t(`skills.${category.id}`) }}</h1>
             <div class="flex flex-col gap-6 pt-8">
                 <div v-if="!Array.isArray(category.items[0])" class="flex flex-row flex-wrap px-0 sm:px-8 lg:px-20 gap-6">
                     <Skill v-for="skillId in category.items" :key="skillId?.toString()" :id="skillId?.toString()" />
@@ -130,7 +130,7 @@
             <template v-for="(i, index) in $tm('studies.items')" :key="index">
                 
                 <div class="hidden lg:flex flex-col flex-nowrap w-auto col-start-1">
-                    <p class="text-end whitespace-nowrap w-full font-light text-xl">{{ $t(i.date) }}</p>
+                    <p class="text-end whitespace-nowrap w-full font-light text-classic">{{ $t(i.date) }}</p>
                 </div>
 
                 <div class="w-5 mx-2.5 mt-1.5 col-start-2">
@@ -138,13 +138,13 @@
                     <div class="w-1 h-[calc(100%-24px-4px)] my-2 mx-auto bg-timeline-rod"></div>
                 </div>
 
-                <div class="w-full col-start-3 font-extralight text-xl">
+                <div class="w-full col-start-3 font-extralight text-classic">
                     
-                    <p class="lg:hidden text-lg font-medium opacity-70 mb-1 leading-none">
+                    <p class="lg:hidden text-classic-m1 font-medium opacity-70 mb-1 leading-none">
                         {{ $t(i.date) }}
                     </p>
 
-                    <h1 class="text-2xl font-bold leading-tight">{{ $t(i.type) }}: {{ $t(i.name) }}</h1>
+                    <h1 class="text-classic-p1 font-bold leading-tight">{{ $t(i.type) }}: {{ $t(i.name) }}</h1>
                     
                     <p class="text-start mt-2" v-if="i.option" v-html="formatBold($t(i.option))"></p>
                     

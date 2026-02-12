@@ -11,7 +11,7 @@
     <nav>
         <div class="hidden min-[831px]:flex flex-row gap-10 p-5 pb-15 justify-center backdrop-blur-md fixed z-10 w-screen top-0 items-start" style="mask:linear-gradient(black, black, transparent);">
             <div @click="scrollToSection(id)" v-for="id in ids" :key="id" class="flex flex-row gap-2 hover:cursor-pointer hover:font-bold">
-                <p class="text-lg text-white">{{ $t(`${id}.title`) }}</p>
+                <p class="text-classic text-white">{{ $t(`${id}.title`) }}</p>
             </div>
         </div>
 
@@ -29,7 +29,7 @@
                     </svg>
                 </button>
 
-                <div v-for="id in ids" :key="id" @click="scrollToSection(id)" class="text-2xl text-white font-medium hover:text-gray-400 transition-colors">
+                <div v-for="id in ids" :key="id" @click="scrollToSection(id)" class="text-classic-p2 text-white font-medium hover:text-gray-400 transition-colors">
                     {{ $t(`${id}.title`) }}
                 </div>
             </div>
