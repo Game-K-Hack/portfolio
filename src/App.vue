@@ -42,9 +42,9 @@
             <ProjectCard id="bkcrackgui" :icons="['qt', 'python']" :links="[
                 { url: 'https://github.com/Game-K-Hack/bkcrack-gui', icon: 'githublink.png' }
             ]"></ProjectCard>
-            <button class="p-2.5 m-auto px-10 border-2 border-dashed hover:cursor-pointer hover:border-solid rounded-[2.5rem] sm:w-[600px] md:w-[600px] lg:w-[470px] 2xl:w-[500px]">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Game-K-Hack?tab=repositories" class="p-2.5 m-auto px-10 border-2 border-dashed text-center hover:cursor-pointer hover:border-solid rounded-[2.5rem] sm:w-150 md:w-150 lg:w-117.5 2xl:w-125">
                 Voir plus
-            </button>
+            </a>
         </div>
     </Section>
 
