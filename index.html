@@ -5,12 +5,18 @@
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://kmaindron/">
+        <meta property="og:url" content="https://kmaindron.fr/">
         <meta property="og:title" content="Kélian | Développeur Informatique">
         <meta property="og:description" content="Développeur informatique passionné, curieux, autonome et autodidacte, je maîtrise plusieurs langages. Explorez mes projets pour mieux me connaître.">
-        <meta property="og:image" content="https://kmaindron/banner.webp">
+        <meta property="og:image" content="https://kmaindron.fr/banner.webp">
         <meta name="description" content="Développeur informatique passionné, curieux, autonome et autodidacte, je maîtrise plusieurs langages. Explorez mes projets pour mieux me connaître.">
-        <link rel="preload" fetchpriority="high" as="image" href="/public/projects/realprice/default-banner-small.webp" type="image/webp">
+        <link rel="preload" as="image" 
+            href="/projects/realprice/default-banner-small.webp" 
+            imagesrcset="/projects/realprice/default-banner-small.webp 500w, /projects/realprice/default-banner-medium.webp 1000w, /projects/realprice/default-banner-large.webp 1920w"
+            imagesizes="(max-width: 600px) 480px, 800px"
+            fetchpriority="high">
+        <link rel="preload" href="/assets/Inconsolata.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="/assets/SNPro.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <title>Portfolio</title>
     </head>
     <body>

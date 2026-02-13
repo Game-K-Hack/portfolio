@@ -1,16 +1,25 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: Incosolata;
+  font-family: Inconsolata;
   src: url(./Inconsolata.woff2) format("woff2");
   font-display: swap;
 }
 
 @font-face {
+  font-family: 'Inconsolata-fallback';
+  src: local('Arial');
+  ascent-override: 90%;
+  descent-override: 20%;
+  line-gap-override: 0%;
+  size-adjust: 105%;
+}
+
+/* @font-face {
   font-family: SNPro;
   src: url(./SNPro.woff2) format("woff2");
   font-display: swap;
-}
+} */
 
 @layer base {
   :focus-visible {
@@ -73,7 +82,7 @@
   --color-timeline-point: var(--timeline-point);
   --color-timeline-rod: var(--timeline-rod);
 
-  --font-sans: "Incosolata";
+  --font-sans: "Inconsolata", "Inconsolata-fallback", sans-serif;
 }
 
 :root {

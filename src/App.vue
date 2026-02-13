@@ -1,14 +1,19 @@
 <script setup lang="ts">
     import Circle from "./components/Circle.vue";
     import Header from "./components/Header.vue";
-    import ProjectCard from "./components/ProjectCard.vue";
-    import Skill from "./components/Skill.vue";
+    import Navbar from "./components/Navbar.vue";
     import Section from '@/components/Section.vue';
+    import SubSection from "./components/SubSection.vue";
+
     import { SKILLS } from '@/data/skills';
     import { ICONS } from '@/data/icons';
-    import SubSection from "./components/SubSection.vue";
-    import BannerCard from "./components/BannerCard.vue";
-    import Navbar from "./components/Navbar.vue";
+
+    import { defineAsyncComponent } from 'vue';
+
+    const ProjectCard = defineAsyncComponent(() => import('./components/ProjectCard.vue'));
+    const BannerCard = defineAsyncComponent(() => import('./components/BannerCard.vue'));
+    const Skill = defineAsyncComponent(() => import('./components/Skill.vue'));
+
     import { useHead } from '@unhead/vue';
     import { useI18n } from 'vue-i18n';
 

@@ -1,9 +1,8 @@
 <script setup>
-    import { ref, computed } from 'vue';
-    import { marked } from 'marked';
+    import { ref } from 'vue';
     import Skill from '../components/Skill.vue';
-    import 'github-markdown-css/github-markdown.css';
     import { ICONS } from '@/data/icons';
+    import 'github-markdown-css/github-markdown.css';
 
     const props = defineProps({
         id: { type: String, default: "modal-readme" },
@@ -12,26 +11,37 @@
         links: { type: Array, default: () => [] },
     });
 
-    const markdownText = ref('');
+    const markdownHtml = ref(''); // On stocke directement le HTML
     const dialogRef = ref(null);
+    const isLoading = ref(false);
 
     const loadMarkdown = async () => {
-        if (markdownText.value) return;
+        if (markdownHtml.value || isLoading.value) return;
+        isLoading.value = true;
+        
         try {
-            const response = await fetch(`./${props.type}/${props.id}/README.md`);
-            if (!response.ok) throw new Error('Fichier non trouvé');
+            const [markedModule, response] = await Promise.all([
+                import('marked'), // Import parallèle
+                fetch(`./${props.type}/${props.id}/README.md`)
+            ]);
+
+            if (!response.ok) throw new Error();
+            
             let text = await response.text();
-            text = text.replaceAll('](./', `](./${props.type}/${props.id}/`);
-            text = text.replaceAll(' src="./', ` src="./${props.type}/${props.id}/`);
-            text = text.replaceAll(' href="./', ` href="./${props.type}/${props.id}/`);
-            markdownText.value = text;
-        } catch (error) {
-            markdownText.value = `### Erreur\nImpossible de charger le fichier : ./${props.type}/${props.id}/README.md`;
-            console.error("Erreur de fetch :", error);
+            const baseUrl = `./${props.type}/${props.id}/`;
+            
+            // Unification des remplacements
+            text = text.replace(/(src|href)="\.?\//g, `$1="${baseUrl}`)
+                    .replace(/\]\(\.\//g, `](${baseUrl}`);
+
+            markdownHtml.value = markedModule.marked.parse(text);
+        } catch (e) {
+            markdownHtml.value = `<p>Erreur de chargement.</p>`;
+        } finally {
+            isLoading.value = false;
         }
     };
 
-    const outputHtml = computed(() => { return marked.parse(markdownText.value || ''); });
     const openModal = () => { dialogRef.value?.showModal(); };
     const closeModal = () => {
         dialogRef.value?.close();
@@ -68,8 +78,8 @@
 
             <span class="w-full h-px bg-text block my-8"></span>
 
-            <div class="min-h-screen p-8">
-                <article v-html="outputHtml" class="markdown-body custom-markdown-style"></article>
+            <div class="p-6" v-if="markdownHtml || isLoading">
+                <article v-html="markdownHtml" class="markdown-body custom-markdown-style"></article>
             </div>
         </div>
     </dialog>
