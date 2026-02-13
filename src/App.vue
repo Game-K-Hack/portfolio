@@ -47,7 +47,7 @@
 
     <Navbar :ids="['projects', 'xpp', 'skills', 'studies']"></Navbar>
 
-    <Header avatar="./avatar.png" :title="$t('name')" :resume="$t('description')"></Header>
+    <Header avatar="./avatar.webp" :title="$t('name')" :resume="$t('description')"></Header>
 
     <Section id="projects">
         <div class="mx-[2%] flex flex-row flex-wrap pt-5 gap-12 justify-around mb-25">

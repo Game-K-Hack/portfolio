@@ -1,5 +1,5 @@
 <p align="center" >
-    <img src="../asset/icon/icon_rounded.png" width=200 />
+    <img src="../asset/icon/icon_rounded.webp" width=200 />
 </p>
 
 <h3 align="center">RealPrice</h3>
@@ -82,10 +82,10 @@ RealPrice基于简单而有效的原理运作，为您提供准确和现实的�
 - **多语言支持**（支持9种语言）
 <br>
 <p align="center">
-  <img src="./images/zh-CN/01_dark_home.png" width="20%" />
-    <img src="./images/zh-CN/04_dark_search.png" width="20%" />
-    <img src="./images/zh-CN/02_dark_setting.png" width="20%" />
-    <img src="./images/zh-CN/01_light_home.png" width="20%" />
+  <img src="./images/zh-CN/01_dark_home.webp" width="20%" />
+    <img src="./images/zh-CN/04_dark_search.webp" width="20%" />
+    <img src="./images/zh-CN/02_dark_setting.webp" width="20%" />
+    <img src="./images/zh-CN/01_light_home.webp" width="20%" />
 </p>
 <br>
 <br>

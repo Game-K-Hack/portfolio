@@ -1,4 +1,4 @@
-![banner](./assets/banner.png)
+![banner](./assets/banner.webp)
 
 ### Inspecteur Cracker
 
@@ -18,23 +18,23 @@ python main.py
 
 ### Démonstration
 
-![screenshot-1](./assets/doc/screenshot-1.png)
+![screenshot-1](./assets/doc/screenshot-1.webp)
 
 Sélection de l’archive cible.
 
-![screenshot-2](./assets/doc/screenshot-2.png)
+![screenshot-2](./assets/doc/screenshot-2.webp)
 
 Paramétrage des éléments connus.
 
-![screenshot-4](./assets/doc/screenshot-4.png)
+![screenshot-4](./assets/doc/screenshot-4.webp)
 
 Attaque en cours — profitez de la musique d’**Inspecteur Gadget** 🎵
 
-![screenshot-9](./assets/doc/screenshot-9.png)
+![screenshot-9](./assets/doc/screenshot-9.webp)
 
 Et voilà, c'est simple comme bonjour
 
-![screenshot-5](./assets/doc/screenshot-5.png)
+![screenshot-5](./assets/doc/screenshot-5.webp)
 
 ### Exemple
 

@@ -1,5 +1,5 @@
 <p align="center" >
-    <img src="../asset/icon/icon_rounded.png" width=200 />
+    <img src="../asset/icon/icon_rounded.webp" width=200 />
 </p>
 
 <h3 align="center">RealPrice</h3>
@@ -81,10 +81,10 @@ RealPrice는 정확하고 현실적인 환율 변환을 제공하기 위해 간�
 - **다국어 지원** (9개 언어 지원)
 <br>
 <p align="center">
-  <img src="./images/ko-KR/01_dark_home.png" width="20%" />
-  <img src="./images/ko-KR/04_dark_search.png" width="20%" />
-  <img src="./images/ko-KR/02_dark_setting.png" width="20%" />
-  <img src="./images/ko-KR/01_light_home.png" width="20%" />
+  <img src="./images/ko-KR/01_dark_home.webp" width="20%" />
+  <img src="./images/ko-KR/04_dark_search.webp" width="20%" />
+  <img src="./images/ko-KR/02_dark_setting.webp" width="20%" />
+  <img src="./images/ko-KR/01_light_home.webp" width="20%" />
 </p>
 <br>
 <br>

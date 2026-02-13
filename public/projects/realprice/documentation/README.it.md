@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="../asset/icon/icon_rounded.png" width=200 />
+    <img src="../asset/icon/icon_rounded.webp" width=200 />
 </p>
 
 <h3 align="center">RealPrice</h3>
@@ -82,10 +82,10 @@ RealPrice opera secondo un principio semplice ma efficace per offrirti conversio
 - **Supporto multilingue** (9 lingue disponibili)
 <br>
 <p align="center">
-  <img src="./images/it-IT/01_dark_home.png" width="20%" />
-  <img src="./images/it-IT/04_dark_search.png" width="20%" />
-  <img src="./images/it-IT/02_dark_setting.png" width="20%" />
-  <img src="./images/it-IT/01_light_home.png" width="20%" />
+  <img src="./images/it-IT/01_dark_home.webp" width="20%" />
+  <img src="./images/it-IT/04_dark_search.webp" width="20%" />
+  <img src="./images/it-IT/02_dark_setting.webp" width="20%" />
+  <img src="./images/it-IT/01_light_home.webp" width="20%" />
 </p>
 <br>
 <br>

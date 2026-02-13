@@ -1,5 +1,5 @@
 <p align="center" >
-    <img src="../asset/icon/icon_rounded.png" width=200 />
+    <img src="../asset/icon/icon_rounded.webp" width=200 />
 </p>
 
 <h3 align="center">RealPrice</h3>
@@ -82,10 +82,10 @@ RealPrice fonctionne selon un principe simple mais efficace pour vous fournir de
 - **Support multilingue** (9 langues disponibles)
 <br>
 <p align="center">
-  <img src="./images/fr-FR/01_dark_home.png" width="20%" />
-  <img src="./images/fr-FR/04_dark_search.png" width="20%" />
-  <img src="./images/fr-FR/02_dark_setting.png" width="20%" />
-  <img src="./images/fr-FR/01_light_home.png" width="20%" />
+  <img src="./images/fr-FR/01_dark_home.webp" width="20%" />
+  <img src="./images/fr-FR/04_dark_search.webp" width="20%" />
+  <img src="./images/fr-FR/02_dark_setting.webp" width="20%" />
+  <img src="./images/fr-FR/01_light_home.webp" width="20%" />
 </p>
 <br>
 <br>

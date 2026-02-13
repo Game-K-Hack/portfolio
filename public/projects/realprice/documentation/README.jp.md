@@ -1,5 +1,5 @@
 <p align="center" >
-    <img src="../asset/icon/icon_rounded.png" width=200 />
+    <img src="../asset/icon/icon_rounded.webp" width=200 />
 </p>
 
 <h3 align="center">RealPrice</h3>
@@ -81,10 +81,10 @@ RealPriceは、正確でリアルな通貨変換を提供するため、シン�
 - **多言語サポート**（9言語対応）
 <br>
 <p align="center">
-  <img src="./images/ja-JP/01_dark_home.png" width="20%" />
-  <img src="./images/ja-JP/04_dark_search.png" width="20%" />
-  <img src="./images/ja-JP/02_dark_setting.png" width="20%" />
-  <img src="./images/ja-JP/01_light_home.png" width="20%" />
+  <img src="./images/ja-JP/01_dark_home.webp" width="20%" />
+  <img src="./images/ja-JP/04_dark_search.webp" width="20%" />
+  <img src="./images/ja-JP/02_dark_setting.webp" width="20%" />
+  <img src="./images/ja-JP/01_light_home.webp" width="20%" />
 </p>
 <br>
 <br>
