@@ -16,6 +16,7 @@
 
     import { useHead } from '@unhead/vue';
     import { useI18n } from 'vue-i18n';
+    import Contact from "./components/Contact.vue";
 
     const { t } = useI18n();
 
@@ -49,8 +50,9 @@
     <Circle color="#00AAFF" :size="2000" pos="8600:-10%" />
     <Circle color="#FF0004" :size="2000" pos="10000:102%" />
     <Circle color="#1EFF00" :size="2000" pos="11400:-30%" />
+    <Circle color="#FFFFFF" :size="2000" pos="105%:50%" />
 
-    <Navbar :ids="['projects', 'xpp', 'skills', 'studies']"></Navbar>
+    <Navbar :ids="['projects', 'xpp', 'skills', 'studies', 'contactme']"></Navbar>
 
     <Header avatar="./avatar.webp" :title="$t('name')" :resume="$t('description')"></Header>
 
@@ -97,7 +99,7 @@
                     <div class="w-1 h-[calc(100%-20px-8px)] my-2 mx-auto bg-timeline-rod"></div>
                 </div>
 
-                <div class="w-full pb-20 col-start-2 lg:col-start-3">
+                <div class="w-full pb-20 col-start-2 mt-1 lg:col-start-3 lg:mt-0.5 xl:mt-0 2xl:-mt-1">
                     
                     <div class="flex lg:hidden flex-row flex-wrap gap-x-5 mb-2 items-center">
                         <span class="text-classic font-light whitespace-nowrap">{{ i.date }}</span>
@@ -161,7 +163,7 @@
                     <div class="w-1 h-[calc(100%-24px-4px)] my-2 mx-auto bg-timeline-rod"></div>
                 </div>
 
-                <div class="w-full col-start-3 font-extralight text-classic">
+                <div class="w-full col-start-3 font-extralight text-classic mt-2 lg:mt-0.5 xl:mt-0 2xl:-mt-1">
                     
                     <p class="lg:hidden text-classic-m1 font-medium opacity-70 mb-1 leading-none">
                         {{ i.date }}
@@ -193,6 +195,32 @@
             <BannerCard id="rootme"></BannerCard>
         </div>
     </SubSection>
+
+    <Section id="contactme">
+        <div class="mx-[7.5%] pt-10 flex flex-col flex-nowrap justify-around gap-5 lg:flex-row lg:gap-2">
+            <Contact id="location">
+                <p class="opacity-50">Loire-Atlantique (44)</p>
+            </Contact>
+            <Contact id="email">
+                <a class="opacity-50 hover:text-blue-500 hover:opacity-100" href="mailto:maindron.kelian@laposte.net">maindron.kelian@laposte.net</a>
+            </Contact>
+            <Contact id="followme">
+                <div class="pt-1 flex flex-row flex-nowrap justify-around gap-1">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kelian-m/">
+                        <img class="transition duration-50 ease-in-out hover:scale-120 rounded-md" src="/icons/linkedin.svg" width="30" height="30" alt="LinkedIn">
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Game-K-Hack/">
+                        <img class="transition duration-50 ease-in-out hover:scale-120" src="/icons/github-white.svg" width="30" height="30" alt="GitHub">
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" :href="`/rss/feed-${$i18n.locale}.xml`">
+                        <img class="transition duration-50 ease-in-out hover:scale-120 rounded-md" src="/icons/rss.svg" width="30" height="30" alt="RSS">
+                    </a>
+                </div>
+            </Contact>
+        </div>
+    </Section>
+
+    <span class="block h-50"></span>
 </template>
 
 <style>

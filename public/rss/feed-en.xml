@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Kélian | Software Developer</title>
+  <link>https://kmaindron.fr</link>
+  <description>A website about tech and coffee.</description>
+  <language>en-us</language>
+
+  <item>
+    <title>RealPrice</title>
+    <link>https://github.com/MathieuMarthy/RealPrice</link>
+    <description>RealPrice is a practical currency conversion app designed for travelers. Easily compare exchange rates, adjust for bank fees, and calculate your costs with precision. Stay informed with automatic online updates for accurate conversions wherever you are.</description>
+    <pubDate>Sat, 14 Feb 2026 09:00:00 GMT</pubDate>
+    <guid>https://github.com/MathieuMarthy/RealPrice</guid>
+    <category>Project</category>
+  </item>
+
+  <item>
+    <title>Inspecteur Cracker</title>
+    <link>https://github.com/Game-K-Hack/bkcrack-gui</link>
+    <description>A graphical user interface for cracking legacy zip encryption using the Biham and Kocher known-plaintext attack.</description>
+    <pubDate>Sat, 14 Feb 2026 09:00:00 GMT</pubDate>
+    <guid>https://github.com/Game-K-Hack/bkcrack-gui</guid>
+    <category>Project</category>
+  </item>
+
+</channel>
+
+</rss>

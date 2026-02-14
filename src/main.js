@@ -123,6 +123,12 @@ const i18nData = {
                 title: "Labs & challenges de cybersécurité", 
                 tryhackme: { title: "Try Hack Me" }, 
                 rootme: { title: "Root Me" }, 
+            }, 
+            contactme: {
+                title: "Me Contacter", 
+                location: "Localisation", 
+                email: "E-mail", 
+                followme: "Suivez-moi"
             }
         }
     }
