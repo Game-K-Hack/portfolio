@@ -15,7 +15,6 @@
             <img class="w-37.5 rounded-[50%] blur-md animate-[blurAnimation_1s]" :src="avatar" alt="avatar background">
             <img class="absolute w-37.5 rounded-[50%]" :src="avatar" alt="avatar">
         </div>
-        <!-- <h1 v-if="title.length > 0" class="text-center text-classic-p3 font-['SNPro']">{{ title }}</h1> -->
         <IconName></IconName>
         <p class="text-justify font-extralight text-classic">{{ resume }}</p>
     </div>

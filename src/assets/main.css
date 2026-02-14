@@ -9,17 +9,9 @@
 @font-face {
   font-family: 'Inconsolata-fallback';
   src: local('Arial');
-  ascent-override: 90%;
-  descent-override: 20%;
-  line-gap-override: 0%;
-  size-adjust: 105%;
+  size-adjust: 50%; /* À ajuster : si Inconsolata est plus large, augmente ce % */
+  /* ascent-override: 90%; */
 }
-
-/* @font-face {
-  font-family: SNPro;
-  src: url(./SNPro.woff2) format("woff2");
-  font-display: swap;
-} */
 
 @layer base {
   :focus-visible {
