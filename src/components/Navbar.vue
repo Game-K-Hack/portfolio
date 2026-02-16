@@ -50,11 +50,17 @@
         watch: {
             openburger(isOpen) {
                 if (isOpen) {
-                    // Empêche le scroll sans déplacer la page
-                    document.body.style.overflow = 'hidden';
+                    const y = window.scrollY;
+                    document.body.style.position = 'fixed';
+                    document.body.style.top = `-${y}px`;
+                    document.body.style.width = '100%';
                 } else {
-                    // Libère le scroll
-                    document.body.style.overflow = '';
+                    const body = document.body;
+                    const scrollY = body.style.top;
+                    body.style.position = '';
+                    body.style.top = '';
+                    body.style.width = '';
+                    window.scrollTo(0, parseInt(scrollY || '0') * -1);
                 }
             }
         },
