@@ -19,7 +19,7 @@
             rounded: false,
             theme: {
                 cp: { light: "#1a1a1a", dark: "#ffffff" },
-                c1: "text-[#1a1a1a] dark:text-[#ffffff]"
+                c1: "text-text"
             }
         },
         computed: {

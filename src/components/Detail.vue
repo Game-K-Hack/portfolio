@@ -63,7 +63,7 @@
             <div class="flex justify-between items-center mb-4">
                 <h2 class="uppercase text-classic-p4 font-thin">{{ $t(`${type}.${id}.title`) }}</h2>
                 <div class="flex flex-row gap-2.5">
-                    <Skill v-for="icon in icons" :id="icon" :enabledHover="false" />
+                    <Skill v-for="icon in icons" :id="icon" />
                 </div>
             </div>
 

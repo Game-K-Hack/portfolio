@@ -23,7 +23,7 @@
                 {{ $t(`projects.${id}.title`) }}
             </h2>
             <div class="flex flex-row justify-end gap-2">
-                <img v-for="i in icons" :key="i" class="max-w-7.5 max-h-7.5" :src="'./icons/' + ICONS[i]?.icon" :alt="ICONS[i]?.name" width="30" height="30"/>
+                <Icon v-for="i in icons" :key="i" :id="i" size="30"/>
             </div>
         </div>
 
@@ -36,6 +36,7 @@
 <script>
     import Skill from '../components/Skill.vue';
     import { defineAsyncComponent } from 'vue';
+    import Icon from './Icon.vue';
 
     const Detail = defineAsyncComponent(() => import('./Detail.vue'));
 

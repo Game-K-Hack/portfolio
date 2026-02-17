@@ -21,7 +21,7 @@
             rounded: false,
             theme: {
                 cp: { light: "#000000", dark: "#ffffff" },
-                c1: "fill-black dark:fill-white"
+                c1: "fill-text"
             }
         },
         computed: {

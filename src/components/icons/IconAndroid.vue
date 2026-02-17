@@ -20,8 +20,8 @@
             experience: "",
             rounded: false,
             theme: {
-                cp: { light: "#A4C439", dark: "#3DDC84" }, 
-                c1: "fill-[#A4C439] dark:fill-[#3DDC84]"
+                cp: { light: "#689f38", dark: "#34a853" }, 
+                c1: "fill-[#689f38] dark:fill-[#34a853]"
             }
         },
         computed: {

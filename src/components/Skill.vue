@@ -6,8 +6,7 @@
     const props = defineProps({
         id: { type: String, default: "" },
         type: { type: String, default: "skills" },
-        enabledHover: { type: Boolean, default: true },
-        enabledDetail: { type: Boolean, default: true }
+        enabledDetail: { type: Boolean, default: false }
     });
 
     const iconRef = ref(null);
@@ -16,9 +15,6 @@
     const metadata = computed(() => iconRef.value?.metadata || {});
 
     const openModal = () => {
-        console.log("metadata");
-        console.log(metadata);
-
         if (!props.enabledDetail) return;
         dialogRef.value?.showModal();
         
@@ -88,8 +84,8 @@
     </dialog>
 
     <div @click="openModal" class="group flex flex-row bg-card rounded-[10px] p-2.5 gap-2.5 items-center" :class="{
-        'border border-solid border-transparent hover:border-color-border hover:cursor-pointer': enabledHover && enabledDetail }">
-        <div class="transition-transform duration-10 group-hover:scale-108">
+        'border border-solid border-transparent hover:border-color-border hover:cursor-pointer': enabledDetail }">
+        <div class="transition-transform duration-10" :class="{'group-hover:scale-108': enabledDetail }">
             <Icon :id="id" ref="iconRef" size="32" />
         </div>
         <h3 class="text-classic-p1 w-full font-normal">{{ metadata.name || "Chargement..." }}</h3>

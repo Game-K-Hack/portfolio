@@ -6,7 +6,6 @@
     import SubSection from "./components/SubSection.vue";
 
     import { SKILLS } from '@/data/skills';
-    import { ICONS } from '@/data/icons';
 
     import { defineAsyncComponent } from 'vue';
 
@@ -88,11 +87,7 @@
                     </p>
 
                     <div class="hidden lg:flex flex-row flex-nowrap gap-2.5 mt-2 mb-2 lg:justify-end">
-                        <img class="w-7.5 h-7.5" v-for="iconKey in i.icons" :key="iconKey"
-                            :src="'./icons/' + ICONS[iconKey]?.icon"
-                            :alt="ICONS[iconKey]?.name"
-                            :class="{ 'rounded-[5px]': ICONS[iconKey]?.rounded }"
-                            width="30" height="30"/>
+                        <Icon :id="iconKey" v-for="iconKey in i.icons" :key="iconKey" class="w-7.5 h-7.5" size="30"/>
                     </div>
                 </div>
 
@@ -114,11 +109,7 @@
                     </div>
 
                     <div class="flex lg:hidden flex-row flex-wrap gap-2.5 lg:justify-start">
-                        <img class="w-7.5 h-7.5" v-for="iconKey in i.icons" :key="iconKey"
-                            :src="'./icons/' + ICONS[iconKey]?.icon"
-                            :alt="ICONS[iconKey]?.name"
-                            :class="{ 'rounded-[5px]': ICONS[iconKey]?.rounded }"
-                            width="30" height="30"/>
+                        <Icon :id="iconKey" v-for="iconKey in i.icons" :key="iconKey" class="w-7.5 h-7.5" size="30"/>
                     </div>
 
                     <h3 class="text-classic-p1 font-bold leading-tight">{{ i.type }}: {{ i.name }}</h3>
@@ -140,12 +131,12 @@
             <h3 class="text-classic-p1 font-medium">{{ $t(`skills.${category.id}`) }}</h3>
             <div class="flex flex-col gap-6 pt-8">
                 <div v-if="!Array.isArray(category.items[0])" class="flex flex-row flex-wrap px-0 sm:px-8 lg:px-20 gap-6">
-                    <Skill v-for="skillId in category.items" :key="skillId?.toString()" :id="skillId?.toString()" />
+                    <Skill v-for="skillId in category.items" :key="skillId?.toString()" :id="skillId?.toString()" :enabledDetail="true" />
                 </div>
                 <template v-else>
                     <div v-for="(subGroup, idx) in category.items" :key="idx" 
                         class="flex flex-row flex-wrap px-0 sm:px-8 lg:px-20 gap-6">
-                        <Skill v-for="skillId in subGroup" :key="skillId" :id="skillId" />
+                        <Skill v-for="skillId in subGroup" :key="skillId" :id="skillId" :enabledDetail="true" />
                     </div>
                 </template>
             </div>
