@@ -18,7 +18,7 @@
             type: "Distribution Linux",
             description: "Une distribution Linux légère et flexible qui suit un modèle de rolling-release.",
             experience: "",
-            rounded: true,
+            rounded: false,
             theme: {
                 cp: { light: "#1791cf", dark: "#1791cf" }, 
                 c1: "fill-[#1791cf]"

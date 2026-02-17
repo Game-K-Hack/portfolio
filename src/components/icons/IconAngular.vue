@@ -30,7 +30,7 @@
             type: "Framework JavaScript",
             description: "Plateforme de développement pour la création d'applications web mobiles et de bureau.",
             experience: "",
-            rounded: true,
+            rounded: false,
             theme: {
                 cp: { light: "#f60a48", dark: "#e40035" }, 
                 c1: "#f60a48", 

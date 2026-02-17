@@ -16,7 +16,7 @@
             type: "Logiciel d'automatisation",
             description: "Outil open-source de gestion de configuration, de déploiement d'applications et d'orchestration informatique.",
             experience: "",
-            rounded: true,
+            rounded: false,
             theme: {
                 cp: { light: "#131211", dark: "#FFFFFF" }, 
                 c1: "fill-[#131211] dark:fill-[#FFFFFF]", 

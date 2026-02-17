@@ -78,12 +78,23 @@
 }
 
 :root {
+  --text: #050514;
   --background: #fcf6e8;
+  --background2: #f0e9d2;
+
+  --background-readme: #f6f8fa;
+
+  --card: rgba(70, 100, 190, 0.10);
+  --color-border: rgba(70, 85, 115, 0.60);
+
+  --timeline-point: #ff6060;
+  --timeline-rod: #5b6070b5;
 }
 
 .dark {
   --text: #fcf6e8;
   --background: #050514;
+  --background2: #1a1b26;
 
   --background-readme: #212830;
 

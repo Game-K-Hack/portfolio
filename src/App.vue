@@ -18,6 +18,7 @@
     import { useI18n } from 'vue-i18n';
     import Contact from "./components/Contact.vue";
     import ThemeSwitcher from "./components/ThemeSwitcher.vue";
+    import Icon from "./components/Icon.vue";
 
     const { t } = useI18n();
 
@@ -207,14 +208,13 @@
             </Contact>
             <Contact id="followme">
                 <div class="pt-1 flex flex-row flex-nowrap justify-around gap-1">
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kelian-m/">
-                        <img class="transition duration-50 ease-in-out hover:scale-120 rounded-md" src="/icons/linkedin.svg" width="30" height="30" alt="LinkedIn">
-                    </a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Game-K-Hack/">
-                        <img class="transition duration-50 ease-in-out hover:scale-120" src="/icons/github-white.svg" width="30" height="30" alt="GitHub">
-                    </a>
-                    <a target="_blank" rel="noopener noreferrer" :href="`/rss/feed-${$i18n.locale}.xml`">
-                        <img class="transition duration-50 ease-in-out hover:scale-120 rounded-md" src="/icons/rss.svg" width="30" height="30" alt="RSS">
+
+                    <a v-for="([key, url]) in [
+                        ['linkedin', 'https://www.linkedin.com/in/kelian-m/'], 
+                        ['github', 'https://github.com/Game-K-Hack/'], 
+                        ['rss', `/rss/feed-${$i18n.locale}.xml`]
+                    ]" :key="key" :href="url" target="_blank" rel="noopener noreferrer">
+                        <Icon :id="key" class="transition duration-50 ease-in-out hover:scale-120" size="30"/>
                     </a>
                 </div>
             </Contact>
