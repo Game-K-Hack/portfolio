@@ -1,0 +1,38 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 917 876" fill="none" xmlns="http://www.w3.org/2000/svg" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[5px]': $options.metadata.rounded}">
+        <title :id="uid">{{ $options.metadata.name }}</title>
+        <path d="M447.981 0.12C565.911 3.1 667.691 49.79 751.031 131.34C752.481 132.75 762.551 142.35 762.411 143.16L613.051 296.61C595.701 278.79 577.991 261.78 556.791 248.51C440.361 175.65 285.891 224.74 232.751 350.38C171.781 494.52 273.881 653.63 428.471 660.77L636.571 660.74L427.371 416.2H707.121L916.541 660.75H637.911V875.29L416.821 874.86C192.361 863.87 11.7613 683.52 0.901289 459C-11.0187 212.5 182.941 6.21 428.721 0.12C435.011 -0.04 441.691 -0.04 447.981 0.12Z" :fill="`url(#${uid}-gradient)`" />
+        <defs>
+            <linearGradient :id="`${uid}-gradient`" x1="579.881" y1="28" x2="211.381" y2="796.5" gradientUnits="userSpaceOnUse">
+                <stop :stop-color="isDark ? $options.metadata.theme.cp.dark : $options.metadata.theme.cp.light" />
+                <stop offset="1" :stop-color="isDark ? '#D1160D' : '#F21C12'" />
+            </linearGradient>
+        </defs>
+    </svg>
+</template>
+
+<script>
+export default {
+    props: {
+        size: { type: [String, Number], default: 24 }
+    },
+    metadata: {
+        name: "Gravitee.io",
+        type: "API Management",
+        description: "Plateforme de gestion d'API open-source pour sécuriser et gouverner vos services.",
+        experience: "",
+        rounded: false,
+        theme: {
+            cp: { light: "#FD6802", dark: "#E55D01" },
+            c1: "fill-[#FD6802] dark:fill-[#E55D01]"
+        }
+    },
+    computed: {
+        uid() { return `icon-gravitee-${Math.random().toString(36).substr(2, 9)}` },
+        isDark() {
+            if (typeof window === 'undefined') return false;
+            return document.documentElement.classList.contains('dark');
+        }
+    }
+};
+</script>

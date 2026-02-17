@@ -1,7 +1,3 @@
-<script setup>
-    import { ICONS } from '@/data/icons';
-</script>
-
 <template>
     <Teleport to="body">
         <Detail ref="detailRef" :id="id" type="projects" :icons="icons" :links="links"></Detail>
