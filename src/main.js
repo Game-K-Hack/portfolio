@@ -92,7 +92,11 @@ const i18nData = {
                 devops: "DevOps", 
                 os: "Systèmes d’exploitation", 
                 cyber: "Cybersécurité & analyse", 
-                conception: "Conception & organisation"
+                conception: "Conception & organisation", 
+                detail: {
+                    description: "Description", 
+                    xp: "Mon Expérience"
+                }
             }, 
             studies: {
                 title: "Formation", 
@@ -141,15 +145,26 @@ app.use(i18n);
 app.use(head);
 app.mount('#app');
 
-// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-document.documentElement.classList.toggle(
-    "dark",
-    localStorage.theme === "dark" ||
-        (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
-);
-// Whenever the user explicitly chooses light mode
-localStorage.theme = "light";
-// Whenever the user explicitly chooses dark mode
-localStorage.theme = "dark";
-// Whenever the user explicitly chooses to respect the OS preference
-localStorage.removeItem("theme");
+export function setTheme(newTheme) {
+    const root = document.documentElement;
+    
+    let isDark;
+    if (newTheme === 'system') {
+        localStorage.removeItem('theme');
+        isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    } else {
+        localStorage.theme = newTheme;
+        isDark = (newTheme === 'dark');
+    }
+
+    if (isDark) {
+        root.classList.add('dark');
+    } else {
+        root.classList.remove('dark');
+    }
+
+    root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+}
+
+const savedTheme = localStorage.getItem('theme') || 'system';
+setTheme(savedTheme);
