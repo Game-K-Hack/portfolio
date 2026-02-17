@@ -1,7 +1,6 @@
 <script setup>
     import { ref } from 'vue';
     import Skill from '../components/Skill.vue';
-    import { ICONS } from '@/data/icons';
     import 'github-markdown-css/github-markdown.css';
     import { marked } from 'marked';
 
@@ -69,7 +68,7 @@
             <div class="flex flex-row gap-2">
                 <span class="w-5"></span>
                 <a target="_blank" rel="noopener noreferrer" v-for="i in links" :href="i.url" class="w-auto mt-5">
-                    <img class="w-auto h-10 max-w-none" :src="'./icons/' + ICONS[i.icon]?.icon" :alt="ICONS[i.icon]?.name"/>
+                    <img class="w-auto h-10 max-w-none" :src="i.icon" :alt="'Link: ' + i.url"/>
                 </a>
             </div>
 

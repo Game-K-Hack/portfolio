@@ -1,6 +1,5 @@
 <script setup>
     import { ref, computed } from 'vue';
-    import { ICONS } from '@/data/icons';
     import Icon from './Icon.vue';
 
     const props = defineProps({
@@ -53,7 +52,7 @@
                     <Icon :id="id" size="48" />
                 </div>
                 <div>
-                    <h2 class="text-2xl font-bold text-text tracking-tight">{{ metadata.name || ICONS[id]?.name }}</h2>
+                    <h2 class="text-2xl font-bold text-text tracking-tight">{{ metadata.name }}</h2>
                     <span class="text-xs font-mono uppercase tracking-widest text-(--dialog-skill-color-light) dark:text-(--dialog-skill-color-dark)">{{ metadata.type }}</span>
                 </div>
             </div>
