@@ -1,3 +1,7 @@
+<script setup>
+    import Icon from './Icon.vue';
+</script>
+
 <template>
     <Teleport to="body">
         <Detail ref="detailRef" :id="id" type="projects" :icons="icons" :links="links"></Detail>
@@ -32,7 +36,6 @@
 <script>
     import Skill from '../components/Skill.vue';
     import { defineAsyncComponent } from 'vue';
-    import Icon from './Icon.vue';
 
     const Detail = defineAsyncComponent(() => import('./Detail.vue'));
 

@@ -3,6 +3,7 @@
     import Skill from '../components/Skill.vue';
     import { ICONS } from '@/data/icons';
     import 'github-markdown-css/github-markdown.css';
+    import { marked } from 'marked';
 
     const props = defineProps({
         id: { type: String, default: "modal-readme" },
@@ -20,11 +21,7 @@
         isLoading.value = true;
         
         try {
-            const [markedModule, response] = await Promise.all([
-                import('marked'), // Import parallèle
-                fetch(`./${props.type}/${props.id}/README.md`)
-            ]);
-
+            const response = await fetch(`./${props.type}/${props.id}/README.md`);
             if (!response.ok) throw new Error();
             
             let text = await response.text();
@@ -34,7 +31,7 @@
             text = text.replace(/(src|href)="\.?\//g, `$1="${baseUrl}`)
                     .replace(/\]\(\.\//g, `](${baseUrl}`);
 
-            markdownHtml.value = markedModule.marked.parse(text);
+            markdownHtml.value = marked.parse(text);
         } catch (e) {
             markdownHtml.value = `<p>Erreur de chargement.</p>`;
         } finally {

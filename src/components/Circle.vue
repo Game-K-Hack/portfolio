@@ -27,7 +27,7 @@ import { computed } from 'vue';
 export default {
     name: 'BackgroundCircle',
     props: {
-        color: { type: String, default: '#3498db' },
+        color: { type: String, require: true },
         size: { type: Number, default: 800 },
         pos: { type: String, default: "50%:50%" },
     },

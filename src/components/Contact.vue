@@ -18,6 +18,4 @@
             id: { type: String, required: true }
         }
     }
-
-    import('marked') // charger la lib markdown une fois les autres composents chargés
 </script>
