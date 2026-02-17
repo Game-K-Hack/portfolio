@@ -1,0 +1,46 @@
+<template>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[5px]': $options.metadata.rounded}">
+        <linearGradient :id="uid + 'c1'" x1="47.667" x2="544.303" y1="363.376" y2="-63.912" gradientTransform="matrix(.5625 0 0 -.568 -36.442 220.966)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" :style="`stop-color: ${themeClasses.c1}`" />
+            <stop offset="1" :style="`stop-color: ${themeClasses.c2}`" />
+        </linearGradient>
+        <path
+            d="M253 0c-20.9.1-40.8 1.9-58.4 5-51.7 9.1-61.1 28.2-61.1 63.5V115h122.1v15.5H87.7c-35.5 0-66.6 21.3-76.3 61.9C.2 239-.3 268 11.4 316.6c8.7 36.2 29.4 61.9 64.9 61.9h42v-55.8c0-40.3 34.9-75.9 76.3-75.9h122c34 0 61.1-28 61.1-62.1V68.5c0-33.1-27.9-58-61.1-63.5-21-3.5-42.7-5.1-63.6-5m-66.1 37.4c12.6 0 22.9 10.5 22.9 23.3s-10.3 23.2-22.9 23.2C174.3 84 164 73.6 164 60.8c0-12.9 10.3-23.4 22.9-23.4"
+            :style="`fill: url(#${uid + 'c1'})`"
+        />
+        <linearGradient :id="uid + 'c2'" x1="736.305" x2="558.957" y1="-322.524" y2="-71.607" gradientTransform="matrix(.5625 0 0 -.568 -36.442 220.966)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" :style="`stop-color: ${themeClasses.c3}`" />
+            <stop offset="1" :style="`stop-color: ${themeClasses.c4}`" />
+        </linearGradient>
+        <path
+            d="M392.9 130.6v54.2c0 42.1-35.7 77.4-76.3 77.4h-122c-33.4 0-61.1 28.6-61.1 62.1v116.3c0 33.1 28.8 52.6 61.1 62.1 38.7 11.4 75.7 13.4 122 0 30.8-8.9 61.1-26.8 61.1-62.1V394h-122v-15.5h183.1c35.5 0 48.7-24.8 61.1-61.9 12.8-38.3 12.2-75.1 0-124.1-8.8-35.3-25.5-61.9-61.1-61.9zm-68.6 294.5c12.7 0 22.9 10.4 22.9 23.2 0 12.9-10.3 23.3-22.9 23.3s-22.9-10.5-22.9-23.3 10.3-23.2 22.9-23.2"
+            :style="`fill: url(#${uid + 'c2'})`"
+        />
+    </svg>
+</template>
+
+<script>
+    export default {
+        props: {
+            size: { type: [String, Number], default: 24 }
+        },
+        metadata: {
+            name: "Python",
+            type: "Langage de programmation",
+            description: "Langage de programmation interprété, multi-paradigme et multiplateformes.",
+            experience: "",
+            rounded: false,
+            theme: {
+                cp: { light: "#5a9fd4", dark: "#306998" },
+                c1: "#5a9fd4", 
+                c2: "#306998", 
+                c3: "#ffd43b", 
+                c4: "#ffe873", 
+            }
+        },
+        computed: {
+            uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
+            themeClasses() { return this.$options.metadata.theme; }
+        }
+    };
+</script>
