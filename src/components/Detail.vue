@@ -57,7 +57,7 @@
 </script>
 
 <template>
-    <dialog :id="id" ref="dialogRef" @click="e => e.target.id === id && closeModal()" 
+    <dialog :id="id" ref="dialogRef" @cancel.prevent="closeModal" @click="e => e.target.id === id && closeModal()" 
         class="w-[80%] mx-[10%] mt-5 rounded-2xl p-0 shadow-2xl bg-background-readme text-text backdrop:bg-black/50">
         <div class="p-6">
             <div class="flex justify-between items-center mb-4">

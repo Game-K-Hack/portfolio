@@ -1,6 +1,10 @@
+<script setup>
+    import Icon from './Icon.vue';
+</script>
+
 <template>
     <div class="flex flex-row flex-nowrap gap-3 items-center">
-        <img :src="`/icons/${id}.svg`" width="70" height="70" :alt="id">
+        <Icon :id="id" size="70" />
         <div class="flex flex-col">
             <h3 class="text-classic-p1">{{ $t(`contactme.${id}`) }}</h3>
             <slot></slot>

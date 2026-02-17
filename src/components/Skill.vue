@@ -50,18 +50,18 @@
 </script>
 
 <template>
-    <dialog ref="dialogRef" @click="e => e.target.tagName === 'DIALOG' && closeModal()" class="w-[90%] md:w-[60%] lg:w-[40%] max-w-2xl rounded-2xl p-0 shadow-2xl bg-[#1a1b26] text-slate-200 backdrop:bg-black/60 backdrop:backdrop-blur-sm border border-slate-700/50 overflow-hidden m-auto" :style="getColor">
+    <dialog ref="dialogRef" @cancel.prevent="closeModal" @click="e => e.target.tagName === 'DIALOG' && closeModal()" class="w-[90%] md:w-[60%] lg:w-[40%] max-w-2xl rounded-2xl p-0 shadow-2xl bg-[var] dark:bg-[#1a1b26] text-slate-200 backdrop:bg-black/60 backdrop:backdrop-blur-sm overflow-hidden m-auto border-0" :style="getColor">
         <div class="p-6 flex justify-between items-start bg-linear-to-r to-transparent from-(--dialog-skill-color-header-light) dark:from-(--dialog-skill-color-header-dark)">
             <div class="flex items-center gap-5">
-                <div class="p-3 bg-slate-900/50 rounded-xl border border-slate-700">
+                <div class="p-3 bg-slate-100/50 dark:bg-slate-900/50 rounded-xl border border-slate-300 darkborder-slate-700">
                     <Icon :id="id" size="48" />
                 </div>
                 <div>
-                    <h2 class="text-2xl font-bold text-white tracking-tight">{{ metadata.name || ICONS[id]?.name }}</h2>
+                    <h2 class="text-2xl font-bold text-text tracking-tight">{{ metadata.name || ICONS[id]?.name }}</h2>
                     <span class="text-xs font-mono uppercase tracking-widest text-(--dialog-skill-color-light) dark:text-(--dialog-skill-color-dark)">{{ metadata.type }}</span>
                 </div>
             </div>
-            <button @click="closeModal" class="p-2 hover:bg-slate-700 rounded-full transition-colors text-slate-400 hover:text-white">
+            <button @click="closeModal" class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-full transition-colors text-slate-400 hover:text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -75,14 +75,14 @@
                     <span class="w-1 h-4 rounded-full bg-(--dialog-skill-color-light) dark:bg-(--dialog-skill-color-dark)"></span>
                     {{ $t('skills.detail.description') }}
                 </h4>
-                <p v-if="metadata.description" class="text-slate-300 leading-relaxed text-classic-m1">{{ metadata.description }}</p>
+                <p v-if="metadata.description" class="text-slate-700 dark:text-slate-300 leading-relaxed text-classic-m1 text-justify">{{ metadata.description }}</p>
             </section>
             <section v-if="metadata.experience">
                 <h4 class="text-sm font-semibold text-slate-500 uppercase mb-3 flex items-center gap-2">
                     <span class="w-1 h-4 rounded-full bg-(--dialog-skill-color-light) dark:bg-(--dialog-skill-color-dark)"></span>
                     {{ $t('skills.detail.xp') }}
                 </h4>
-                <p class="text-slate-300 leading-relaxed text-classic-m1">{{ metadata.experience }}</p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-classic-m1 text-justify">{{ metadata.experience }}</p>
             </section>
         </div>
     </dialog>
