@@ -3,12 +3,12 @@
         <title :id="uid">{{ $t("skills.items.jira.name") }}</title>
         <defs>
             <linearGradient :id="`grad-a-${uid}`" gradientUnits="userSpaceOnUse" x1="22.034" y1="9.773" x2="17.118" y2="14.842" gradientTransform="scale(4)">
-                <stop offset=".176" :stop-color="themeColors.stop1"/>
-                <stop offset="1" :stop-color="themeColors.stop2"/>
+                <stop offset=".176" :stop-color="themeClasses.c2"/>
+                <stop offset="1" :stop-color="themeClasses.c3"/>
             </linearGradient>
             <linearGradient :id="`grad-b-${uid}`" gradientUnits="userSpaceOnUse" x1="16.641" y1="15.564" x2="10.957" y2="21.094" gradientTransform="scale(4)">
-                <stop offset=".176" :stop-color="themeColors.stop1"/>
-                <stop offset="1" :stop-color="themeColors.stop2"/>
+                <stop offset=".176" :stop-color="themeClasses.c2"/>
+                <stop offset="1" :stop-color="themeClasses.c3"/>
             </linearGradient>
         </defs>
         <path d="M108.023 16H61.805c0 11.52 9.324 20.848 20.847 20.848h8.5v8.226c0 11.52 9.328 20.848 20.848 20.848V19.977A3.98 3.98 0 00108.023 16zm0 0" :class="themeClasses.c1"/>
@@ -27,21 +27,13 @@
             theme: {
                 cp: { light: "#2684ff", dark: "#0052cc" },
                 c1: "fill-[#2684ff] dark:fill-[#4c9aff]",
-                stop1: { light: "#0052cc", dark: "#2684ff" },
-                stop2: { light: "#2684ff", dark: "#4c9aff" }
+                c2: "#0052cc",
+                c3: "#2684ff"
             }
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
             themeClasses() { return this.$options.metadata.theme },
-            themeColors() {
-                // Simplified logic for gradient stops based on a hypothetical dark mode state
-                // In a real app, this could be tied to a global theme provider
-                return {
-                    stop1: this.$options.metadata.theme.stop1.light,
-                    stop2: this.$options.metadata.theme.stop2.light
-                }
-            }
         }
     };
 </script>

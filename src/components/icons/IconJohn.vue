@@ -27,7 +27,7 @@
         metadata: {
             rounded: false,
             theme: {
-                cp: { light: '#ffffff', dark: '#2d3436'},
+                cp: { light: '#ffcc44', dark: '#EDB832'},
                 c1: '#fcfcfc',
                 c2: '#fff',
                 c3: '#fc4',
