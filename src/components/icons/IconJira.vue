@@ -1,6 +1,6 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
-        <title :id="uid">{{ $options.metadata.name }}</title>
+        <title :id="uid">{{ $t("skills.items.jira.name") }}</title>
         <defs>
             <linearGradient :id="`grad-a-${uid}`" gradientUnits="userSpaceOnUse" x1="22.034" y1="9.773" x2="17.118" y2="14.842" gradientTransform="scale(4)">
                 <stop offset=".176" :stop-color="themeColors.stop1"/>

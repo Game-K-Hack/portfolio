@@ -1,6 +1,6 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
-        <title :id="uid">{{ $options.metadata.name }}</title>
+        <title :id="uid">{{ $t("skills.items.drawio.name") }}</title>
         <g transform="translate(-247 -114)">
             <g transform="translate(247 114)">
                 <path d="M21.2 0h469.6c11.2 0 20.3 9.1 20.3 20.3v471.3c0 11.2-9.1 20.3-20.3 20.3H21.2C10 511.9.9 502.8.9 491.6V20.3C.9 9.1 10 0 21.2 0" :class="themeClasses.c1" />

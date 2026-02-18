@@ -1,6 +1,6 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335 335" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
-        <title :id="uid">{{ $options.metadata.name }}</title>
+        <title :id="uid">{{ $t("skills.items.windows7.name") }}</title>
         <radialGradient :id="uid + 'a'" cx="232.2451" cy="-168.24001" gradientTransform="matrix(1 0 0 -1 -270.96 -122.0747)" gradientUnits="userSpaceOnUse" r="33.430199">
             <stop offset=".005" stop-color="#d1e787"/>
             <stop offset=".1227" stop-color="#cee583"/>

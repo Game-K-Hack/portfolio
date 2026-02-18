@@ -1,6 +1,6 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
-        <title :id="uid">{{ $options.metadata.name }}</title>
+        <title :id="uid">{{ $t("skills.items.angular.name") }}</title>
         <defs>
             <linearGradient :id="uid + '-a'" x1="14.704" x2="110.985" y1="46.27" y2="92.024" gradientTransform="matrix(1 0 0 -1 0 130)" gradientUnits="userSpaceOnUse">
                 <stop offset="0" :stop-color="themeClasses.c8"/>

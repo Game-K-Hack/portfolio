@@ -1,6 +1,6 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="57.58 0.17 396.88 512.06" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
-        <title :id="uid">{{ $options.metadata.name }}</title>
+        <title :id="uid">{{ $t("skills.items.obsidian.name") }}</title>
         <radialGradient :id="uid + 'logo-bottom-left'" cx="0" cy="0" gradientTransform="matrix(-59 -225 150 -39 161.4 470)" gradientUnits="userSpaceOnUse" r="1">
             <stop offset="0" :stop-color="themeClasses.c1" stop-opacity=".4"/>
             <stop offset="1" stop-opacity=".1"/>

@@ -1,6 +1,6 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
-        <title :id="uid">{{ $options.metadata.name }}</title>
+        <title :id="uid">{{ $t("skills.items.ubuntu.name") }}</title>
         <circle cx="72.6" cy="242" r="72.6" :class="themeClasses.c1"/>
         <circle cx="374.9" cy="82.8" r="72.6" :class="themeClasses.c1"/>
         <path d="M51.8 343c36.6 92.2 126.4 152.2 225.6 150.5-14.2-17.8-22-39.8-22.3-62.6-6.5-.9-12.7-2-18.7-3.2-52.1-11-96.3-45.1-120.2-92.6-20 9.5-42.6 12.3-64.4 7.9" :class="themeClasses.c1"/>

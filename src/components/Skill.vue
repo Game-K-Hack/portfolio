@@ -52,8 +52,8 @@
                     <Icon :id="id" size="48" />
                 </div>
                 <div>
-                    <h2 class="text-2xl font-bold text-text tracking-tight">{{ metadata.name }}</h2>
-                    <span class="text-xs font-mono uppercase tracking-widest text-(--dialog-skill-color-light) dark:text-(--dialog-skill-color-dark)">{{ metadata.type }}</span>
+                    <h2 class="text-2xl font-bold text-text tracking-tight">{{ $t(`skills.items.${id}.name`) }}</h2>
+                    <span class="text-xs font-mono uppercase tracking-widest text-(--dialog-skill-color-light) dark:text-(--dialog-skill-color-dark)">{{ $t(`skills.items.${id}.type`) }}</span>
                 </div>
             </div>
             <button @click="closeModal" class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-full transition-colors text-slate-400 hover:text-white">
@@ -65,19 +65,19 @@
         </div>
 
         <div class="p-8 space-y-8">
-            <section v-if="metadata.description">
+            <section v-if="$te(`skills.items.${id}.description`)">
                 <h4 class="text-sm font-semibold text-slate-500 uppercase mb-3 flex items-center gap-2">
                     <span class="w-1 h-4 rounded-full bg-(--dialog-skill-color-light) dark:bg-(--dialog-skill-color-dark)"></span>
                     {{ $t('skills.detail.description') }}
                 </h4>
-                <p v-if="metadata.description" class="text-slate-700 dark:text-slate-300 leading-relaxed text-classic-m1 text-justify">{{ metadata.description }}</p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-classic-m1 text-justify">{{ $t(`skills.items.${id}.description`) }}</p>
             </section>
-            <section v-if="metadata.experience">
+            <section v-if="$te(`skills.items.${id}.experience`)">
                 <h4 class="text-sm font-semibold text-slate-500 uppercase mb-3 flex items-center gap-2">
                     <span class="w-1 h-4 rounded-full bg-(--dialog-skill-color-light) dark:bg-(--dialog-skill-color-dark)"></span>
                     {{ $t('skills.detail.xp') }}
                 </h4>
-                <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-classic-m1 text-justify">{{ metadata.experience }}</p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-classic-m1 text-justify">{{ $t(`skills.items.${id}.experience`) }}</p>
             </section>
         </div>
     </dialog>
@@ -87,6 +87,6 @@
         <div class="transition-transform duration-10" :class="{'group-hover:scale-108': enabledDetail }">
             <Icon :id="id" ref="iconRef" size="32" />
         </div>
-        <h3 class="text-classic-p1 w-full font-normal">{{ metadata.name || "Chargement..." }}</h3>
+        <h3 class="text-classic-p1 w-full font-normal">{{ $te(`skills.items.${id}.name`) ? $t(`skills.items.${id}.name`) : "Chargement..." }}</h3>
     </div>
 </template>

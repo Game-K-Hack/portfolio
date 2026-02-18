@@ -1,6 +1,6 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.47 135.47" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
-        <title :id="uid">{{ $options.metadata.name }}</title>
+        <title :id="uid">{{ $t("skills.items.metasploit.name") }}</title>
         <g transform="matrix(1.0444 0 0 1.0444 -3.204 -171.71)">
             <path d="m23.221 176.09v66.222c0 9.4651 9.3645 22.539 18.943 28.972l26.082 17.517 25.813-17.517c9.5475-6.4791 18.943-19.507 18.943-28.972v-66.222c-29.665-8.7742-59.61-8.1596-89.78 0z" :class="themeClasses.c1" />
             <path d="m29.924 186.24v55.775c0 7.972 10.945 19.391 15.955 24.402v-56.446l14.748 13.274v23.597h14.212v-23.597l14.748-13.274v56.446c5.0103-5.0103 15.955-16.43 15.955-24.402v-55.775h-15.151l-22.658 21.586-22.659-21.586z" opacity=".3" fill="currentColor" :class="themeClasses.c2" />

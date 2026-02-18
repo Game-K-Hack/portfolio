@@ -1,6 +1,6 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
-        <title :id="uid">{{ $options.metadata.name }}</title>
+        <title :id="uid">{{ $t("skills.items.sqlmap.name") }}</title>
         <g>
             <path
                 d="m381.44 54.01c-24.048 0.0024-43.542 19.497-43.545 43.545v35.679h-273.35c-24.048 3e-3 -43.542 19.497-43.545 43.545v145.24c0.0024 24.048 19.497 43.542 43.545 43.545h171.24c4.4145 10.267 12.607 18.444 22.883 22.839v26.043c3e-3 24.048 19.497 43.542 43.545 43.545h66.016c24.048-3e-3 43.542-19.497 43.545-43.545v-25.999c10.268-4.4142 18.445-12.607 22.841-22.883h12.839c24.048-3e-3 43.542-19.497 43.545-43.545v-224.46c-3e-3 -24.048-19.497-43.542-43.545-43.545z"

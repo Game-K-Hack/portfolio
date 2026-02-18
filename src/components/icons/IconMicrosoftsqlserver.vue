@@ -1,6 +1,6 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
-        <title :id="uid">{{ $options.metadata.name }}</title>
+        <title :id="uid">{{ $t("skills.items.microsoftsqlserver.name") }}</title>
         <defs>
             <linearGradient :id="uid + 'a'" x1="-2901.9519" x2="-2061.249" y1="923.573" y2="1420.3311" gradientTransform="matrix(.01102 0 0 -.01102 56.808 125.521)" gradientUnits="userSpaceOnUse">
                 <stop offset="0" :stop-color="themeClasses.c1"/>

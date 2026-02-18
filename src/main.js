@@ -150,7 +150,7 @@ const i18nData = {
                     },
                     "cherrytree": {
                         "name": "CherryTree",
-                        "type": "Prise de notes",
+                        "type": "Gestion des connaissances",
                         "description": "Application de prise de notes hiérarchique avec support du texte enrichi et du code."
                     },
                     "cobol": {
@@ -179,9 +179,7 @@ const i18nData = {
                         "description": "IDE multi-langages principalement utilisé pour les écosystèmes Java et d'entreprise."
                     },
                     "email": {
-                        "name": "Email",
-                        "type": "Communication",
-                        "description": "Gestion et configuration des services de messagerie électronique."
+                        "name": "Email"
                     },
                     "fedora": {
                         "name": "Fedora",
@@ -194,9 +192,7 @@ const i18nData = {
                         "description": "Plateforme collaborative de conception graphique et de prototypage d'interfaces."
                     },
                     "followme": {
-                        "name": "Followme",
-                        "type": "Outil d'automatisation",
-                        "description": "Solution logicielle de guidage interactif et d'assistance à l'utilisateur."
+                        "name": "Me suivre",
                     },
                     "git": {
                         "name": "Git",
@@ -225,7 +221,7 @@ const i18nData = {
                     },
                     "hashcat": {
                         "name": "Hashcat",
-                        "type": "Cybersécurité",
+                        "type": "Cassage de mot de passe",
                         "description": "L'un des outils de récupération de mots de passe et de craquage de hashs les plus rapides."
                     },
                     "htmlcss": {
@@ -235,7 +231,7 @@ const i18nData = {
                     },
                     "hydra": {
                         "name": "Hydra",
-                        "type": "Outil de cybersécurité",
+                        "type": "Cassage de mot de passe",
                         "description": "Outil de crack de login réseau supportant de nombreux protocoles (parfois confondu avec l'outil de live-coding visuel)."
                     },
                     "ida": {
@@ -270,7 +266,7 @@ const i18nData = {
                     },
                     "john": {
                         "name": "John the Ripper",
-                        "type": "Cybersécurité",
+                        "type": "Cassage de mot de passe",
                         "description": "Outil de test de robustesse de mots de passe et de craquage de hashs."
                     },
                     "kali": {
@@ -289,14 +285,10 @@ const i18nData = {
                         "description": "Plateforme open-source pour automatiser le déploiement et la gestion de conteneurs."
                     },
                     "linkedin": {
-                        "name": "LinkedIn",
-                        "type": "Réseau social",
-                        "description": "Plateforme professionnelle pour le réseautage et la visibilité de carrière."
+                        "name": "LinkedIn"
                     },
                     "location": {
-                        "name": "Location",
-                        "type": "Navigation",
-                        "description": "Compétences liées à la géolocalisation et à l'intégration de services cartographiques."
+                        "name": "Localisation"
                     },
                     "metasploit": {
                         "name": "Metasploit",
@@ -305,17 +297,17 @@ const i18nData = {
                     },
                     "microsoftsqlserver": {
                         "name": "Microsoft SQL Server",
-                        "type": "SGBD",
+                        "type": "Système de gestion de base de données",
                         "description": "Système de gestion de base de données relationnelle développé par Microsoft."
                     },
                     "mysql": {
                         "name": "MySQL",
-                        "type": "SGBD",
+                        "type": "Système de gestion de base de données",
                         "description": "Système de gestion de bases de données relationnelles open-source très populaire."
                     },
                     "netbeans": {
                         "name": "NetBeans",
-                        "type": "IDE",
+                        "type": "Environnement de développement (IDE)",
                         "description": "Environnement de développement polyvalent pour Java, PHP et C++."
                     },
                     "netcat": {
@@ -325,8 +317,8 @@ const i18nData = {
                     },
                     "nmap": {
                         "name": "Nmap",
-                        "type": "Sécurité réseau",
-                        "description": "Scanner de ports utilisé pour la découverte de réseaux et l'audit de sécurité."
+                        "type": "Analyseur réseau",
+                        "description": "Scanneur de ports utilisé pour la découverte de réseaux et l'audit de sécurité."
                     },
                     "obsidian": {
                         "name": "Obsidian",
@@ -340,7 +332,7 @@ const i18nData = {
                     },
                     "postgresql": {
                         "name": "PostgreSQL",
-                        "type": "SGBD",
+                        "type": "Système de gestion de base de données",
                         "description": "Système de base de données relationnelle et objet puissant, reconnu pour son intégrité."
                     },
                     "postman": {
@@ -366,11 +358,11 @@ const i18nData = {
                     "qt": {
                         "name": "Qt",
                         "type": "Framework de développement",
-                        "description": "Framework C++ utilisé pour créer des interfaces graphiques multiplateformes."
+                        "description": "Framework C++/Python utilisé pour créer des interfaces graphiques multiplateformes."
                     },
                     "rabbitmq": {
                         "name": "RabbitMQ",
-                        "type": "Message Broker",
+                        "type": "Agent de messages",
                         "description": "Agent de messages implémentant le protocole AMQP pour la communication entre services."
                     },
                     "rootme": {
@@ -379,13 +371,11 @@ const i18nData = {
                         "description": "Site communautaire dédié à l'entraînement à la cybersécurité et au hacking éthique."
                     },
                     "rss": {
-                        "name": "RSS",
-                        "type": "Flux Web",
-                        "description": "Format de syndication permettant de suivre les mises à jour de contenus web."
+                        "name": "RSS"
                     },
                     "sherlock": {
                         "name": "Sherlock",
-                        "type": "Outil OSINT",
+                        "type": "OSINT",
                         "description": "Outil de recherche de comptes sur les réseaux sociaux via un nom d'utilisateur."
                     },
                     "sketchup": {
@@ -405,12 +395,12 @@ const i18nData = {
                     },
                     "sqlite": {
                         "name": "SQLite",
-                        "type": "SGBD",
+                        "type": "Système de gestion de base de données",
                         "description": "Moteur de base de données SQL léger, autonome et sans serveur."
                     },
                     "sqlmap": {
                         "name": "Sqlmap",
-                        "type": "Outil de test d'intrusion",
+                        "type": "Test d'intrusion",
                         "description": "Outil d'automatisation de détection et d'exploitation de failles d'injection SQL."
                     },
                     "squashtm": {
@@ -425,8 +415,8 @@ const i18nData = {
                     },
                     "talaxie": {
                         "name": "Talaxie",
-                        "type": "Marque / Identité",
-                        "description": "Identité visuelle spécifique représentée par des tracés organiques entrelacés."
+                        "type": "ETL",
+                        "description": "Solution d'intégration de données pour l'extraction, la transformation et le chargement (ETL)."
                     },
                     "talend": {
                         "name": "Talend",
@@ -465,8 +455,8 @@ const i18nData = {
                     },
                     "vscode": {
                         "name": "Visual Studio Code",
-                        "type": "Éditeur de code",
-                        "description": "Éditeur moderne et extensible développé par Microsoft, favori des développeurs."
+                        "type": "Environnement de développement (IDE)",
+                        "description": "Éditeur moderne et extensible développé par Microsoft."
                     },
                     "windows10": {
                         "name": "Windows 10",
@@ -495,7 +485,7 @@ const i18nData = {
                     },
                     "wireshark": {
                         "name": "Wireshark",
-                        "type": "Analyseur de paquets",
+                        "type": "Analyseur réseau",
                         "description": "Analyseur de protocoles réseau standard pour le dépannage et l'analyse de trafic."
                     },
                     "xampp": {

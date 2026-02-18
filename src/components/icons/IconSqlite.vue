@@ -1,6 +1,6 @@
 <template>
     <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
-        <title :id="uid">{{ $options.metadata.name }}</title>
+        <title :id="uid">{{ $t("skills.items.sqlite.name") }}</title>
         <defs>
             <linearGradient id="sqlite-original-a" x1="-15.615" x2="-6.741" y1="-9.108" y2="-9.108"
                 gradientTransform="rotate(90 -90.486 64.634) scale(9.2712)"

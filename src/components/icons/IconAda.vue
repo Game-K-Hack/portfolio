@@ -1,5 +1,3 @@
-<script setup>import {useI18n} from 'vue-i18n';const {t}=useI18n();</script>
-
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
         <title :id="uid">{{ $t("skills.items.ada.name") }}</title>
