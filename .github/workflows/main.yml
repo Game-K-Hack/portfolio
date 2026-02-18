@@ -20,10 +20,6 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install Python dependencies
-        run: |
-          pip install ftpsync
-
       # 3. Configurer Node (optionnel mais recommandé pour la stabilité)
       - name: Install NPM dependencies
         run: |
