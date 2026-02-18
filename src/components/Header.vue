@@ -12,8 +12,8 @@
 <template>
     <div class="flex flex-col gap-7.5 my-32 mx-[10%] lg:mx-[20%] 2xl:mx-[30%]">
         <div class="flex justify-center">
-            <img class="w-37.5 rounded-[50%] blur-md animate-[blurAnimation_1s]" :src="avatar" alt="avatar background">
-            <img class="absolute w-37.5 rounded-[50%]" :src="avatar" alt="avatar">
+            <img class="w-37.5 rounded-[50%] blur-md animate-[blurAnimation_1s]" :src="avatar" width="150" height="150" alt="avatar background">
+            <img class="absolute w-37.5 rounded-[50%]" :src="avatar" width="150" height="150" alt="avatar">
         </div>
         <IconName></IconName>
         <p class="text-justify font-extralight text-classic">{{ resume }}</p>
