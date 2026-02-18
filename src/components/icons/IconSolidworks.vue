@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "SolidWorks",
-            type: "Conception 3D",
-            description: "Logiciel propriétaire de conception assistée par ordinateur 3D fonctionnant sous Windows",
-            experience: "",
             rounded: true,
             theme: {
                 cp: { light: "#da291c", dark: "#da291c" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

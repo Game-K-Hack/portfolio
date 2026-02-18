@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "QEMU",
-            type: "Émulateur",
-            description: "Systèmes d'exploitation (et leurs applications) de manière isolée sur une même machine physique",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#ff6600", dark: "#ff6600" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

@@ -21,10 +21,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "RSS",
-            type: "Web Feed",
-            description: "Format de syndication de contenu Web.",
-            experience: "",
             rounded: true,
             theme: {
                 cp: { light: "#f78422", dark: "#d96a0d" }, 

@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Sweet Home 3D",
-            type: "Conception",
-            description: "logiciel libre d'aménagement d'intérieurqui vous aide à dessiner le plan de votre maison",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#0066a7", dark: "#0066a7" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

@@ -11,10 +11,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "COBOL",
-            type: "Langage de programmation",
-            description: "Langage de programmation compilé de haut niveau destiné aux applications de gestion.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#005a9c", dark: "#3d91cf" },

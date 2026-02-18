@@ -25,10 +25,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Visual Studio Code",
-            type: "Éditeur de code",
-            description: "Éditeur de code source extensible développé par Microsoft.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#007ACC", dark: "#1F9CF0" },

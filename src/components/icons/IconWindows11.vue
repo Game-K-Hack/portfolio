@@ -11,10 +11,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Windows 11",
-            type: "Système d'exploitation",
-            description: "Dernière version majeure du système d'exploitation de Microsoft.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#0078d4", dark: "#005a9e" }, 

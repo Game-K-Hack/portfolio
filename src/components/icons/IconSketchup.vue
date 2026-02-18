@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "SketchUp",
-            type: "Conception 3D",
-            description: "Application de conception graphique puissante utilisée par des architectes, des ingénieurs et des designers",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#0863a2", dark: "#0863a2" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

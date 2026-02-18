@@ -11,10 +11,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "MySQL",
-            type: "Système de gestion de base de données",
-            description: "Système de gestion de bases de données relationnelles open-source le plus utilisé au monde.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#00618A", dark: "#0075a5" },

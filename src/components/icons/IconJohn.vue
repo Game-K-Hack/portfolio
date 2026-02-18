@@ -25,10 +25,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: 'John',
-            type: 'Software',
-            description: 'John (John the Ripper) is a fast password cracker.',
-            experience: '',
             rounded: false,
             theme: {
                 cp: { light: '#ffffff', dark: '#2d3436'},

@@ -96,6 +96,413 @@ const i18nData = {
                 detail: {
                     description: "Description", 
                     xp: "Mon Expérience"
+                }, 
+                items: {
+                    "ada": {
+                        "name": "Ada",
+                        "type": "Langage de programmation",
+                        "description": "Langage structuré, typé statiquement et impératif, reconnu pour sa fiabilité et sa sécurité."
+                    },
+                    "aircrackng": {
+                        "name": "Aircrack-ng",
+                        "type": "Sécurité Réseau",
+                        "description": "Suite d'outils complète pour l'audit, l'analyse et le cassage des réseaux sans fil (Wi-Fi)."
+                    },
+                    "android": {
+                        "name": "Android",
+                        "type": "Système d'exploitation",
+                        "description": "Système mobile basé sur le noyau Linux, optimisé pour les appareils à écran tactile."
+                    },
+                    "androidstudio": {
+                        "name": "Android Studio",
+                        "type": "Environnement de développement (IDE)",
+                        "description": "L'IDE officiel pour le développement d'applications Android, basé sur IntelliJ IDEA."
+                    },
+                    "angular": {
+                        "name": "Angular",
+                        "type": "Framework JavaScript",
+                        "description": "Plateforme de développement pour la création d'applications web modernes, mobiles et de bureau."
+                    },
+                    "ansible": {
+                        "name": "Ansible",
+                        "type": "Logiciel d'automatisation",
+                        "description": "Outil d'automatisation pour la gestion de configuration, le déploiement et l'orchestration IT."
+                    },
+                    "arch": {
+                        "name": "Arch Linux",
+                        "type": "Distribution Linux",
+                        "description": "Distribution légère et flexible suivant un modèle de mise à jour en continu (rolling-release)."
+                    },
+                    "arduino": {
+                        "name": "Arduino",
+                        "type": "Électronique & Matériel",
+                        "description": "Plateforme de prototypage électronique open-source pour la création d'objets interactifs."
+                    },
+                    "binwalk": {
+                        "name": "Binwalk",
+                        "type": "Analyse de firmware",
+                        "description": "Outil d'analyse de fichiers binaires pour l'extraction de code embarqué et d'images de firmware."
+                    },
+                    "bkcrack": {
+                        "name": "bkcrack",
+                        "type": "Outil de cryptanalyse",
+                        "description": "Outil permettant de casser le chiffrement ZIP classique via une attaque à texte clair connu."
+                    },
+                    "cherrytree": {
+                        "name": "CherryTree",
+                        "type": "Prise de notes",
+                        "description": "Application de prise de notes hiérarchique avec support du texte enrichi et du code."
+                    },
+                    "cobol": {
+                        "name": "COBOL",
+                        "type": "Langage de programmation",
+                        "description": "Langage compilé de haut niveau spécialisé dans les applications de gestion et la finance."
+                    },
+                    "cpp": {
+                        "name": "C++",
+                        "type": "Langage de programmation",
+                        "description": "Langage polyvalent permettant la programmation procédurale, générique et orientée objet."
+                    },
+                    "debian": {
+                        "name": "Debian",
+                        "type": "Système d'exploitation",
+                        "description": "Système d'exploitation universel et libre, réputé pour sa stabilité et sa sécurité."
+                    },
+                    "drawio": {
+                        "name": "Draw.io",
+                        "type": "Outil de diagrammes",
+                        "description": "Outil de conception de diagrammes, de logigrammes et d'architectures système."
+                    },
+                    "eclipse": {
+                        "name": "Eclipse",
+                        "type": "Environnement de développement (IDE)",
+                        "description": "IDE multi-langages principalement utilisé pour les écosystèmes Java et d'entreprise."
+                    },
+                    "email": {
+                        "name": "Email",
+                        "type": "Communication",
+                        "description": "Gestion et configuration des services de messagerie électronique."
+                    },
+                    "fedora": {
+                        "name": "Fedora",
+                        "type": "Système d'exploitation",
+                        "description": "Distribution Linux innovante soutenue par Red Hat, axée sur les logiciels libres."
+                    },
+                    "figma": {
+                        "name": "Figma",
+                        "type": "Outil de design UI/UX",
+                        "description": "Plateforme collaborative de conception graphique et de prototypage d'interfaces."
+                    },
+                    "followme": {
+                        "name": "Followme",
+                        "type": "Outil d'automatisation",
+                        "description": "Solution logicielle de guidage interactif et d'assistance à l'utilisateur."
+                    },
+                    "git": {
+                        "name": "Git",
+                        "type": "Système de contrôle de version",
+                        "description": "Logiciel décentralisé de gestion de versions pour le suivi des modifications du code."
+                    },
+                    "github": {
+                        "name": "GitHub",
+                        "type": "Forge logicielle",
+                        "description": "Service d'hébergement cloud pour le développement logiciel utilisant Git."
+                    },
+                    "gitlab": {
+                        "name": "GitLab",
+                        "type": "Forge logicielle",
+                        "description": "Plateforme DevOps complète pour la gestion du cycle de vie des applications."
+                    },
+                    "grafana": {
+                        "name": "Grafana",
+                        "type": "Observabilité & Visualisation",
+                        "description": "Outil open-source d'analyse et de visualisation de données métriques en temps réel."
+                    },
+                    "gravitee": {
+                        "name": "Gravitee.io",
+                        "type": "API Management",
+                        "description": "Solution open-source pour la sécurisation, la gestion et la gouvernance des API."
+                    },
+                    "hashcat": {
+                        "name": "Hashcat",
+                        "type": "Cybersécurité",
+                        "description": "L'un des outils de récupération de mots de passe et de craquage de hashs les plus rapides."
+                    },
+                    "htmlcss": {
+                        "name": "HTML/CSS",
+                        "type": "Langage Web",
+                        "description": "Langages fondamentaux pour la structuration et la mise en forme de pages web."
+                    },
+                    "hydra": {
+                        "name": "Hydra",
+                        "type": "Outil de cybersécurité",
+                        "description": "Outil de crack de login réseau supportant de nombreux protocoles (parfois confondu avec l'outil de live-coding visuel)."
+                    },
+                    "ida": {
+                        "name": "IDA Pro",
+                        "type": "Rétro-ingénierie",
+                        "description": "Désassembleur et débogueur interactif de référence pour l'analyse de binaires."
+                    },
+                    "java": {
+                        "name": "Java",
+                        "type": "Langage de programmation",
+                        "description": "Langage orienté objet robuste, conçu pour être portable via la JVM."
+                    },
+                    "javascript": {
+                        "name": "JavaScript",
+                        "type": "Langage de programmation",
+                        "description": "Langage de script essentiel au développement web interactif côté client et serveur."
+                    },
+                    "jenkins": {
+                        "name": "Jenkins",
+                        "type": "CI/CD Automation",
+                        "description": "Serveur d'automatisation permettant l'intégration et la livraison continues (CI/CD)."
+                    },
+                    "jira": {
+                        "name": "Jira",
+                        "type": "Gestion de projet",
+                        "description": "Outil de suivi de tickets et de gestion de projets agiles (Scrum/Kanban)."
+                    },
+                    "jobscheduler7": {
+                        "name": "JobScheduler 7",
+                        "type": "Ordonnanceur",
+                        "description": "Solution d'automatisation des processus et d'ordonnancement des tâches en entreprise."
+                    },
+                    "john": {
+                        "name": "John the Ripper",
+                        "type": "Cybersécurité",
+                        "description": "Outil de test de robustesse de mots de passe et de craquage de hashs."
+                    },
+                    "kali": {
+                        "name": "Kali Linux",
+                        "type": "Distribution Linux",
+                        "description": "Distribution spécialisée dans la sécurité offensive et les tests d'intrusion."
+                    },
+                    "kotlin": {
+                        "name": "Kotlin",
+                        "type": "Langage de programmation",
+                        "description": "Langage moderne et concis, privilégié pour le développement Android natif."
+                    },
+                    "kubernetes": {
+                        "name": "Kubernetes",
+                        "type": "Orchestration",
+                        "description": "Plateforme open-source pour automatiser le déploiement et la gestion de conteneurs."
+                    },
+                    "linkedin": {
+                        "name": "LinkedIn",
+                        "type": "Réseau social",
+                        "description": "Plateforme professionnelle pour le réseautage et la visibilité de carrière."
+                    },
+                    "location": {
+                        "name": "Location",
+                        "type": "Navigation",
+                        "description": "Compétences liées à la géolocalisation et à l'intégration de services cartographiques."
+                    },
+                    "metasploit": {
+                        "name": "Metasploit",
+                        "type": "Framework de test d'intrusion",
+                        "description": "Outil standard pour le développement et l'exécution d'exploits contre des cibles distantes."
+                    },
+                    "microsoftsqlserver": {
+                        "name": "Microsoft SQL Server",
+                        "type": "SGBD",
+                        "description": "Système de gestion de base de données relationnelle développé par Microsoft."
+                    },
+                    "mysql": {
+                        "name": "MySQL",
+                        "type": "SGBD",
+                        "description": "Système de gestion de bases de données relationnelles open-source très populaire."
+                    },
+                    "netbeans": {
+                        "name": "NetBeans",
+                        "type": "IDE",
+                        "description": "Environnement de développement polyvalent pour Java, PHP et C++."
+                    },
+                    "netcat": {
+                        "name": "Netcat",
+                        "type": "Outil réseau",
+                        "description": "Utilitaire polyvalent pour lire, écrire et rediriger des données sur un réseau."
+                    },
+                    "nmap": {
+                        "name": "Nmap",
+                        "type": "Sécurité réseau",
+                        "description": "Scanner de ports utilisé pour la découverte de réseaux et l'audit de sécurité."
+                    },
+                    "obsidian": {
+                        "name": "Obsidian",
+                        "type": "Gestion des connaissances",
+                        "description": "Application de prise de notes basée sur Markdown facilitant la création d'un second cerveau."
+                    },
+                    "php": {
+                        "name": "PHP",
+                        "type": "Langage de programmation",
+                        "description": "Langage de script côté serveur principalement utilisé pour le développement web dynamique."
+                    },
+                    "postgresql": {
+                        "name": "PostgreSQL",
+                        "type": "SGBD",
+                        "description": "Système de base de données relationnelle et objet puissant, reconnu pour son intégrité."
+                    },
+                    "postman": {
+                        "name": "Postman",
+                        "type": "Développement API",
+                        "description": "Plateforme de collaboration pour tester, documenter et développer des API."
+                    },
+                    "prometheus": {
+                        "name": "Prometheus",
+                        "type": "Monitoring",
+                        "description": "Système de surveillance et d'alerte basé sur les séries temporelles."
+                    },
+                    "python": {
+                        "name": "Python",
+                        "type": "Langage de programmation",
+                        "description": "Langage interprété polyvalent, célèbre pour sa syntaxe claire et ses vastes bibliothèques."
+                    },
+                    "qemu": {
+                        "name": "QEMU",
+                        "type": "Émulateur & Virtualisation",
+                        "description": "Émulateur de processeur et solution de virtualisation open-source performante."
+                    },
+                    "qt": {
+                        "name": "Qt",
+                        "type": "Framework de développement",
+                        "description": "Framework C++ utilisé pour créer des interfaces graphiques multiplateformes."
+                    },
+                    "rabbitmq": {
+                        "name": "RabbitMQ",
+                        "type": "Message Broker",
+                        "description": "Agent de messages implémentant le protocole AMQP pour la communication entre services."
+                    },
+                    "rootme": {
+                        "name": "Root-Me",
+                        "type": "Plateforme d'apprentissage",
+                        "description": "Site communautaire dédié à l'entraînement à la cybersécurité et au hacking éthique."
+                    },
+                    "rss": {
+                        "name": "RSS",
+                        "type": "Flux Web",
+                        "description": "Format de syndication permettant de suivre les mises à jour de contenus web."
+                    },
+                    "sherlock": {
+                        "name": "Sherlock",
+                        "type": "Outil OSINT",
+                        "description": "Outil de recherche de comptes sur les réseaux sociaux via un nom d'utilisateur."
+                    },
+                    "sketchup": {
+                        "name": "SketchUp",
+                        "type": "Modélisation 3D",
+                        "description": "Logiciel de conception 3D intuitif utilisé en architecture et ingénierie."
+                    },
+                    "solidworks": {
+                        "name": "SolidWorks",
+                        "type": "Conception 3D / CAO",
+                        "description": "Logiciel de conception mécanique assistée par ordinateur de référence industrielle."
+                    },
+                    "spring": {
+                        "name": "Spring",
+                        "type": "Framework Java",
+                        "description": "Écosystème complet pour le développement d'applications Java d'entreprise."
+                    },
+                    "sqlite": {
+                        "name": "SQLite",
+                        "type": "SGBD",
+                        "description": "Moteur de base de données SQL léger, autonome et sans serveur."
+                    },
+                    "sqlmap": {
+                        "name": "Sqlmap",
+                        "type": "Outil de test d'intrusion",
+                        "description": "Outil d'automatisation de détection et d'exploitation de failles d'injection SQL."
+                    },
+                    "squashtm": {
+                        "name": "Squash TM",
+                        "type": "Outil de test",
+                        "description": "Gestionnaire de référentiels de tests pour la gestion de la qualité logicielle."
+                    },
+                    "sweethome3d": {
+                        "name": "Sweet Home 3D",
+                        "type": "Conception d'intérieur",
+                        "description": "Logiciel libre d'aménagement d'intérieur et de dessin de plans de maison."
+                    },
+                    "talaxie": {
+                        "name": "Talaxie",
+                        "type": "Marque / Identité",
+                        "description": "Identité visuelle spécifique représentée par des tracés organiques entrelacés."
+                    },
+                    "talend": {
+                        "name": "Talend",
+                        "type": "ETL",
+                        "description": "Solution d'intégration de données pour l'extraction, la transformation et le chargement (ETL)."
+                    },
+                    "tryhackme": {
+                        "name": "Try Hack Me",
+                        "type": "Plateforme d'apprentissage",
+                        "description": "Plateforme interactive de formation à la cybersécurité via des laboratoires virtuels."
+                    },
+                    "typescript": {
+                        "name": "TypeScript",
+                        "type": "Langage de programmation",
+                        "description": "Sur-ensemble typé de JavaScript améliorant la maintenabilité du code web."
+                    },
+                    "ubuntu": {
+                        "name": "Ubuntu",
+                        "type": "Système d'exploitation",
+                        "description": "Distribution Linux grand public basée sur Debian, orientée vers la facilité d'utilisation."
+                    },
+                    "vegaspro": {
+                        "name": "Vegas Pro",
+                        "type": "Montage Vidéo",
+                        "description": "Logiciel professionnel de montage vidéo et de production multimédia."
+                    },
+                    "virtualbox": {
+                        "name": "VirtualBox",
+                        "type": "Virtualisation",
+                        "description": "Logiciel permettant d'exécuter plusieurs systèmes d'exploitation sur une seule machine."
+                    },
+                    "vmware": {
+                        "name": "VMware",
+                        "type": "Virtualisation & Cloud",
+                        "description": "Leader des solutions d'infrastructure de virtualisation de serveurs et de postes de travail."
+                    },
+                    "vscode": {
+                        "name": "Visual Studio Code",
+                        "type": "Éditeur de code",
+                        "description": "Éditeur moderne et extensible développé par Microsoft, favori des développeurs."
+                    },
+                    "windows10": {
+                        "name": "Windows 10",
+                        "type": "Système d'exploitation",
+                        "description": "Système d'exploitation polyvalent de Microsoft pour PC et tablettes."
+                    },
+                    "windows11": {
+                        "name": "Windows 11",
+                        "type": "Système d'exploitation",
+                        "description": "Dernière version majeure de l'OS Microsoft avec une interface modernisée."
+                    },
+                    "windows7": {
+                        "name": "Windows 7",
+                        "type": "Système d'exploitation",
+                        "description": "Ancienne version classique du système d'exploitation Microsoft."
+                    },
+                    "windowsembedded7": {
+                        "name": "Windows Embedded 7",
+                        "type": "Système d'exploitation",
+                        "description": "Version de Windows 7 optimisée pour les systèmes embarqués et industriels."
+                    },
+                    "windowsserver2012": {
+                        "name": "Windows Server 2012",
+                        "type": "Système d'exploitation",
+                        "description": "Système d'exploitation serveur pour la gestion d'infrastructure réseau."
+                    },
+                    "wireshark": {
+                        "name": "Wireshark",
+                        "type": "Analyseur de paquets",
+                        "description": "Analyseur de protocoles réseau standard pour le dépannage et l'analyse de trafic."
+                    },
+                    "xampp": {
+                        "name": "XAMPP",
+                        "type": "Serveur local",
+                        "description": "Environnement de développement PHP local incluant Apache, MariaDB et PHP."
+                    }
                 }
             }, 
             studies: {

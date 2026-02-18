@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Postman",
-            type: "API Platform",
-            description: "Plateforme de collaboration pour le développement d'API.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#ff6c37", dark: "#ff6c37" }, 

@@ -37,10 +37,7 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Sqlmap",
-            type: "Outil de test d'intrusion",
-            description: "Outil open source qui automatise le processus de détection et d'exploitation des failles d'injection SQL.",
-            experience: "",
+            rounded: false,
             theme: {
                 cp: { light: "#d41919", dark: "#d41919" },
                 c1: "#000000",

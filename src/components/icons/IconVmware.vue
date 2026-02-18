@@ -18,10 +18,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "VMware",
-            type: "Virtualisation & Cloud",
-            description: "Solution de virtualisation de serveurs et d'infrastructure cloud.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#F38B00", dark: "#0097D3" },

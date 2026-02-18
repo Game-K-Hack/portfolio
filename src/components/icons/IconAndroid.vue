@@ -14,10 +14,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Android",
-            type: "Système d'exploitation",
-            description: "Système d'exploitation mobile basé sur le noyau Linux et conçu principalement pour les écrans tactiles.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#689f38", dark: "#34a853" }, 

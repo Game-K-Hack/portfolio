@@ -17,10 +17,7 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Wireshark",
-            type: "Analyseur de paquets",
-            description: "Analyseur de protocoles réseau open source utilisé pour le dépannage et l'analyse.",
-            experience: "",
+            rounded: false,
             theme: {
                 cp: { light: "#4aaee6", dark: "#0f2b5c" },
                 c1: "fill-[#4aaee6] dark:fill-[#4aaee6]",

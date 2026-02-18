@@ -11,10 +11,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Qt",
-            type: "Framework de développement",
-            description: "Framework orienté objet pour le développement d'interfaces graphiques multiplateformes.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#41cd52", dark: "#2ea340" }, 

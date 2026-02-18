@@ -59,10 +59,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Obsidian",
-            type: "Prise de notes & Base de connaissances",
-            description: "Application de prise de notes utilisant des fichiers Markdown locaux et un graphe de relations.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#6c31e3", dark: "#7c3aed" },

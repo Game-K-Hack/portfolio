@@ -11,10 +11,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Windows Server 2012",
-            type: "Système d'exploitation",
-            description: "Système d'exploitation développé par Microsoft.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#000d8a", dark: "#0e1ba0" }, 

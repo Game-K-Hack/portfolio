@@ -11,10 +11,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Windows 10",
-            type: "Système d'exploitation",
-            description: "Système d'exploitation développé par Microsoft.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#00adef", dark: "#0087ba" }, 

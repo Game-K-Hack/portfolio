@@ -21,10 +21,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "CherryTree",
-            type: "Prise de notes hierarchique",
-            description: "Une application de prise de notes hiérarchique sous forme de base de données.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#087142", dark: "#065a35" }, 

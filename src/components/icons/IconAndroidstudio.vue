@@ -21,10 +21,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Android Studio",
-            type: "Environnement de développement (IDE)",
-            description: "L'IDE officiel pour le développement d'applications Android, basé sur IntelliJ IDEA.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#3DDC84", dark: "#073042" }, 

@@ -13,10 +13,6 @@
             size: { type: [String, Number], require: false }
         },
         metadata: {
-            name: "Try Hack Me",
-            type: "Plateforme d'apprentissage",
-            description: "Plateforme éducative dédiée au hacking et à la sécurité de l'information.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#c21818", dark: "#c21818" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

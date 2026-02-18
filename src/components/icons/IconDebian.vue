@@ -11,10 +11,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Debian",
-            type: "Système d'exploitation",
-            description: "Système d'exploitation libre composé uniquement de logiciels libres.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#A80030", dark: "#d70a53" },

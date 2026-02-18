@@ -33,10 +33,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Aircrack-ng",
-            type: "Sécurité Réseau",
-            description: "Suite d'outils pour l'audit de sécurité des réseaux sans fil (Wi-Fi).",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#23bac2", dark: "#367bf0" }, 

@@ -11,10 +11,7 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Spring",
-            type: "Framework",
-            description: "Framework d'application et conteneur d'inversion de contrôle pour la plateforme Java.",
-            experience: "",
+            rounded: false,
             theme: {
                 cp: { light: "#77bc1f", dark: "#6db33f" },
                 c1: "fill-[#77bc1f] dark:fill-[#6db33f]"

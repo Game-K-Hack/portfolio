@@ -14,10 +14,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Arduino",
-            type: "Électronique & Matériel",
-            description: "Plateforme de prototypage électronique open-source basée sur du matériel et des logiciels flexibles.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#00979C", dark: "#008184" }, 

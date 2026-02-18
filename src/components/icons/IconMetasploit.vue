@@ -18,10 +18,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Metasploit",
-            type: "Framework de test d'intrusion",
-            description: "Plateforme mondiale de tests d'intrusion utilisée par les professionnels de la cybersécurité.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#265ab1", dark: "#1e468d" }, 

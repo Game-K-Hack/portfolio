@@ -12,10 +12,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Followme",
-            type: "Outil d'automatisation",
-            description: "Solution logicielle de guidage interactif et d'assistance utilisateur.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#1a1a1a", dark: "#ffffff" },

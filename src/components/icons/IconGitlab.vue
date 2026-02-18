@@ -14,10 +14,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "GitLab",
-            type: "Forge logicielle",
-            description: "Plateforme de gestion de cycle de vie DevOps basée sur Git.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#e24329", dark: "#e24329" },

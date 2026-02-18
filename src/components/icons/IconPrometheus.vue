@@ -11,10 +11,7 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Prometheus",
-            type: "Monitoring & Alerting",
-            description: "Système de surveillance et d'alerte open-source basé sur des séries temporelles.",
-            experience: "",
+            rounded: false,
             theme: {
                 cp: { light: "#e6522c", dark: "#e6522c" },
                 c1: "fill-[#e6522c]"

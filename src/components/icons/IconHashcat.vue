@@ -17,10 +17,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Hashcat",
-            type: "Cybersécurité",
-            description: "Logiciel de récupération de mots de passe et de craquage de hashs.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#000000", dark: "#ffffff" }, 

@@ -16,10 +16,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Root-Me",
-            type: "Plateforme d'apprentissage",
-            description: "Plateforme éducative dédiée au hacking et à la sécurité de l'information.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#ffffff", dark: "#000000" }, 

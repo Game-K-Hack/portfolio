@@ -50,10 +50,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Binwalk",
-            type: "Analyse de firmware",
-            description: "Outil de recherche de fichiers binaires, d'images et de code embarqué.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#0b9155", dark: "#30aa93" },
@@ -67,7 +63,7 @@
             }
         },
         computed: {
-            uid() { return `icon-binwalk-${Math.random().toString(36).substr(2, 9)}` },
+            uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
             themeClasses() { return this.$options.metadata.theme; }
         }
     };

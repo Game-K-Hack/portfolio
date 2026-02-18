@@ -16,10 +16,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Fedora",
-            type: "Système d'exploitation",
-            description: "Distribution GNU/Linux basée sur le système RPM, soutenue par Red Hat.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#294172", dark: "#3c6eb4" },

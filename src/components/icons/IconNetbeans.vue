@@ -18,10 +18,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "NetBeans",
-            type: "IDE",
-            description: "Environnement de développement intégré pour Java, C++, PHP et plus.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#1d6ac6", dark: "#165196" },

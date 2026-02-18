@@ -14,10 +14,7 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "PostgreSQL",
-            type: "Base de données relationnelle",
-            description: "Système de gestion de base de données relationnelle et objet open source puissant.",
-            experience: "",
+            rounded: false,
             theme: {
                 cp: { light: "#336791", dark: "#2f5e85" }, 
                 c1: "fill-[#336791] dark:fill-[#2f5e85]", 

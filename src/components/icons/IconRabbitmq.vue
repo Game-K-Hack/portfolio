@@ -11,10 +11,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "RabbitMQ",
-            type: "Message Broker",
-            description: "Agent de messages (Message Broker) open-source implémentant le protocole AMQP.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#ff6600", dark: "#e65c00" }, 

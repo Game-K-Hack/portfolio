@@ -14,10 +14,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Email",
-            type: "Communication",
-            description: "Service de messagerie électronique pour l'envoi de courrier digital.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#000000", dark: "#ffffff" },

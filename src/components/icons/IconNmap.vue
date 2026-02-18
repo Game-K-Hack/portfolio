@@ -117,13 +117,8 @@
 export default {
     props: {
         size: { type: [String, Number], default: 24 },
-        isDark: { type: Boolean, default: false }
     },
     metadata: {
-        name: "Nmap",
-        type: "Sécurité réseau",
-        description: "Scanner de ports libre utilisé pour la découverte de réseaux et l'audit de sécurité.",
-        experience: "",
         rounded: false,
         theme: {
             cp: { light: "#4aaee6", dark: "#2a6282" },

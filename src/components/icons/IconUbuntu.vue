@@ -15,10 +15,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Ubuntu",
-            type: "Système d'exploitation",
-            description: "Distribution Linux open-source populaire basée sur Debian.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#ea4f06", dark: "#dd4814" },

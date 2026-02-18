@@ -28,10 +28,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "SQLite",
-            type: "Base de données relationnelle",
-            description: "Moteur de base de données SQL compact et autonome.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#0f7fcc", dark: "#0b7fcc" },

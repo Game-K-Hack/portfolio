@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "JobScheduler 7",
-            type: "ordonnanceur",
-            description: "Ordonnanceur open source qui permet à une entreprise d'ordonnancer ses travaux d'informations et d'automatiser ses processus.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#1f3c88", dark: "#1f3c88" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

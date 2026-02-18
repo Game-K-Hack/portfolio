@@ -12,10 +12,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Kubernetes",
-            type: "Orchestrateur de conteneurs",
-            description: "Système open source permettant d'automatiser le déploiement, la mise à l'échelle et la gestion des applications conteneurisées.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#326ce5", dark: "#326ce5" }, 

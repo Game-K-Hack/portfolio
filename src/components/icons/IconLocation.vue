@@ -12,10 +12,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Location",
-            type: "Icône de navigation",
-            description: "Représentation visuelle d'un point géographique ou d'une adresse.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#000000", dark: "#ffffff" }, 

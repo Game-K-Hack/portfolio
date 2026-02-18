@@ -14,10 +14,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "XAMPP",
-            type: "Serveur local",
-            description: "Distribution Apache contenant MariaDB, PHP et Perl.",
-            experience: "",
             rounded: true,
             theme: {
                 cp: { light: "#fb7a24", dark: "#e66a1a" }, 

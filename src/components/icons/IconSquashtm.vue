@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Squash TM",
-            type: "Outil de test",
-            description: "Suite d'outils de test logiciel français dédiée à la qualité logicielle et au management de tests, manuels ou automatisés.",
-            experience: "",
             rounded: true,
             theme: {
                 cp: { light: "#aac5de", dark: "#aac5de" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

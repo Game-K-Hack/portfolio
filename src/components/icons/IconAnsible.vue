@@ -12,10 +12,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Ansible",
-            type: "Logiciel d'automatisation",
-            description: "Outil open-source de gestion de configuration, de déploiement d'applications et d'orchestration informatique.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#131211", dark: "#FFFFFF" }, 
@@ -24,7 +20,7 @@
             }
         },
         computed: {
-            uid() { return `icon-ansible-${Math.random().toString(36).substr(2, 9)}` },
+            uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
             themeClasses() { return this.$options.metadata.theme; }
         }
     };

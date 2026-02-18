@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "HTML/CSS",
-            type: "Language",
-            description: "Language web",
-            experience: "",
             rounded: true,
             theme: {
                 cp: { light: "#ef6930", dark: "#e3542c" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

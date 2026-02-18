@@ -14,10 +14,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Talaxie",
-            type: "Plateforme / Marque",
-            description: "Identité visuelle de Talaxie représentée par un double tracé organique entrelacé.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#19a1f4", dark: "#19a1f4" },

@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "bkcrack",
-            type: "Outil de crack",
-            description: "Crack legacy zip encryption with Biham and Kocher's known plaintext attack.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#2a899b", dark: "#2a899b" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

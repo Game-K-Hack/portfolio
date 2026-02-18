@@ -12,10 +12,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "TypeScript",
-            type: "Langage de programmation",
-            description: "Sur-ensemble typé de JavaScript qui se compile en JavaScript simple.",
-            experience: "",
             rounded: true,
             theme: {
                 cp: { light: "#007acc", dark: "#005a9e" },

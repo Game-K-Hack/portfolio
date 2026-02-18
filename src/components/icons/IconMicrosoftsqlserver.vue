@@ -27,10 +27,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Microsoft SQL Server",
-            type: "Système de gestion de base de données (SGBD)",
-            description: "Système de gestion de base de données relationnelle développé par Microsoft.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#ee352c", dark: "#a91d22" },

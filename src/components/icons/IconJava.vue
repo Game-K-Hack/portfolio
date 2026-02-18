@@ -15,10 +15,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Java",
-            type: "Langage de programmation",
-            description: "Langage de programmation orienté objet multiplateforme.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#0075be", dark: "#0082d2" }, 

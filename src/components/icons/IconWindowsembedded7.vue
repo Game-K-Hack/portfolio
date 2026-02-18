@@ -12,13 +12,9 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Windows Embedded 7",
-            type: "Système d'exploitation",
-            description: "Système d'exploitation développé par Microsoft.",
-            experience: "",
             rounded: false,
             theme: {
-            cp: { light: "#3474aa", dark: "#3474aa" },
+                cp: { light: "#3474aa", dark: "#3474aa" },
             }
         },
         computed: {

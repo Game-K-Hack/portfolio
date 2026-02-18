@@ -15,10 +15,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "C++",
-            type: "Langage de programmation",
-            description: "Langage de programmation compilé permettant la programmation procédurale et orientée objet.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#00599C", dark: "#004482" },

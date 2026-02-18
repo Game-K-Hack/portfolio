@@ -23,10 +23,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Jira",
-            type: "Gestion de projet",
-            description: "Outil de suivi de tickets et de gestion de projets agiles.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#2684ff", dark: "#0052cc" },

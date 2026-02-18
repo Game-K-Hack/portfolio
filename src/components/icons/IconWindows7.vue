@@ -427,10 +427,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Windows 7",
-            type: "Système d'exploitation",
-            description: "Logo de Windows 7, système d'exploitation développé par Microsoft.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#3982b1", dark: "#3474aa" }

@@ -12,10 +12,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "JavaScript",
-            type: "Langage de programmation",
-            description: "Langage de script de haut niveau principalement utilisé pour le développement web interactif.",
-            experience: "",
             rounded: true,
             theme: {
                 cp: { light: "#F0DB4F", dark: "#e5cf39" },

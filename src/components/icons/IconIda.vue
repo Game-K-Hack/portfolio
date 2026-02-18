@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "IDA",
-            type: "Decompileur",
-            description: "Le désassembleur interactif (Interactive Disassembler), plus connu sous le nom d'IDA Pro, est un désassembleur commercial très utilisé en rétro-ingénierie.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#62cccc", dark: "#4c9a9a" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

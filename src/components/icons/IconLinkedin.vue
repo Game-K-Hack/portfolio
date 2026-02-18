@@ -12,10 +12,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "LinkedIn",
-            type: "Réseau social professionnel",
-            description: "Plateforme de réseautage professionnel et de développement de carrière.",
-            experience: "",
             rounded: true,
             theme: {
                 cp: { light: "#0076b2", dark: "#006091" }, 

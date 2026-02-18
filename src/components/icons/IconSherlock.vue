@@ -29,10 +29,6 @@ export default {
         size: { type: [String, Number], default: 24 }
     },
     metadata: {
-        name: "Sherlock",
-        type: "Software/Icon",
-        description: "Icône stylisée représentant un détective avec une loupe.",
-        experience: "",
         rounded: false,
         theme: {
             cp: { light: "#815631", dark: "#714b2b" },

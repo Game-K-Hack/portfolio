@@ -15,10 +15,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Kali Linux",
-            type: "Distribution Linux",
-            description: "Distribution Linux spécialisée dans la sécurité informatique et les tests d'intrusion.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#367bf0", dark: "#367bf0" },

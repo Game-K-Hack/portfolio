@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "VirtualBox",
-            type: "Virtualisation",
-            description: "",
-            experience: "",
             rounded: true,
             theme: {
                 cp: { light: "#00768b", dark: "#00768b" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

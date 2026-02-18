@@ -23,10 +23,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Draw.io",
-            type: "Tracé de graphes",
-            description: "Outil de conception de diagrammes et d'architecture.",
-            experience: "Utilisé pour modéliser les bases de données de mon projet de fin d'études.",
             rounded: true,
             theme: {
                 cp: { light: "#f08705", dark: "#d67500" }, 

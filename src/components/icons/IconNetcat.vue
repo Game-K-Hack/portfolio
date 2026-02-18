@@ -20,10 +20,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Netcat",
-            type: "Networking Tool",
-            description: "Utilitaire de lecture et d'écriture de données à travers des connexions réseau.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#367bf0", dark: "#1b3f7c" },

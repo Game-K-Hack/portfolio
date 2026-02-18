@@ -30,10 +30,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Eclipse",
-            type: "Environnement de développement (IDE)",
-            description: "IDE multi-langages principalement utilisé pour le développement Java.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#2c2255", dark: "#473788" },

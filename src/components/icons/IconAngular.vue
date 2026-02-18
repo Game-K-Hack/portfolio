@@ -26,10 +26,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Angular",
-            type: "Framework JavaScript",
-            description: "Plateforme de développement pour la création d'applications web mobiles et de bureau.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#f60a48", dark: "#e40035" }, 
@@ -44,7 +40,7 @@
             }
         },
         computed: {
-            uid() { return `icon-angular-${Math.random().toString(36).substr(2, 9)}` },
+            uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
             themeClasses() { return this.$options.metadata.theme; }
         }
     };

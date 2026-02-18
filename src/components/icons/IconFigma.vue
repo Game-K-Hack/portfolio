@@ -15,10 +15,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Figma",
-            type: "Outil de design UI/UX",
-            description: "Plateforme de conception graphique collaborative basée sur le web.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#F24E1E", dark: "#F24E1E" }, 

@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Talend",
-            type: "Extract Transform and Load",
-            description: "",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#85bd44", dark: "#85bd44" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

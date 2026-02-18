@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "PHP",
-            type: "Langage de programmation",
-            description: "",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#7377ad", dark: "#7377ad" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

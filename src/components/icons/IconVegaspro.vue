@@ -13,10 +13,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Vegas Pro",
-            type: "Conception",
-            description: "Logiciel de montage vidéo",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#1898d0", dark: "#1898d0" },
@@ -24,7 +20,6 @@
         },
         computed: {
             uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-            themeClasses() { return this.$options.metadata.theme; }
         }
     };
 </script>

@@ -27,10 +27,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Jenkins",
-            type: "CI/CD Automation Server",
-            description: "Serveur d'automatisation open source leader pour mettre en œuvre l'intégration et la livraison continues.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#D33833", dark: "#EF3D3A" },

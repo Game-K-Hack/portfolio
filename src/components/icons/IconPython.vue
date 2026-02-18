@@ -26,10 +26,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Python",
-            type: "Langage de programmation",
-            description: "Langage de programmation interprété, multi-paradigme et multiplateformes.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#5a9fd4", dark: "#306998" },

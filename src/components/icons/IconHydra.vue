@@ -72,33 +72,25 @@
 </template>
 
 <script>
-export default {
-    name: "IconHydra",
-    metadata: {
-        name: "Hydra",
-        type: "Language / Tool",
-        description: "Hydra est un environnement de programmation live pour les visuels, s'inspirant des synthétiseurs modulaires analogiques.",
-        experience: "",
-        rounded: false,
-        theme: {
-            cp: { light: "#19a187", dark: "#12715f" },
-            c1: "#fae895", 
-            c2: "#fff", 
-            c3: "#12715f", 
-            c4: "#19a187", 
-            c5: "#f8de68", 
-            c6: "#54bd8e", 
-        }
-    },
-    props: {
-        size: {
-            type: [Number, String],
-            default: 24
+    export default {
+        props: {
+            size: { type: [String, Number], default: 24 }
         },
-    },
-    computed: {
-        uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
-        themeClasses() { return this.$options.metadata.theme; }
+        metadata: {
+            rounded: false,
+            theme: {
+                cp: { light: "#19a187", dark: "#12715f" },
+                c1: "#fae895", 
+                c2: "#fff", 
+                c3: "#12715f", 
+                c4: "#19a187", 
+                c5: "#f8de68", 
+                c6: "#54bd8e", 
+            }
+        },
+        computed: {
+            uid() { return `icon-${Math.random().toString(36).substr(2, 9)}` },
+            themeClasses() { return this.$options.metadata.theme; }
+        }
     }
-}
 </script>

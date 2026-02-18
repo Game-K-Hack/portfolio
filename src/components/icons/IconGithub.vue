@@ -14,10 +14,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "GitHub",
-            type: "Forge logicielle et versionnage",
-            description: "Plateforme d'hébergement et de gestion de développement logiciel utilisant Git.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#181616", dark: "#f0f6fc" }, 

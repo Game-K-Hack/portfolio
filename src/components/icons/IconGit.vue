@@ -11,10 +11,6 @@
             size: { type: [String, Number], default: 24 }
         },
         metadata: {
-            name: "Git",
-            type: "Système de contrôle de version",
-            description: "Logiciel de gestion de versions décentralisé permettant de suivre les modifications du code source.",
-            experience: "",
             rounded: false,
             theme: {
                 cp: { light: "#F34F29", dark: "#E44D26" }, 
