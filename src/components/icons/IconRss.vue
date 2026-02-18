@@ -1,5 +1,5 @@
 <template>
-    <svg version="1.1" viewBox="0 0 455.731 455.731" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[5px]': $options.metadata.rounded}">
+    <svg version="1.1" viewBox="0 0 455.731 455.731" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
         <title :id="uid">{{ $options.metadata.name }}</title>
         <g>
             <rect x="0" y="0" width="455.731" height="455.731" :class="themeClasses.c1"/>

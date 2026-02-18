@@ -1,5 +1,5 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[5px]': $options.metadata.rounded}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
         <title :id="uid">{{ $options.metadata.name }}</title>
         <defs>
             <linearGradient :id="uid + '-a'" x1="15.959" x2="44.307" y1="-13.014" y2="15.333" gradientTransform="matrix(1 0 0 -1 0 61)" gradientUnits="userSpaceOnUse">

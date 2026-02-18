@@ -1,5 +1,6 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[5px]': $options.metadata.rounded}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
+        <title :id="uid">{{ $options.metadata.name }}</title>
         <linearGradient :id="uid + 'c1'" x1="47.667" x2="544.303" y1="363.376" y2="-63.912" gradientTransform="matrix(.5625 0 0 -.568 -36.442 220.966)" gradientUnits="userSpaceOnUse">
             <stop offset="0" :style="`stop-color: ${themeClasses.c1}`" />
             <stop offset="1" :style="`stop-color: ${themeClasses.c2}`" />

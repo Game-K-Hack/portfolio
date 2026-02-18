@@ -1,5 +1,5 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.47 135.47" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[5px]': $options.metadata.rounded}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.47 135.47" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
         <title :id="uid">{{ $options.metadata.name }}</title>
         <g transform="matrix(1.0444 0 0 1.0444 -3.204 -171.71)">
             <path d="m23.221 176.09v66.222c0 9.4651 9.3645 22.539 18.943 28.972l26.082 17.517 25.813-17.517c9.5475-6.4791 18.943-19.507 18.943-28.972v-66.222c-29.665-8.7742-59.61-8.1596-89.78 0z" :class="themeClasses.c1" />

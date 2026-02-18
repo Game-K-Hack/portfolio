@@ -1,5 +1,5 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[5px]': $options.metadata.rounded}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" :width="size" :height="size" :aria-labelledby="uid" role="img" class="transition-colors duration-300" :class="{'rounded-[15%]': $options.metadata.rounded}">
         <title :id="uid">{{ $options.metadata.name }}</title>
         <g>
             <path d="M24.554,20.075c.209.27,1.356.961,1.37,1.246a6.921,6.921,0,0,0-1.4-.324c-.468-.142-.951-.293-1.412-.48a9.2,9.2,0,0,1-2.375-1.3A3.146,3.146,0,0,1,19.3,16.75a1.722,1.722,0,0,1,1.767-1.822,3.584,3.584,0,0,1,1.593.321c.146.066,1.31.606,1.256.809a5.5,5.5,0,0,0-1.41-.112c-.649.244-.4.828-.168,1.311a7.877,7.877,0,0,0,1.078,1.554C23.58,19.005,24.3,20.082,24.554,20.075Z" :class="themeClasses.c1" />
