@@ -1,0 +1,49 @@
+name: Build & Deploy FTP
+
+on:
+  push:
+    tags:
+      - '[0-9]*.[0-9]*.[0-9]*'  # Déclenchement sur tags type 1.2.3
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Récupérer le code source (Étape manquante indispensable)
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Configurer Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Python dependencies
+        run: |
+          pip install ftpsync
+
+      # 3. Configurer Node (optionnel mais recommandé pour la stabilité)
+      - name: Install NPM dependencies
+        run: |
+          npm install
+
+      # 4. Compilation du projet
+      - name: Build project
+        run: |
+          npm run build
+
+      # 5. Exécuter ton script de correction
+      - name: Run proofreader.py
+        run: |
+          python proofreader.py
+
+      # 6. Déploiement FTP (Seulement le contenu de dist)
+      - name: 📂 FTP Upload
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
