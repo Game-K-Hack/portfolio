@@ -1,6 +1,6 @@
 <template>
     <button @click="toggleLanguage()" :title="$t('switchlang')">
-        <Flag :id="$i18n.locale" class="h-7.5 z-10 rounded-[5px]"/>
+        <Flag :id="nextLang()" class="h-7.5 z-10 rounded-[5px]"/>
     </button>
 </template>
 
@@ -10,15 +10,18 @@
     export default {
         components: { Flag },
         methods: {
-            toggleLanguage() {
+            nextLang() {
                 const locales = this.$i18n.availableLocales;
                 const currentIndex = locales.indexOf(this.$i18n.locale);
                 const nextIndex = (currentIndex + 1) % locales.length;
-                const newLocale = locales[nextIndex];
-
-                this.$i18n.locale = newLocale;
-                localStorage.setItem('user-locale', newLocale);
-                document.documentElement.setAttribute('lang', newLocale);
+                const nextLocale = locales[nextIndex];
+                return nextLocale;
+            },
+            toggleLanguage() {
+                const nextLocale = this.nextLang();
+                this.$i18n.locale = nextLocale;
+                localStorage.setItem('user-locale', nextLocale);
+                document.documentElement.setAttribute('lang', nextLocale);
             }
         }
     }
