@@ -39,6 +39,8 @@
         if (!text) return '';
         return text.replace(/\[b\](.*?)\[\/b\]/g, '<b class="font-light">$1</b>');
     };
+
+    fetch("metrics").then()
 </script>
 
 <template>
