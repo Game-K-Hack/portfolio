@@ -18,6 +18,7 @@
     import Contact from "./components/Contact.vue";
     import ThemeSwitcher from "./components/ThemeSwitcher.vue";
     import Icon from "./components/Icon.vue";
+    import LangSwitcher from "./components/LangSwitcher.vue";
 
     const { t } = useI18n();
 
@@ -54,6 +55,8 @@
     <Circle color="#FFFFFF" :size="2000" pos="105%:50%" />
 
     <Navbar :ids="['projects', 'xpp', 'skills', 'studies', 'contactme']"></Navbar>
+
+    <LangSwitcher class="fixed hidden min-[831px]:block top-5 right-10 z-10 opacity-75 hover:opacity-100"/>
 
     <Header avatar="./avatar.webp" :title="$t('name')" :resume="$t('description')"></Header>
 

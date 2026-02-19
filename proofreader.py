@@ -35,6 +35,21 @@ print("[+] Date 'sitemap.xml' mis à jour")
 
 
 
+# Correction index
+with open(os.path.join(distpath, "index.html"), "r", encoding="utf8") as basefile:
+    content = basefile.read()
+    content = content.replace("      <script", "        <script")
+    content = content.replace("      <link", "        <link")
+for fn in os.listdir(os.path.join(distpath, "assets")):
+    if fn.startswith("Inconsolata-") and fn.endswith(".woff2"):
+        content = content.replace("Inconsolata.woff2", fn)
+        break
+with open(os.path.join(distpath, "index.html"), "w", encoding="utf8") as file:
+    file.write(content)
+print("[+] Fichier 'index.html' corrigé")
+
+
+
 # Create default_index.html
 with open(os.path.join(distpath, "default_index.html"), "w", encoding="utf8") as file:
     with open(os.path.join(distpath, "index.html"), "r", encoding="utf8") as basefile:

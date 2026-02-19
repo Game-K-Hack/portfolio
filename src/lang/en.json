@@ -519,5 +519,8 @@
         "location": "Location",
         "email": "Email",
         "followme": "Follow me"
-    }
+    }, 
+    "switchtodarktheme": "Switch to dark theme",
+    "switchtolighttheme": "Switch to light theme",
+    "switchlang": "Switch language"
 }

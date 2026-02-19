@@ -8,6 +8,7 @@
 </style>
 
 <script setup>
+    import LangSwitcher from './LangSwitcher.vue';
     import ThemeSwitcher from './ThemeSwitcher.vue';
 </script>
 
@@ -28,7 +29,8 @@
         <transition name="fade">
             <div v-if="openburger" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8">
 
-                <ThemeSwitcher class="fixed top-5 left-5 cursor-pointer"/>
+                <ThemeSwitcher class="absolute top-5 left-5 text-white"/>
+                <LangSwitcher class="fixed block top-5 left-25 z-10"/>
 
                 <button @click="openburger = false" class="absolute top-5 right-5 text-white" aria-label="Fermer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">

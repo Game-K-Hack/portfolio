@@ -519,5 +519,8 @@
         "location": "Localisation",
         "email": "E-mail",
         "followme": "Suivez-moi"
-    }
+    }, 
+    "switchtodarktheme": "Changer en thème sombre",
+    "switchtolighttheme": "Changer en thème claire",
+    "switchlang": "Changer de langue"
 }
