@@ -90,7 +90,8 @@
             "ada": {
                 "name": "Ada",
                 "type": "Programming Language",
-                "description": "Structured, statically typed, and imperative language, known for its reliability and security."
+                "description": "Structured, statically typed, and imperative language known for its reliability and security.",
+                "experience": "Once I have acquired a solid foundation in COBOL, I plan to start learning Ada."
             },
             "aircrackng": {
                 "name": "Aircrack-ng",
@@ -104,48 +105,55 @@
             },
             "androidstudio": {
                 "name": "Android Studio",
-                "type": "IDE",
-                "description": "The official IDE for Android application development, based on IntelliJ IDEA."
+                "type": "Integrated Development Environment (IDE)",
+                "description": "The official IDE for Android app development, based on IntelliJ IDEA.",
+                "experience": "Used during coursework to develop a Java-based application. Core competencies include file explorer navigation, emulator launching, and debugging. However, I have limited understanding of the advanced IDE settings and interface."
             },
             "angular": {
                 "name": "Angular",
                 "type": "JavaScript Framework",
-                "description": "Development platform for building modern web, mobile, and desktop applications."
+                "description": "Development platform for building modern web, mobile, and desktop applications.",
+                "experience": "One year of experience with Angular during my apprenticeship, developing dynamic web applications integrated with backend APIs."
             },
             "ansible": {
                 "name": "Ansible",
                 "type": "Automation Software",
-                "description": "Automation tool for configuration management, deployment, and IT orchestration."
+                "description": "Automation tool for configuration management, deployment, and IT orchestration.",
+                "experience": "Modified Ansible scripts for automated deployment."
             },
             "arch": {
                 "name": "Arch Linux",
                 "type": "Linux Distribution",
-                "description": "Lightweight and flexible distribution following a rolling-release update model."
+                "description": "Lightweight and flexible distribution following a rolling-release model."
             },
             "arduino": {
                 "name": "Arduino",
                 "type": "Electronics & Hardware",
-                "description": "Open-source electronic prototyping platform for creating interactive objects."
+                "description": "Open-source electronic prototyping platform for creating interactive objects.",
+                "experience": "Skills in Arduino include controlling servo motors, LEDs, and buttons, alongside electronics experience. I have also programmed displays and possess a solid understanding of programming fundamentals."
             },
             "binwalk": {
                 "name": "Binwalk",
                 "type": "Firmware Analysis",
-                "description": "Binary file analysis tool for extracting embedded code and firmware images."
+                "description": "Tool for analyzing binary files to extract embedded code and firmware images.",
+                "experience": "Used during my analysis of my car radio's update file."
             },
             "bkcrack": {
                 "name": "bkcrack",
                 "type": "Cryptanalysis Tool",
-                "description": "Tool for cracking classic ZIP encryption via a known-plaintext attack."
+                "description": "Tool for cracking legacy ZIP encryption via a known plaintext attack.",
+                "experience": "Used to crack the CryptoZip encryption of my car radio's update."
             },
             "cherrytree": {
                 "name": "CherryTree",
                 "type": "Knowledge Management",
-                "description": "Hierarchical note-taking application with support for rich text and code syntax highlighting."
+                "description": "Hierarchical note-taking application with rich text and code support."
             },
             "cobol": {
                 "name": "COBOL",
                 "type": "Programming Language",
-                "description": "High-level compiled language specialized in business and finance applications."
+                "description": "Compiled high-level language specialized in business and financial applications.",
+                "experience": "Currently learning."
             },
             "cpp": {
                 "name": "C++",
@@ -155,17 +163,20 @@
             "debian": {
                 "name": "Debian",
                 "type": "Operating System",
-                "description": "Universal and free operating system, renowned for its stability and security."
+                "description": "Universal and free operating system, renowned for its stability and security.",
+                "experience": "Used on Raspberry Pi to execute Python automation scripts."
             },
             "drawio": {
                 "name": "Draw.io",
                 "type": "Diagramming Tool",
-                "description": "Design tool for diagrams, flowcharts, and system architectures."
+                "description": "Tool for designing diagrams, flowcharts, and system architectures.",
+                "experience": "Used to create diagrams and schemas, facilitating visualization and documentation of processes and architectures."
             },
             "eclipse": {
                 "name": "Eclipse",
-                "type": "IDE",
-                "description": "Multi-language IDE primarily used for Java and enterprise ecosystems."
+                "type": "Integrated Development Environment (IDE)",
+                "description": "Multi-language IDE primarily used for Java and enterprise ecosystems.",
+                "experience": "Used throughout my apprenticeship to develop Java Spring Boot applications."
             },
             "email": {
                 "name": "Email"
@@ -173,50 +184,57 @@
             "fedora": {
                 "name": "Fedora",
                 "type": "Operating System",
-                "description": "Innovative Linux distribution supported by Red Hat, focused on free software."
+                "description": "Innovative Linux distribution backed by Red Hat, focused on free software.",
+                "experience": "Used throughout my BTS SIO (IT degree)."
             },
             "figma": {
                 "name": "Figma",
                 "type": "UI/UX Design Tool",
-                "description": "Collaborative graphic design and interface prototyping platform."
+                "description": "Collaborative interface design and prototyping platform.",
+                "experience": "Regular use for designing interfaces to organize my ideas."
             },
             "followme": {
-                "name": "Follow me"
+                "name": "Follow Me"
             },
             "git": {
                 "name": "Git",
                 "type": "Version Control System",
-                "description": "Decentralized version control software for tracking code changes."
+                "description": "Distributed version control software for tracking code changes.",
+                "experience": "Daily use with strong expertise in fundamental commands such as clone, add, commit, pull, push, and merge. I also occasionally use reset and rebase for specific requirements."
             },
             "github": {
                 "name": "GitHub",
                 "type": "Software Forge",
-                "description": "Cloud hosting service for software development using Git."
+                "description": "Cloud hosting service for software development using Git.",
+                "experience": "Solid experience with GitHub, covering various aspects of code management, merging, code modification, project creation, CI/CD, etc."
             },
             "gitlab": {
                 "name": "GitLab",
                 "type": "Software Forge",
-                "description": "Complete DevOps platform for managing the application lifecycle."
+                "description": "Complete DevOps platform for application lifecycle management.",
+                "experience": "Solid skills in GitLab, covering essential aspects of code management, merging, status tracking, pipeline restarts, project creation, CI/CD, etc."
             },
             "grafana": {
                 "name": "Grafana",
                 "type": "Observability & Visualization",
-                "description": "Open-source tool for real-time analysis and visualization of metric data."
+                "description": "Open-source tool for real-time analysis and visualization of metric data.",
+                "experience": "In-depth experience during my internship, creating charts and indicators from Prometheus queries, integrating data from RabbitMQ queues."
             },
             "gravitee": {
                 "name": "Gravitee.io",
                 "type": "API Management",
-                "description": "Open-source solution for securing, managing, and governing APIs."
+                "description": "Open-source solution for API security, management, and governance."
             },
             "hashcat": {
                 "name": "Hashcat",
                 "type": "Password Cracking",
-                "description": "One of the fastest password recovery and hash cracking tools."
+                "description": "One of the fastest password recovery and hash cracking tools available."
             },
             "htmlcss": {
                 "name": "HTML/CSS",
                 "type": "Web Language",
-                "description": "Fundamental languages for structuring and styling web pages."
+                "description": "Fundamental languages for structuring and styling web pages.",
+                "experience": "Mastery of essential HTML tags and proven competence in their appropriate use to create structured websites. Basic CSS skills, continuously reinforced through constant exploration of online resources."
             },
             "hydra": {
                 "name": "Hydra",
@@ -226,32 +244,36 @@
             "ida": {
                 "name": "IDA Pro",
                 "type": "Reverse Engineering",
-                "description": "The industry-standard interactive disassembler and debugger for binary analysis."
+                "description": "Industry-standard interactive disassembler and debugger for binary analysis.",
+                "experience": "Used for static analysis of binary code to practice reverse engineering."
             },
             "java": {
                 "name": "Java",
                 "type": "Programming Language",
-                "description": "Robust object-oriented language designed for portability via the JVM."
+                "description": "Robust object-oriented language designed for portability via the JVM.",
+                "experience": "Deep experience in Java, including Android app development using Android Studio. Proficient in designing attractive UIs and connecting to databases for full functionality. I also have one year of solid experience in backend development with Spring Boot."
             },
             "javascript": {
                 "name": "JavaScript",
                 "type": "Programming Language",
-                "description": "Essential scripting language for interactive client-side and server-side web development."
+                "description": "Essential scripting language for interactive client-side and server-side web development.",
+                "experience": "Proficiency in client-side JavaScript for data extraction, extension development, and HTML manipulation."
             },
             "jenkins": {
                 "name": "Jenkins",
                 "type": "CI/CD Automation",
-                "description": "Automation server enabling continuous integration and delivery (CI/CD)."
+                "description": "Automation server for continuous integration and continuous delivery (CI/CD)."
             },
             "jira": {
                 "name": "Jira",
                 "type": "Project Management",
-                "description": "Ticket tracking and agile project management tool (Scrum/Kanban)."
+                "description": "Ticket tracking and agile project management tool (Scrum/Kanban).",
+                "experience": "Regular use for managing assigned tickets, creating/assigning tickets, and updating statuses. Ability to create custom workflows with different permissions and generate dashboards for overviews."
             },
             "jobscheduler7": {
                 "name": "JobScheduler 7",
                 "type": "Scheduler",
-                "description": "Enterprise automation solution for process automation and task scheduling."
+                "description": "Enterprise-grade process automation and job scheduling solution."
             },
             "john": {
                 "name": "John the Ripper",
@@ -261,12 +283,14 @@
             "kali": {
                 "name": "Kali Linux",
                 "type": "Linux Distribution",
-                "description": "Distribution specialized in offensive security and penetration testing."
+                "description": "Distribution specialized in offensive security and penetration testing.",
+                "experience": "Used on VMware for Linux-based analysis tools."
             },
             "kotlin": {
                 "name": "Kotlin",
                 "type": "Programming Language",
-                "description": "Modern and concise language, preferred for native Android development."
+                "description": "Modern and concise language, preferred for native Android development.",
+                "experience": "Limited knowledge, code modification; language used during the development of the RealPrice application."
             },
             "kubernetes": {
                 "name": "Kubernetes",
@@ -287,26 +311,29 @@
             "microsoftsqlserver": {
                 "name": "Microsoft SQL Server",
                 "type": "Database Management System",
-                "description": "Relational database management system developed by Microsoft."
+                "description": "Relational database management system developed by Microsoft.",
+                "experience": "Database modification during the creation of the Geodis module for the company Socodep."
             },
             "mysql": {
                 "name": "MySQL",
                 "type": "Database Management System",
-                "description": "Highly popular open-source relational database management system."
+                "description": "Popular open-source relational database management system.",
+                "experience": "Expertise in SQL including mastery of SQL injections and essential SQL functions."
             },
             "netbeans": {
                 "name": "NetBeans",
-                "type": "IDE",
-                "description": "Versatile development environment for Java, PHP, and C++."
+                "type": "Integrated Development Environment (IDE)",
+                "description": "Versatile IDE for Java, PHP, and C++.",
+                "experience": "Used throughout my BTS to develop Java applications."
             },
             "netcat": {
                 "name": "Netcat",
                 "type": "Networking Tool",
-                "description": "Versatile utility for reading, writing, and redirecting data over a network."
+                "description": "Versatile utility for reading, writing, and redirecting data across a network."
             },
             "nmap": {
                 "name": "Nmap",
-                "type": "Network Analyzer",
+                "type": "Network Scanner",
                 "description": "Port scanner used for network discovery and security auditing."
             },
             "obsidian": {
@@ -317,47 +344,60 @@
             "php": {
                 "name": "PHP",
                 "type": "Programming Language",
-                "description": "Server-side scripting language primarily used for dynamic web development."
+                "description": "Server-side scripting language primarily used for dynamic web development.",
+                "experience": "Mastery of fundamental PHP concepts, alongside deep knowledge of potential language vulnerabilities and remediation techniques."
             },
             "postgresql": {
                 "name": "PostgreSQL",
                 "type": "Database Management System",
-                "description": "Powerful object-relational database system, recognized for its integrity."
+                "description": "Powerful object-relational database system, recognized for its integrity.",
+                "experience": "Regular use during my apprenticeship at Sodebo."
             },
             "postman": {
                 "name": "Postman",
                 "type": "API Development",
-                "description": "Collaboration platform for testing, documenting, and developing APIs."
+                "description": "Collaboration platform for testing, documenting, and developing APIs.",
+                "experience": "Used to test and debug APIs, facilitating the verification of requests and responses during development."
             },
             "prometheus": {
                 "name": "Prometheus",
                 "type": "Monitoring",
-                "description": "Monitoring and alerting system based on time series data."
+                "description": "Time-series based monitoring and alerting system.",
+                "experience": "Used at Sodebo during my 2nd internship; limited but sufficient knowledge."
             },
             "python": {
                 "name": "Python",
                 "type": "Programming Language",
-                "description": "Versatile interpreted language, famous for its clear syntax and vast libraries."
+                "description": "Versatile interpreted language, famous for its clear syntax and vast libraries.",
+                "experience": "I use Python daily. Here are the libraries I use for my various projects:\n\nOS, Sys, Time, Flask, Tkinter, Requests, Datetime, BeautifulSoup, PIL (Pillow), Json, NumPy, OpenCV, Random, Discord, Logging, Pyaudio, Selenium, Threading, Subprocess, Websockets, Pytesseract (OCR), Configparser, NLTK, Keras, Base64, OpenAI, Pandas, Pynput, Winreg, Asyncio, Pystray, PyTorch, Zipfile, Win32gui, Pyautogui, Matplotlib, TensorFlow, Scikit-learn\n\nYou can find some of my projects on my GitHub."
             },
             "qemu": {
                 "name": "QEMU",
                 "type": "Emulator & Virtualization",
-                "description": "High-performance open-source processor emulator and virtualization solution."
+                "description": "High-performance open-source processor emulator and virtualization solution.",
+                "experience": "Emulation of my car radio's architecture."
             },
             "qt": {
                 "name": "Qt",
                 "type": "Development Framework",
-                "description": "C++/Python framework used to create cross-platform graphical interfaces."
+                "description": "C++/Python framework used for creating cross-platform GUIs.",
+                "experience": "Used in the creation of Python interfaces."
             },
             "rabbitmq": {
                 "name": "RabbitMQ",
                 "type": "Message Broker",
-                "description": "Message broker implementing the AMQP protocol for communication between services."
+                "description": "Message broker implementing the AMQP protocol for service-to-service communication.",
+                "experience": "Basic understanding of RabbitMQ operations, including creating Prometheus queries via RabbitMQ queues. Limited knowledge in creating and managing RabbitMQ queues."
+            },
+            "rancher": {
+                "name": "Rancher",
+                "type": "Kubernetes Management Platform",
+                "description": "Open-source tool for centralized management of Kubernetes clusters across any cloud."
             },
             "rootme": {
                 "name": "Root-Me",
                 "type": "Learning Platform",
-                "description": "Community site dedicated to training in cybersecurity and ethical hacking."
+                "description": "Community site dedicated to cybersecurity training and ethical hacking."
             },
             "rss": {
                 "name": "RSS"
@@ -365,22 +405,25 @@
             "sherlock": {
                 "name": "Sherlock",
                 "type": "OSINT",
-                "description": "Tool for searching social media accounts via a username."
+                "description": "Tool for finding social media accounts via username."
             },
             "sketchup": {
                 "name": "SketchUp",
                 "type": "3D Modeling",
-                "description": "Intuitive 3D design software used in architecture and engineering."
+                "description": "Intuitive 3D design software used in architecture and engineering.",
+                "experience": "Used to create plans for my future house (currently learning)."
             },
             "solidworks": {
                 "name": "SolidWorks",
                 "type": "3D Design / CAD",
-                "description": "Industry-standard mechanical computer-aided design software."
+                "description": "Industry-standard computer-aided design software for mechanical engineering.",
+                "experience": "Used to design and model 3D parts, facilitating prototype creation and model preparation for 3D printing."
             },
             "spring": {
                 "name": "Spring",
                 "type": "Java Framework",
-                "description": "Complete ecosystem for developing enterprise Java applications."
+                "description": "Comprehensive ecosystem for Java enterprise application development.",
+                "experience": "Experience acquired during my apprenticeship modifying Java Spring applications and creating unit tests. Basic skills in using Spring Tools."
             },
             "sqlite": {
                 "name": "SQLite",
@@ -405,12 +448,14 @@
             "talaxie": {
                 "name": "Talaxie",
                 "type": "ETL",
-                "description": "Data integration solution for Extraction, Transformation, and Loading (ETL)."
+                "description": "Data integration solution for extraction, transformation, and loading (ETL).",
+                "experience": "Used at Algam for data flow creation; it replaced Talend due to a lack of updates."
             },
             "talend": {
                 "name": "Talend",
                 "type": "ETL",
-                "description": "Data integration solution for Extraction, Transformation, and Loading (ETL)."
+                "description": "Data integration solution for extraction, transformation, and loading (ETL).",
+                "experience": "Used at Algam for data flow creation."
             },
             "tryhackme": {
                 "name": "Try Hack Me",
@@ -420,17 +465,20 @@
             "typescript": {
                 "name": "TypeScript",
                 "type": "Programming Language",
-                "description": "Typed superset of JavaScript improving web code maintainability."
+                "description": "Typed superset of JavaScript improving web code maintainability.",
+                "experience": "Proficiency in TypeScript with the Angular framework."
             },
             "ubuntu": {
                 "name": "Ubuntu",
                 "type": "Operating System",
-                "description": "Mainstream Linux distribution based on Debian, oriented towards ease of use."
+                "description": "User-friendly Debian-based Linux distribution.",
+                "experience": "Used during my early stages of learning Linux systems."
             },
             "vegaspro": {
                 "name": "Vegas Pro",
                 "type": "Video Editing",
-                "description": "Professional video editing and multimedia production software."
+                "description": "Professional video editing and multimedia production software.",
+                "experience": "Used for video editing and tracking, with expertise in creating visual content and enhancing video quality."
             },
             "virtualbox": {
                 "name": "VirtualBox",
@@ -440,47 +488,56 @@
             "vmware": {
                 "name": "VMware",
                 "type": "Virtualization & Cloud",
-                "description": "Leader in virtualization infrastructure solutions for servers and desktops."
+                "description": "Leading infrastructure solutions for server and desktop virtualization.",
+                "experience": "Used to create and manage virtual environments, facilitating testing and development in isolated operating systems."
             },
             "vscode": {
                 "name": "Visual Studio Code",
-                "type": "IDE",
-                "description": "Modern and extensible editor developed by Microsoft."
+                "type": "Integrated Development Environment (IDE)",
+                "description": "Modern and extensible editor developed by Microsoft.",
+                "experience": "Daily use with advanced expertise. Integration of extensions like SonarLint to maintain code quality."
             },
             "windows10": {
                 "name": "Windows 10",
                 "type": "Operating System",
-                "description": "Versatile Microsoft operating system for PCs and tablets."
+                "description": "Versatile Microsoft operating system for PCs and tablets.",
+                "experience": "Primary operating system, used daily."
             },
             "windows11": {
                 "name": "Windows 11",
                 "type": "Operating System",
-                "description": "Latest major version of the Microsoft OS with a modernized interface."
+                "description": "Latest major version of Microsoft OS with a modernized interface.",
+                "experience": "Secondary operating system, used primarily in enterprise environments."
             },
             "windows7": {
                 "name": "Windows 7",
                 "type": "Operating System",
-                "description": "Classic former version of the Microsoft operating system."
+                "description": "Classic former version of the Microsoft operating system.",
+                "experience": "Former primary operating system, used daily."
             },
             "windowsembedded7": {
                 "name": "Windows Embedded 7",
                 "type": "Operating System",
-                "description": "Version of Windows 7 optimized for embedded and industrial systems."
+                "description": "Version of Windows 7 optimized for embedded and industrial systems.",
+                "experience": "Used during the modification of my car radio (Hyundai i20 gen2)."
             },
             "windowsserver2012": {
                 "name": "Windows Server 2012",
                 "type": "Operating System",
-                "description": "Server operating system for network infrastructure management."
+                "description": "Server operating system for network infrastructure management.",
+                "experience": "Used during the creation of the Geodis module for the company Socodep."
             },
             "wireshark": {
                 "name": "Wireshark",
                 "type": "Network Analyzer",
-                "description": "Standard network protocol analyzer for troubleshooting and traffic analysis."
+                "description": "Industry-standard network protocol analyzer for troubleshooting and traffic analysis.",
+                "experience": "Used to analyze and debug network traffic, allowing me to practice for my cybersecurity training and gain a deep understanding of protocols and network security."
             },
             "xampp": {
                 "name": "XAMPP",
                 "type": "Local Server",
-                "description": "Local PHP development environment including Apache, MariaDB, and PHP."
+                "description": "Local PHP development environment including Apache, MariaDB, and PHP.",
+                "experience": "Used to set up a local development environment, specifically for testing web applications and managing MySQL databases."
             }
         }
     },
