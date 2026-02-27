@@ -5,7 +5,7 @@ export const SKILLS = [
     }, 
     {
         id: "framework", 
-        items: ["angular", "spring", "talend", "talaxie"]
+        items: ["angular", "vuejs", "react", "spring", "talend", "talaxie"]
     }, 
     {
         id: "database", 

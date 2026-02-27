@@ -383,6 +383,12 @@
                 "description": "C++/Python framework used for creating cross-platform GUIs.",
                 "experience": "Used in the creation of Python interfaces."
             },
+            "react": {
+                "name": "React",
+                "type": "JavaScript Library",
+                "description": "React is a library. It allows you to assemble components but is not prescriptive regarding routing or data loading.",
+                "experience": "Not a fan; I much prefer Angular or VueJS. I only used it to learn the basics and create a photo gallery website."
+            },
             "rabbitmq": {
                 "name": "RabbitMQ",
                 "type": "Message Broker",
@@ -485,17 +491,23 @@
                 "type": "Virtualization",
                 "description": "Software for running multiple operating systems on a single machine."
             },
+            "vscode": {
+                "name": "Visual Studio Code",
+                "type": "Integrated Development Environment (IDE)",
+                "description": "Modern and extensible editor developed by Microsoft.",
+                "experience": "Daily use with advanced expertise. Integration of extensions like SonarLint to maintain code quality."
+            },
             "vmware": {
                 "name": "VMware",
                 "type": "Virtualization & Cloud",
                 "description": "Leading infrastructure solutions for server and desktop virtualization.",
                 "experience": "Used to create and manage virtual environments, facilitating testing and development in isolated operating systems."
             },
-            "vscode": {
-                "name": "Visual Studio Code",
-                "type": "Integrated Development Environment (IDE)",
-                "description": "Modern and extensible editor developed by Microsoft.",
-                "experience": "Daily use with advanced expertise. Integration of extensions like SonarLint to maintain code quality."
+            "vuejs": {
+                "name": "Vue.JS",
+                "type": "JavaScript Framework",
+                "description": "An open-source JavaScript framework used for building user interfaces and single-page applications.",
+                "experience": "Used to create this portfolio."
             },
             "windows10": {
                 "name": "Windows 10",

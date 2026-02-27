@@ -383,6 +383,12 @@
                 "description": "Framework C++/Python utilisé pour créer des interfaces graphiques multiplateformes.",
                 "experience": "Utilisé dans la création d'interface Python."
             },
+            "react": {
+                "name": "React",
+                "type": "Bibliothèque JavaScript",
+                "description": "React est une bibliothèque. Il vous permet d'assembler des composants, mais n'est pas prescriptif en ce qui concerne le routage ou le chargement de données.",
+                "experience": "Pas fan, je préfère largement Angular ou VueJS, je l'ai utilisé simplement pour apprendre et créer un site de galerie de photos."
+            },
             "rabbitmq": {
                 "name": "RabbitMQ",
                 "type": "Agent de messages",
@@ -485,17 +491,23 @@
                 "type": "Virtualisation",
                 "description": "Logiciel permettant d'exécuter plusieurs systèmes d'exploitation sur une seule machine."
             },
+            "vscode": {
+                "name": "Visual Studio Code",
+                "type": "Environnement de développement (IDE)",
+                "description": "Éditeur moderne et extensible développé par Microsoft.",
+                "experience": "Utilisation quotidienne avec expertise avancée. Intégration d'extensions comme SonarLint pour maintenir la qualité du code."
+            },
             "vmware": {
                 "name": "VMware",
                 "type": "Virtualisation & Cloud",
                 "description": "Leader des solutions d'infrastructure de virtualisation de serveurs et de postes de travail.",
                 "experience": "Utilisé pour créer et gérer des environnements virtuels, facilitant le test et le développement dans des systèmes d'exploitation isolés."
             },
-            "vscode": {
-                "name": "Visual Studio Code",
-                "type": "Environnement de développement (IDE)",
-                "description": "Éditeur moderne et extensible développé par Microsoft.",
-                "experience": "Utilisation quotidienne avec expertise avancée. Intégration d'extensions comme SonarLint pour maintenir la qualité du code."
+            "vuejs": {
+                "name": "Vue.JS",
+                "type": "Framework JavaScript",
+                "description": "Framework JavaScript open-source utilisé pour construire des interfaces utilisateur et des applications web monopages.",
+                "experience": "Utilisé pour créer ce portfolio, "
             },
             "windows10": {
                 "name": "Windows 10",
