@@ -30,6 +30,12 @@ jobs:
         run: |
           npm run build
 
+      # 4b. Pré-rendu SEO : injecte le contenu rendu dans dist/index.html
+      #     (rend le site enfin visible des robots Google / LinkedIn / outils RH)
+      - name: Prerender (SEO)
+        run: |
+          node prerender.js
+
       # 5. Exécuter ton script de correction
       - name: Run proofreader.py
         run: |
