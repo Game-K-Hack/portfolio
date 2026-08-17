@@ -40,8 +40,21 @@
             description: item.description ? rt(item.description) : '',
             icons: item.icons ? item.icons.map((i) => rt(i)) : [],
             url: item.url ? rt(item.url) : '',
+            // Vignette optionnelle, par convention /projects/<id>/logo.webp
+            image: item.image ? rt(item.image) : '',
+            // Image de fond optionnelle ; à défaut on réutilise la vignette
+            background: item.background ? rt(item.background) : (item.image ? rt(item.image) : ''),
         }))
     );
+
+    // Un fichier absent ne doit pas laisser une image cassée dans la carte
+    const hideBrokenImage = (e) => { e.target.style.display = 'none'; };
+
+    /**
+     * Le fond est estompé puis effacé en dégradé vers la gauche : l'image reste
+     * perceptible côté droit, et le texte démarre sur un fond propre.
+     */
+    const BACKGROUND_MASK = 'linear-gradient(to left, black 0%, transparent 80%)';
 
     const itemsOf = (status) => items.value.filter((i) => i.status === status);
 </script>
@@ -93,17 +106,27 @@
                 :href="item.url || null"
                 :target="item.url ? '_blank' : null"
                 :rel="item.url ? 'noopener noreferrer' : null"
-                class="flex flex-col gap-2 rounded-3xl bg-background p-4 border border-solid border-transparent"
+                class="relative overflow-hidden flex flex-col gap-2 rounded-3xl bg-background p-4 border border-solid border-transparent"
                 :class="item.url ? 'hover:border-color-border hover:cursor-pointer' : ''">
 
-                <div class="flex flex-row justify-between items-start gap-2">
-                    <h3 class="text-classic font-bold leading-tight">{{ item.name }}</h3>
+                <img v-if="item.background" :src="item.background" alt="" aria-hidden="true"
+                    loading="lazy" decoding="async" @error="hideBrokenImage"
+                    class="pointer-events-none select-none absolute inset-0 w-full h-full object-cover opacity-[0.10] dark:opacity-[0.16]"
+                    :style="{ maskImage: BACKGROUND_MASK, WebkitMaskImage: BACKGROUND_MASK }" />
+
+                <div class="relative flex flex-row justify-between items-start gap-2">
+                    <div class="flex flex-row items-center gap-2.5 min-w-0">
+                        <img v-if="item.image" :src="item.image" :alt="item.name"
+                            width="40" height="40" loading="lazy" decoding="async" @error="hideBrokenImage"
+                            class="w-10 h-10 shrink-0 rounded-lg object-cover bg-card" />
+                        <h3 class="text-classic font-bold leading-tight">{{ item.name }}</h3>
+                    </div>
                     <div v-if="item.icons.length" class="flex flex-row justify-end gap-1.5 shrink-0 pt-0.5">
                         <Icon v-for="i in item.icons" :key="i" :id="i" size="22"/>
                     </div>
                 </div>
 
-                <p v-if="item.description" class="text-classic-m1 font-extralight leading-snug">
+                <p v-if="item.description" class="relative text-classic-m1 font-extralight leading-snug">
                     {{ item.description }}
                 </p>
             </component>
