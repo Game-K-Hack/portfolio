@@ -10,7 +10,7 @@
         <div class="hidden md:flex w-[90%] justify-around">
             <template v-for="key in ['rank', 'room', 'level', 'badge']">
                 <div class="flex flex-col justify-center gap-2" v-if="CYBER[id][key] !== undefined">
-                    <p class="text-classic-p2 font-bold text-center">{{ CYBER[id][key].value }}</p>
+                    <p class="text-classic-p2 font-bold text-center">{{ CYBER[id][key] }}</p>
                     <p class="text-classic-m1 font-medium text-center">{{ $t(`cyber.${id}.${key}`) }}</p>
                 </div>
             </template>
@@ -19,7 +19,7 @@
             <template v-for="key in ['rank', 'room', 'level', 'badge']">
                 <template v-if="CYBER[id][key] !== undefined">
                     <p class="text-classic-m1 font-medium text-end col-1 content-center">{{ $t(`cyber.${id}.${key}`) }}</p>
-                    <p class="text-classic-p2 font-bold text-start col-2 pl-3">{{ CYBER[id][key].value }}</p>
+                    <p class="text-classic-p2 font-bold text-start col-2 pl-3">{{ CYBER[id][key] }}</p>
                 </template>
             </template>
         </div>

@@ -55,7 +55,7 @@
                 "icons": ["windowsembedded7", "cpp"]
             },
             {
-                "status": "p",
+                "status": "d",
                 "name": "Portfolio",
                 "description": "This website: a showcase of my background, my skills and my projects.",
                 "icons": ["vuejs", "javascript"],
@@ -69,9 +69,21 @@
             },
             {
                 "status": "i",
-                "name": "Idea to explore",
-                "description": "Replace this card with an idea you want to keep around.",
-                "icons": ["figma"]
+                "name": "Idea to explore"
+            },
+            {
+                "status": "p",
+                "name": "Pakdo",
+                "description": "A 100% local, blazing-fast file converter. Process all your documents, images and videos right on your machine, in complete privacy.",
+                "icons": ["rust"],
+                "url": "https://github.com/Game-K-Hack/pakdo"
+            },
+            {
+                "status": "d",
+                "name": "Freeze Ray",
+                "description": "Freeze a window: keep it visible in the same spot across every virtual desktop, and on top of everything else.",
+                "icons": ["csharp", "claude"],
+                "url": "https://github.com/Game-K-Hack/freeze-ray"
             }
         ]
     },
@@ -206,6 +218,11 @@
                 "type": "Knowledge Management",
                 "description": "Hierarchical note-taking application with rich text and code support."
             },
+            "claude": {
+                "name": "Claude",
+                "type": "AI Assistant",
+                "description": "Anthropic's AI assistant, used as a development aid: code generation and review, refactoring and documentation."
+            },
             "cobol": {
                 "name": "COBOL",
                 "type": "Programming Language",
@@ -216,6 +233,11 @@
                 "name": "C++",
                 "type": "Programming Language",
                 "description": "Versatile language supporting procedural, generic, and object-oriented programming."
+            },
+            "csharp": {
+                "name": "C#",
+                "type": "Programming Language",
+                "description": "Microsoft's object-oriented language, built on the .NET platform, used for both desktop applications and web services."
             },
             "debian": {
                 "name": "Debian",
@@ -461,6 +483,11 @@
                 "name": "Root-Me",
                 "type": "Learning Platform",
                 "description": "Community site dedicated to cybersecurity training and ethical hacking."
+            },
+            "rust": {
+                "name": "Rust",
+                "type": "Programming Language",
+                "description": "Compiled language focused on performance and memory safety, with no garbage collector, whose compiler rules out data races at build time."
             },
             "rss": {
                 "name": "RSS"

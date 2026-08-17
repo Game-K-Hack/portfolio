@@ -55,7 +55,7 @@
                 "icons": ["windowsembedded7", "cpp"]
             },
             {
-                "status": "p",
+                "status": "d",
                 "name": "Portfolio",
                 "description": "Ce site : une vitrine de mon parcours, de mes compétences et de mes projets.",
                 "icons": ["vuejs", "javascript"],
@@ -69,9 +69,21 @@
             },
             {
                 "status": "i",
-                "name": "Idée à creuser",
-                "description": "Remplace cette carte par une idée que tu veux garder sous le coude.",
-                "icons": ["figma"]
+                "name": "Idée à creuser"
+            },
+            {
+                "status": "p",
+                "name": "Pakdo",
+                "description": "Convertisseur de fichiers 100 % local et ultra-rapide. Traitez tous vos documents, images et vidéos directement sur votre machine, en toute confidentialité.",
+                "icons": ["rust"], 
+                "url": "https://github.com/Game-K-Hack/pakdo"
+            },
+            {
+                "status": "d",
+                "name": "Freeze Ray",
+                "description": "Figez une fenêtre : gardez-la visible au même endroit sur tous les bureaux virtuels, et au-dessus de tout le reste.",
+                "icons": ["csharp", "claude"],
+                "url": "https://github.com/Game-K-Hack/freeze-ray"
             }
         ]
     },
@@ -206,6 +218,11 @@
                 "type": "Gestion des connaissances",
                 "description": "Application de prise de notes hiérarchique avec support du texte enrichi et du code."
             },
+            "claude": {
+                "name": "Claude",
+                "type": "Assistant IA",
+                "description": "Assistant IA d'Anthropic, utilisé en appui au développement : génération et relecture de code, refactorisation et documentation."
+            },
             "cobol": {
                 "name": "COBOL",
                 "type": "Langage de programmation",
@@ -216,6 +233,11 @@
                 "name": "C++",
                 "type": "Langage de programmation",
                 "description": "Langage polyvalent permettant la programmation procédurale, générique et orientée objet."
+            },
+            "csharp": {
+                "name": "C#",
+                "type": "Langage de programmation",
+                "description": "Langage orienté objet de Microsoft, adossé à la plateforme .NET, utilisé aussi bien pour les applications de bureau que pour les services web."
             },
             "debian": {
                 "name": "Debian",
@@ -461,6 +483,11 @@
                 "name": "Root-Me",
                 "type": "Plateforme d'apprentissage",
                 "description": "Site communautaire dédié à l'entraînement à la cybersécurité et au hacking éthique."
+            },
+            "rust": {
+                "name": "Rust",
+                "type": "Langage de programmation",
+                "description": "Langage compilé orienté performance et sûreté mémoire, sans ramasse-miettes, dont le compilateur garantit l'absence d'accès concurrents dangereux."
             },
             "rss": {
                 "name": "RSS"
