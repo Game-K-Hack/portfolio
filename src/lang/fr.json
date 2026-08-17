@@ -84,6 +84,54 @@
                 "description": "Figez une fenêtre : gardez-la visible au même endroit sur tous les bureaux virtuels, et au-dessus de tout le reste.",
                 "icons": ["csharp", "claude"],
                 "url": "https://github.com/Game-K-Hack/freeze-ray"
+            },
+            {
+                "status": "p",
+                "name": "Claria",
+                "description": "Application pour suivre ses transactions et faire ses comptes.",
+                "icons": ["python", "angular"]
+            },
+            {
+                "status": "d",
+                "name": "Grand-Duc",
+                "description": "Grand-Duc est un proxy HTTP/HTTPS d'entreprise doté d'un filtrage par expressions régulières, d'une gestion des utilisateurs par adresse IP, de groupes de clients et d'une interface d'administration web.",
+                "icons": ["rust", "claude"],
+                "url": "https://github.com/Game-K-Hack/grand-duc-proxy"
+            },
+            {
+                "status": "p",
+                "name": "Glyphfall",
+                "description": "Glyphfall est un jeu 8-bit en Rust pour apprendre les alphabets asiatiques (hangeul, kana, kanji) en tapant les caractères qui tombent. Modes arcade, fiches mnémotechniques et suivi du temps.",
+                "icons": ["rust", "claude"], 
+                "url": "https://github.com/Game-K-Hack/glyphfall"
+            },
+            {
+                "status": "d",
+                "name": "ReCode",
+                "description": "Assistant graphique qui explore le cache local de Visual Studio Code afin de récupérer les données qui n'ont pas été sauvegardées ou que l'on croyait perdues.",
+                "icons": ["python"],
+                "url": "https://github.com/Game-K-Hack/ReCode"
+            },
+            {
+                "status": "d",
+                "name": "Coloratio",
+                "description": "Application interactive pour modifier les couleurs d'une image tout en préservant la cohérence des teintes.",
+                "icons": ["python"],
+                "url": "https://github.com/Game-K-Hack/coloratio"
+            },
+            {
+                "status": "d",
+                "name": "DotClaude Analyzer",
+                "description": "Application graphique qui explore votre dossier .claude afin de pouvoir récupérer votre activité Claude Code.",
+                "icons": ["python"],
+                "url": "https://github.com/Game-K-Hack/dotclaude-analyzer"
+            },
+            {
+                "status": "d",
+                "name": "ExeMorph",
+                "description": "Outil Windows qui remplace l'icône d'un fichier .exe à partir d'une image quelconque (PNG, JPG…) ou en réutilisant l'icône déjà embarquée dans l'exécutable.",
+                "icons": ["python"],
+                "url": "https://github.com/Game-K-Hack/ExeMorph"
             }
         ]
     },

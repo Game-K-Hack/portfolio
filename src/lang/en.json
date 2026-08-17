@@ -84,6 +84,54 @@
                 "description": "Freeze a window: keep it visible in the same spot across every virtual desktop, and on top of everything else.",
                 "icons": ["csharp", "claude"],
                 "url": "https://github.com/Game-K-Hack/freeze-ray"
+            },
+            {
+                "status": "p",
+                "name": "Claria",
+                "description": "Application to track your transactions and manage your accounts.",
+                "icons": ["python", "angular"]
+            },
+            {
+                "status": "d",
+                "name": "Grand-Duc",
+                "description": "Grand-Duc is an enterprise HTTP/HTTPS proxy with regular-expression filtering, per-IP user management, client groups and a web admin interface.",
+                "icons": ["rust", "claude"],
+                "url": "https://github.com/Game-K-Hack/grand-duc-proxy"
+            },
+            {
+                "status": "p",
+                "name": "Glyphfall",
+                "description": "Glyphfall is an 8-bit game in Rust for learning Asian alphabets (hangul, kana, kanji) by typing the falling characters. Arcade modes, mnemonic flashcards and time tracking.",
+                "icons": ["rust", "claude"],
+                "url": "https://github.com/Game-K-Hack/glyphfall"
+            },
+            {
+                "status": "d",
+                "name": "ReCode",
+                "description": "Graphical assistant that digs through the local Visual Studio Code cache to recover data that was never saved, or thought to be lost.",
+                "icons": ["python"],
+                "url": "https://github.com/Game-K-Hack/ReCode"
+            },
+            {
+                "status": "d",
+                "name": "Coloratio",
+                "description": "Interactive application to recolour an image while preserving the consistency of its hues.",
+                "icons": ["python"],
+                "url": "https://github.com/Game-K-Hack/coloratio"
+            },
+            {
+                "status": "d",
+                "name": "DotClaude Analyzer",
+                "description": "Graphical application that explores your .claude folder so you can review your Claude Code activity.",
+                "icons": ["python"],
+                "url": "https://github.com/Game-K-Hack/dotclaude-analyzer"
+            },
+            {
+                "status": "d",
+                "name": "ExeMorph",
+                "description": "Windows tool that replaces the icon of a .exe file from any image (PNG, JPG…) or by reusing the icon already embedded in the executable.",
+                "icons": ["python"],
+                "url": "https://github.com/Game-K-Hack/ExeMorph"
             }
         ]
     },
