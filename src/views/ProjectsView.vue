@@ -30,7 +30,7 @@
         { id: 'i', dot: 'bg-[#a78bfa]' },
         { id: 'b', dot: 'bg-[#00AAFF]' },
         { id: 'p', dot: 'bg-[#FFAE00]' },
-        { id: 'd', dot: 'bg-[#1EFF00]' },
+        { id: 'd', dot: 'bg-[#6ED45D]' },
     ];
 
     const items = computed(() =>
@@ -54,11 +54,24 @@
 
     <div class="mx-[5%] pt-30 sm:pt-35">
         <RouterLink to="/" class="inline-flex items-center gap-2 text-classic-m1 opacity-60 hover:opacity-100">
-            &larr; {{ $t('allprojects.back') }}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="shrink-0" aria-hidden="true">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m0 0l7-7m-7 7l7 7"/>
+            </svg>
+            <span>{{ $t('allprojects.back') }}</span>
         </RouterLink>
 
-        <h1 class="uppercase text-4xl sm:text-6xl font-thin mt-4">{{ $t('allprojects.title') }}</h1>
-        <p class="text-classic font-extralight mt-4 max-w-3xl">{{ $t('allprojects.description') }}</p>
+        <div class="mt-4 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between sm:gap-10">
+            <div>
+                <h1 class="uppercase text-4xl sm:text-6xl font-thin">{{ $t('allprojects.title') }}</h1>
+                <p class="text-classic font-extralight mt-4 max-w-3xl">{{ $t('allprojects.description') }}</p>
+            </div>
+
+            <a href="https://github.com/Game-K-Hack?tab=repositories" target="_blank" rel="noopener noreferrer"
+                class="flex shrink-0 items-center justify-center gap-3 self-start p-2.5 px-6 border-2 border-dashed text-center text-classic-m1 hover:cursor-pointer hover:border-solid rounded-[2.5rem]">
+                <Icon id="github" size="22"/>
+                {{ $t('allprojects.github') }}
+            </a>
+        </div>
     </div>
 
     <div class="mx-[5%] pt-12 pb-25 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 items-start">
@@ -95,14 +108,6 @@
                 </p>
             </component>
         </section>
-    </div>
-
-    <div class="mx-[5%] pb-25 flex justify-center">
-        <a href="https://github.com/Game-K-Hack?tab=repositories" target="_blank" rel="noopener noreferrer"
-            class="flex items-center justify-center gap-3 p-2.5 px-10 border-2 border-dashed text-center text-classic hover:cursor-pointer hover:border-solid rounded-[2.5rem]">
-            <Icon id="github" size="26"/>
-            {{ $t('allprojects.github') }}
-        </a>
     </div>
 
     <span class="block h-25"></span>
