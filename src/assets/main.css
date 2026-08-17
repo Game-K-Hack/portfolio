@@ -122,4 +122,7 @@ html, body {
 #app {
   position: relative; /* https://stackoverflow.com/a/14271049 */
   overflow: hidden;
+  /* Les cercles de fond sont clippés par #app : sur une page plus courte que
+     la fenêtre (grand écran), sans ça le dégradé est coupé net en plein écran. */
+  min-height: 100vh;
 }
