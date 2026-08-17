@@ -74,7 +74,7 @@
         </div>
     </div>
 
-    <div class="mx-[5%] pt-12 pb-25 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 items-start">
+    <div class="mx-[5%] pt-12 pb-25 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         <section v-for="column in COLUMNS" :key="column.id"
             class="flex flex-col gap-4 rounded-4xl bg-card p-4 border border-solid border-transparent">
 
