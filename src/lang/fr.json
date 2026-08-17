@@ -637,8 +637,19 @@
     },
     "cyber": {
         "title": "Labs & challenges de cybersécurité",
-        "tryhackme": { "title": "Try Hack Me" },
-        "rootme": { "title": "Root Me" }
+        "tryhackme": {
+            "title": "Try Hack Me",
+            "rank": "Rang",
+            "room": "Salle complété",
+            "level": "Niveau",
+            "badge": "Badge"
+        },
+        "rootme": {
+            "title": "Root Me",
+            "rank": "Rang",
+            "room": "Défis complété",
+            "level": "Score"
+        }
     },
     "contactme": {
         "title": "Me Contacter",
