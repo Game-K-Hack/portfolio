@@ -35,18 +35,29 @@ print("[+] Date 'sitemap.xml' mis à jour")
 
 
 
-# Correction index
-with open(os.path.join(distpath, "index.html"), "r", encoding="utf8") as basefile:
-    content = basefile.read()
-    content = content.replace("      <script", "        <script")
-    content = content.replace("      <link", "        <link")
+# Correction des pages pré-rendues (index.html + un sous-dossier par route)
+fontfile = None
 for fn in os.listdir(os.path.join(distpath, "assets")):
     if fn.startswith("Inconsolata-") and fn.endswith(".woff2"):
-        content = content.replace("Inconsolata.woff2", fn)
+        fontfile = fn
         break
-with open(os.path.join(distpath, "index.html"), "w", encoding="utf8") as file:
-    file.write(content)
-print("[+] Fichier 'index.html' corrigé")
+
+pages = ["index.html"]
+for entry in sorted(os.listdir(distpath)):
+    subindex = os.path.join(entry, "index.html")
+    if entry != "assets" and os.path.isfile(os.path.join(distpath, subindex)):
+        pages.append(subindex)
+
+for page in pages:
+    with open(os.path.join(distpath, page), "r", encoding="utf8") as basefile:
+        content = basefile.read()
+    content = content.replace("      <script", "        <script")
+    content = content.replace("      <link", "        <link")
+    if fontfile:
+        content = content.replace("Inconsolata.woff2", fontfile)
+    with open(os.path.join(distpath, page), "w", encoding="utf8") as file:
+        file.write(content)
+    print(f"[+] Fichier '{page}' corrigé")
 
 
 

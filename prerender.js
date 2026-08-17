@@ -25,6 +25,8 @@ import puppeteer from "puppeteer";
 const DIST = path.join(path.dirname(fileURLToPath(import.meta.url)), "dist");
 const PORT = 4390;
 
+const ROUTES = ["/", "/projects"];
+
 const MIME = {
     ".html": "text/html; charset=utf-8",
     ".js": "text/javascript; charset=utf-8",
@@ -80,24 +82,34 @@ async function run() {
     try {
         const page = await browser.newPage();
         await page.setExtraHTTPHeaders({ "Accept-Language": "fr-FR,fr;q=0.9" });
-        await page.goto(`http://localhost:${PORT}/`, {
-            waitUntil: "networkidle0",
-            timeout: 60000,
-        });
-        // Sécurité : attendre que Vue ait rempli #app
-        await page.waitForFunction(
-            () => {
-                const app = document.querySelector("#app");
-                return app && app.children.length > 0;
-            },
-            { timeout: 60000 }
-        );
 
-        const html = "<!doctype html>\n" + (await page.content()).replace(/^<!doctype html>/i, "").trimStart();
-        fs.writeFileSync(path.join(DIST, "index.html"), html, "utf8");
+        for (const route of ROUTES) {
+            await page.goto(`http://localhost:${PORT}${route}`, {
+                waitUntil: "networkidle0",
+                timeout: 60000,
+            });
+            // Sécurité : attendre que Vue ait rempli #app
+            await page.waitForFunction(
+                () => {
+                    const app = document.querySelector("#app");
+                    return app && app.children.length > 0;
+                },
+                { timeout: 60000 }
+            );
 
-        const size = fs.statSync(path.join(DIST, "index.html")).size;
-        console.log(`[prerender] ✅ dist/index.html regénéré (${size} octets)`);
+            const html = "<!doctype html>\n" + (await page.content()).replace(/^<!doctype html>/i, "").trimStart();
+
+            // "/" → dist/index.html, "/projects" → dist/projects/index.html
+            const outFile =
+                route === "/"
+                    ? path.join(DIST, "index.html")
+                    : path.join(DIST, ...route.split("/").filter(Boolean), "index.html");
+            fs.mkdirSync(path.dirname(outFile), { recursive: true });
+            fs.writeFileSync(outFile, html, "utf8");
+
+            const size = fs.statSync(outFile).size;
+            console.log(`[prerender] ✅ ${path.relative(process.cwd(), outFile)} regénéré (${size} octets)`);
+        }
     } finally {
         await browser.close();
         server.close();

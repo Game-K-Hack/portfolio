@@ -18,6 +18,63 @@
             "description": "Interface utilisateur graphique pour casser le chiffrement zip ancien avec l'attaque à texte clair connue de Biham et Kocher."
         }
     },
+    "column": {
+        "i": "Idées",
+        "b": "À réaliser",
+        "p": "En cours",
+        "d": "Terminé"
+    },
+    "allprojects": {
+        "title": "Tous mes projets",
+        "nav": "Kanban",
+        "link": "Voir tous mes projets",
+        "back": "Retour à l'accueil",
+        "github": "Voir mes dépôts GitHub",
+        "empty": "Rien pour le moment",
+        "description": "Une vue d'ensemble de ce que j'ai en tête, de ce que je vais attaquer, de ce sur quoi je travaille en ce moment et de ce que j'ai mené à bout.",
+        "meta_description": "Le tableau de bord de tous mes projets : idées, projets à réaliser, projets en cours et projets terminés.",
+        "items": [
+            {
+                "status": "d",
+                "name": "RealPrice",
+                "description": "Application Android de conversion de devises pour les voyageurs, avec prise en compte des frais bancaires.",
+                "icons": ["android", "kotlin"],
+                "url": "https://play.google.com/store/apps/details?id=com.app.realprice"
+            },
+            {
+                "status": "d",
+                "name": "Inspecteur Cracker",
+                "description": "Interface graphique pour bkcrack, qui casse le chiffrement zip ancien avec l'attaque à texte clair connue.",
+                "icons": ["qt", "python"],
+                "url": "https://github.com/Game-K-Hack/bkcrack-gui"
+            },
+            {
+                "status": "p",
+                "name": "Interface I20",
+                "description": "Interface auto-radio personnalisée pour ma voiture, une Hyundai i20 gen2.",
+                "icons": ["windowsembedded7", "cpp"]
+            },
+            {
+                "status": "p",
+                "name": "Portfolio",
+                "description": "Ce site : une vitrine de mon parcours, de mes compétences et de mes projets.",
+                "icons": ["vuejs", "javascript"],
+                "url": "https://github.com/Game-K-Hack"
+            },
+            {
+                "status": "b",
+                "name": "Projet à réaliser",
+                "description": "Remplace cette carte par un projet que tu comptes lancer prochainement.",
+                "icons": ["python"]
+            },
+            {
+                "status": "i",
+                "name": "Idée à creuser",
+                "description": "Remplace cette carte par une idée que tu veux garder sous le coude.",
+                "icons": ["figma"]
+            }
+        ]
+    },
     "xpp": {
         "title": "Expériences professionnelles",
         "items": [

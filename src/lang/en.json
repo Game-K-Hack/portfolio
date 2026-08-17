@@ -18,6 +18,63 @@
             "description": "Graphical user interface for cracking legacy zip encryption using the Biham and Kocher known-plaintext attack."
         }
     },
+    "column": {
+        "i": "Ideas",
+        "b": "To Do",
+        "p": "In Progress",
+        "d": "Done"
+    },
+    "allprojects": {
+        "title": "All my projects",
+        "nav": "Kanban",
+        "link": "See all my projects",
+        "back": "Back to home",
+        "github": "Browse my GitHub repositories",
+        "empty": "Nothing here yet",
+        "description": "An overview of what I have in mind, what I am about to start, what I am currently working on and what I have shipped.",
+        "meta_description": "The board of all my projects: ideas, projects to build, work in progress and finished projects.",
+        "items": [
+            {
+                "status": "d",
+                "name": "RealPrice",
+                "description": "Android currency conversion app for travellers, taking bank fees into account.",
+                "icons": ["android", "kotlin"],
+                "url": "https://play.google.com/store/apps/details?id=com.app.realprice"
+            },
+            {
+                "status": "d",
+                "name": "Inspector Cracker",
+                "description": "Graphical interface for bkcrack, which breaks legacy zip encryption with the known-plaintext attack.",
+                "icons": ["qt", "python"],
+                "url": "https://github.com/Game-K-Hack/bkcrack-gui"
+            },
+            {
+                "status": "p",
+                "name": "I20 Interface",
+                "description": "Custom car radio interface for my car, a Hyundai i20 gen2.",
+                "icons": ["windowsembedded7", "cpp"]
+            },
+            {
+                "status": "p",
+                "name": "Portfolio",
+                "description": "This website: a showcase of my background, my skills and my projects.",
+                "icons": ["vuejs", "javascript"],
+                "url": "https://github.com/Game-K-Hack"
+            },
+            {
+                "status": "b",
+                "name": "Project to build",
+                "description": "Replace this card with a project you plan to start soon.",
+                "icons": ["python"]
+            },
+            {
+                "status": "i",
+                "name": "Idea to explore",
+                "description": "Replace this card with an idea you want to keep around.",
+                "icons": ["figma"]
+            }
+        ]
+    },
     "xpp": {
         "title": "Professional Experience",
         "items": [

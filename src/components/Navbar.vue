@@ -14,10 +14,14 @@
 
 <template>
     <nav>
-        <div class="hidden min-[831px]:flex flex-row gap-15 p-5 pb-15 justify-center backdrop-blur-md fixed z-10 w-screen top-0 items-start" style="mask:linear-gradient(black, black, transparent);">
+        <div class="hidden min-[831px]:flex flex-row gap-8 xl:gap-15 p-5 pb-15 pr-20 justify-center backdrop-blur-md fixed z-10 w-screen top-0 items-start" style="mask:linear-gradient(black, black, transparent);">
             <div @click="scrollToSection(id)" v-for="id in ids" :key="id" class="flex flex-row gap-2 hover:cursor-pointer hover:font-bold">
                 <p class="text-classic text-text">{{ $t(`${id}.title`) }}</p>
             </div>
+            <RouterLink v-for="page in pages" :key="page.to" :to="page.to"
+                class="flex flex-row gap-2 hover:cursor-pointer hover:font-bold">
+                <p class="text-classic text-text" :class="{ 'font-bold': $route.path === page.to }">{{ $t(page.label ?? `${page.id}.title`) }}</p>
+            </RouterLink>
         </div>
 
         <div @click="openburger = true" class="flex min-[831px]:hidden p-5 pb-10 justify-end fixed top-0 right-0 z-20 hover:cursor-pointer">
@@ -41,6 +45,11 @@
                 <div v-for="id in ids" :key="id" @click="scrollToSection(id)" class="text-classic-p2 text-white font-medium hover:text-gray-400 transition-colors">
                     {{ $t(`${id}.title`) }}
                 </div>
+
+                <RouterLink v-for="page in pages" :key="page.to" :to="page.to" @click="openburger = false"
+                    class="text-classic-p2 text-white font-medium hover:text-gray-400 transition-colors">
+                    {{ $t(page.label ?? `${page.id}.title`) }}
+                </RouterLink>
             </div>
         </transition>
     </nav>
@@ -50,6 +59,8 @@
     export default {
         props: {
             ids: { type: Array, default: () => [] },
+            // Liens vers d'autres routes : [{ id: 'allprojects', to: '/projects' }]
+            pages: { type: Array, default: () => [] },
         },
         data() {
             return {
@@ -78,7 +89,13 @@
                 // 1. On ferme le menu
                 this.openburger = false;
                 
-                // 2. On attend que le menu soit fermé et le scroll libéré
+                // 2. Si la section n'est pas sur la page courante, on repasse par l'accueil
+                if (this.$route.path !== '/') {
+                    this.$router.push({ path: '/', hash: `#${id}` });
+                    return;
+                }
+
+                // 3. On attend que le menu soit fermé et le scroll libéré
                 this.$nextTick(() => {
                     const element = document.getElementById(id);
                     if (element) {
