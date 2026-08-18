@@ -21,11 +21,6 @@
         ],
     });
 
-    /**
-     * Colonnes du kanban. L'ordre du tableau est l'ordre d'affichage, `id`
-     * correspond à la clé de traduction (`column.<id>`) et au champ `status`
-     * des items dans les fichiers de langue.
-     */
     const COLUMNS = [
         { id: 'i', dot: 'bg-[#a78bfa]' },
         { id: 'b', dot: 'bg-[#00AAFF]' },
@@ -40,21 +35,14 @@
             description: item.description ? rt(item.description) : '',
             icons: item.icons ? item.icons.map((i) => rt(i)) : [],
             url: item.url ? rt(item.url) : '',
-            // Vignette optionnelle, par convention /projects/<id>/logo.webp
             image: item.image ? rt(item.image) : '',
-            // Image de fond optionnelle ; à défaut on réutilise la vignette
-            background: item.background ? rt(item.background) : (item.image ? rt(item.image) : ''),
+            background: item.background ? rt(item.background) : '',
         }))
     );
 
-    // Un fichier absent ne doit pas laisser une image cassée dans la carte
     const hideBrokenImage = (e) => { e.target.style.display = 'none'; };
 
-    /**
-     * Le fond est estompé puis effacé en dégradé vers la gauche : l'image reste
-     * perceptible côté droit, et le texte démarre sur un fond propre.
-     */
-    const BACKGROUND_MASK = 'linear-gradient(to left, black 0%, transparent 80%)';
+    const BACKGROUND_MASK = 'linear-gradient(to left, black 0%, transparent 85%)';
 
     const itemsOf = (status) => items.value.filter((i) => i.status === status);
 </script>
@@ -118,7 +106,7 @@
                     <div class="flex flex-row items-center gap-2.5 min-w-0">
                         <img v-if="item.image" :src="item.image" :alt="item.name"
                             width="40" height="40" loading="lazy" decoding="async" @error="hideBrokenImage"
-                            class="w-10 h-10 shrink-0 rounded-lg object-cover bg-card" />
+                            class="w-10 h-10 shrink-0 rounded-lg object-cover bg-transparent" />
                         <h3 class="text-classic font-bold leading-tight">{{ item.name }}</h3>
                     </div>
                     <div v-if="item.icons.length" class="flex flex-row justify-end gap-1.5 shrink-0 pt-0.5">

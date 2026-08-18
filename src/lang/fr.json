@@ -38,7 +38,8 @@
                 "status": "d",
                 "name": "RealPrice",
                 "description": "Application Android de conversion de devises pour les voyageurs, avec prise en compte des frais bancaires.",
-                "image": "/projects/realprice/default-banner-small.webp",
+                "image": "/projects/realprice/asset/icon/icon.webp",
+                "background": "/projects/realprice/default-banner-medium.webp",
                 "icons": ["android", "kotlin"],
                 "url": "https://play.google.com/store/apps/details?id=com.app.realprice"
             },
@@ -46,6 +47,8 @@
                 "status": "d",
                 "name": "Inspecteur Cracker",
                 "description": "Interface graphique pour bkcrack, qui casse le chiffrement zip ancien avec l'attaque à texte clair connue.",
+                "image": "/projects/bkcrackgui/assets/icon.png",
+                "background": "/projects/bkcrackgui/default-banner-medium.webp",
                 "icons": ["qt", "python"],
                 "url": "https://github.com/Game-K-Hack/bkcrack-gui"
             },
@@ -59,14 +62,14 @@
                 "status": "d",
                 "name": "Portfolio",
                 "description": "Ce site : une vitrine de mon parcours, de mes compétences et de mes projets.",
+                "image": "/projects/assets/icons/portfolio.png",
+                "background": "/projects/assets/banners/portfolio.png",
                 "icons": ["vuejs", "javascript"],
                 "url": "https://github.com/Game-K-Hack"
             },
             {
                 "status": "b",
-                "name": "Projet à réaliser",
-                "description": "Remplace cette carte par un projet que tu comptes lancer prochainement.",
-                "icons": ["python"]
+                "name": "Projet à réaliser"
             },
             {
                 "status": "i",
@@ -83,6 +86,8 @@
                 "status": "d",
                 "name": "Freeze Ray",
                 "description": "Figez une fenêtre : gardez-la visible au même endroit sur tous les bureaux virtuels, et au-dessus de tout le reste.",
+                "image": "/projects/assets/icons/freeze-ray.svg",
+                "background": "/projects/assets/banners/freeze-ray.png",
                 "icons": ["csharp", "claude"],
                 "url": "https://github.com/Game-K-Hack/freeze-ray"
             },
@@ -96,6 +101,8 @@
                 "status": "d",
                 "name": "Grand-Duc",
                 "description": "Grand-Duc est un proxy HTTP/HTTPS d'entreprise doté d'un filtrage par expressions régulières, d'une gestion des utilisateurs par adresse IP, de groupes de clients et d'une interface d'administration web.",
+                "image": "/projects/assets/icons/grand-duc.svg",
+                "background": "/projects/assets/banners/grand-duc.png",
                 "icons": ["rust", "claude"],
                 "url": "https://github.com/Game-K-Hack/grand-duc-proxy"
             },
@@ -103,6 +110,7 @@
                 "status": "p",
                 "name": "Glyphfall",
                 "description": "Glyphfall est un jeu 8-bit en Rust pour apprendre les alphabets asiatiques (hangeul, kana, kanji) en tapant les caractères qui tombent. Modes arcade, fiches mnémotechniques et suivi du temps.",
+                "image": "/projects/assets/icons/glyphfall.png",
                 "icons": ["rust", "claude"], 
                 "url": "https://github.com/Game-K-Hack/glyphfall"
             },
@@ -110,6 +118,8 @@
                 "status": "d",
                 "name": "ReCode",
                 "description": "Assistant graphique qui explore le cache local de Visual Studio Code afin de récupérer les données qui n'ont pas été sauvegardées ou que l'on croyait perdues.",
+                "image": "/projects/assets/icons/recode.png",
+                "background": "/projects/assets/banners/recode.png",
                 "icons": ["python"],
                 "url": "https://github.com/Game-K-Hack/ReCode"
             },
@@ -117,6 +127,8 @@
                 "status": "d",
                 "name": "Coloratio",
                 "description": "Application interactive pour modifier les couleurs d'une image tout en préservant la cohérence des teintes.",
+                "image": "/projects/assets/icons/coloratio.png",
+                "background": "/projects/assets/banners/coloratio.png",
                 "icons": ["python"],
                 "url": "https://github.com/Game-K-Hack/coloratio"
             },
@@ -124,6 +136,8 @@
                 "status": "d",
                 "name": "DotClaude Analyzer",
                 "description": "Application graphique qui explore votre dossier .claude afin de pouvoir récupérer votre activité Claude Code.",
+                "image": "/projects/assets/icons/dotclaude-analyzer.png",
+                "background": "/projects/assets/banners/dotclaude-analyzer.png",
                 "icons": ["python"],
                 "url": "https://github.com/Game-K-Hack/dotclaude-analyzer"
             },
@@ -131,6 +145,8 @@
                 "status": "d",
                 "name": "ExeMorph",
                 "description": "Outil Windows qui remplace l'icône d'un fichier .exe à partir d'une image quelconque (PNG, JPG…) ou en réutilisant l'icône déjà embarquée dans l'exécutable.",
+                "image": "/projects/assets/icons/ExeMorph.png",
+                "background": "/projects/assets/banners/ExeMorph.png",
                 "icons": ["python"],
                 "url": "https://github.com/Game-K-Hack/ExeMorph"
             }
@@ -140,6 +156,13 @@
         "title": "Expériences professionnelles",
         "items": [
             {
+                "date": "3 | 9 Juillet, 2026",
+                "company": { "name": "Socodep", "location": "Bouguenais", "url": "https://socodep.fr" },
+                "icons": ["python", "grafana"], 
+                "type": "Freelance",
+                "name": "Automatisation et supervision du suivi logistique Geodis",
+                "description": "Conception et développement d'une solution d'automatisation du suivi des livraisons Geodis. Le projet a consisté à développer un script exploitant les API Geodis pour automatiser la récupération, la mise à jour et le stockage en base de données des événements de livraison. Pour optimiser le pilotage opérationnel, un rapport automatisé sous Excel identifie les retards de livraison, tandis qu'un dashboard Grafana centralise l'ensemble des données pour assurer une visibilité globale et en temps réel de l'activité."
+            }, {
                 "date": "19 | 23 Janvier, 2026",
                 "company": { "name": "Socodep", "location": "Bouguenais", "url": "https://socodep.fr" },
                 "icons": ["python", "microsoftsqlserver"], 

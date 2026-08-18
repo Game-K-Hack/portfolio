@@ -38,7 +38,8 @@
                 "status": "d",
                 "name": "RealPrice",
                 "description": "Android currency conversion app for travellers, taking bank fees into account.",
-                "image": "/projects/realprice/default-banner-small.webp",
+                "image": "/projects/realprice/asset/icon/icon.webp",
+                "background": "/projects/realprice/default-banner-medium.webp",
                 "icons": ["android", "kotlin"],
                 "url": "https://play.google.com/store/apps/details?id=com.app.realprice"
             },
@@ -46,6 +47,8 @@
                 "status": "d",
                 "name": "Inspector Cracker",
                 "description": "Graphical interface for bkcrack, which breaks legacy zip encryption with the known-plaintext attack.",
+                "image": "/projects/bkcrackgui/assets/icon.png",
+                "background": "/projects/bkcrackgui/default-banner-medium.webp",
                 "icons": ["qt", "python"],
                 "url": "https://github.com/Game-K-Hack/bkcrack-gui"
             },
@@ -59,14 +62,14 @@
                 "status": "d",
                 "name": "Portfolio",
                 "description": "This website: a showcase of my background, my skills and my projects.",
+                "image": "/projects/assets/icons/portfolio.png",
+                "background": "/projects/assets/banners/portfolio.png",
                 "icons": ["vuejs", "javascript"],
                 "url": "https://github.com/Game-K-Hack"
             },
             {
                 "status": "b",
-                "name": "Project to build",
-                "description": "Replace this card with a project you plan to start soon.",
-                "icons": ["python"]
+                "name": "Project to build"
             },
             {
                 "status": "i",
@@ -83,6 +86,8 @@
                 "status": "d",
                 "name": "Freeze Ray",
                 "description": "Freeze a window: keep it visible in the same spot across every virtual desktop, and on top of everything else.",
+                "image": "/projects/assets/icons/freeze-ray.svg",
+                "background": "/projects/assets/banners/freeze-ray.png",
                 "icons": ["csharp", "claude"],
                 "url": "https://github.com/Game-K-Hack/freeze-ray"
             },
@@ -96,6 +101,8 @@
                 "status": "d",
                 "name": "Grand-Duc",
                 "description": "Grand-Duc is an enterprise HTTP/HTTPS proxy with regular-expression filtering, per-IP user management, client groups and a web admin interface.",
+                "image": "/projects/assets/icons/grand-duc.svg",
+                "background": "/projects/assets/banners/grand-duc.png",
                 "icons": ["rust", "claude"],
                 "url": "https://github.com/Game-K-Hack/grand-duc-proxy"
             },
@@ -103,6 +110,7 @@
                 "status": "p",
                 "name": "Glyphfall",
                 "description": "Glyphfall is an 8-bit game in Rust for learning Asian alphabets (hangul, kana, kanji) by typing the falling characters. Arcade modes, mnemonic flashcards and time tracking.",
+                "image": "/projects/assets/icons/glyphfall.png",
                 "icons": ["rust", "claude"],
                 "url": "https://github.com/Game-K-Hack/glyphfall"
             },
@@ -110,6 +118,8 @@
                 "status": "d",
                 "name": "ReCode",
                 "description": "Graphical assistant that digs through the local Visual Studio Code cache to recover data that was never saved, or thought to be lost.",
+                "image": "/projects/assets/icons/recode.png",
+                "background": "/projects/assets/banners/recode.png",
                 "icons": ["python"],
                 "url": "https://github.com/Game-K-Hack/ReCode"
             },
@@ -117,6 +127,8 @@
                 "status": "d",
                 "name": "Coloratio",
                 "description": "Interactive application to recolour an image while preserving the consistency of its hues.",
+                "image": "/projects/assets/icons/coloratio.png",
+                "background": "/projects/assets/banners/coloratio.png",
                 "icons": ["python"],
                 "url": "https://github.com/Game-K-Hack/coloratio"
             },
@@ -124,6 +136,8 @@
                 "status": "d",
                 "name": "DotClaude Analyzer",
                 "description": "Graphical application that explores your .claude folder so you can review your Claude Code activity.",
+                "image": "/projects/assets/icons/dotclaude-analyzer.png",
+                "background": "/projects/assets/banners/dotclaude-analyzer.png",
                 "icons": ["python"],
                 "url": "https://github.com/Game-K-Hack/dotclaude-analyzer"
             },
@@ -131,6 +145,8 @@
                 "status": "d",
                 "name": "ExeMorph",
                 "description": "Windows tool that replaces the icon of a .exe file from any image (PNG, JPG…) or by reusing the icon already embedded in the executable.",
+                "image": "/projects/assets/icons/ExeMorph.png",
+                "background": "/projects/assets/banners/ExeMorph.png",
                 "icons": ["python"],
                 "url": "https://github.com/Game-K-Hack/ExeMorph"
             }
@@ -140,6 +156,13 @@
         "title": "Professional Experience",
         "items": [
             {
+                "date": "July 3 | 9, 2026",
+                "company": { "name": "Socodep", "location": "Bouguenais", "url": "https://socodep.fr" },
+                "icons": ["python", "grafana"], 
+                "type": "Freelance",
+                "name": "Automation and Monitoring of Geodis Logistics Tracking",
+                "description": "Design and development of an automation solution for tracking Geodis deliveries. The project consisted of developing a script leveraging the Geodis APIs to automate the retrieval, update and database storage of delivery events. To improve operational oversight, an automated Excel report flags late deliveries, while a Grafana dashboard centralises all the data to provide global, real-time visibility over the activity."
+            }, {
                 "date": "January 19 | 23, 2026",
                 "company": { "name": "Socodep", "location": "Bouguenais", "url": "https://socodep.fr" },
                 "icons": ["python", "microsoftsqlserver"], 
@@ -149,7 +172,7 @@
             }, {
                 "date": "January 6 | July 11, 2025",
                 "company": { "name": "Algam", "location": "Thouaré-sur-Loire", "url": "https://www.algam.net" },
-                "icons": ["php", "javascript", "jobscheduler7", "talend", "talaxie"], 
+                "icons": ["php", "javascript", "jobscheduler7", "talend", "talaxie", "ansible"], 
                 "type": "Fixed-term contract",
                 "name": "Data Flow Developer Analyst",
                 "description": "- Modification and maintenance of data flows (CSV, JSON, SQL)\n\n- Initial development of an [b]API connection module[/b]\n\n- Conducted [b]security testing on HR management software[/b]"
@@ -163,7 +186,7 @@
             }, {
                 "date": "September 4 | August 30, 2024",
                 "company": { "name": "Sodebo", "location": "Montaigu-Vendée", "url": "https://www.sodebo.com" },
-                "icons": ["spring", "angular", "python", "postgresql", "kubernetes"], 
+                "icons": ["spring", "angular", "python", "postgresql", "rancher", "kubernetes"], 
                 "type": "Apprenticeship",
                 "name": "Bachelor's in Software Development",
                 "description": "- Evolution of an application portal (Java Spring Boot for backend and Angular for frontend)\n\n- Migration of PostgreSQL database to a new PostgreSQL 16 server (creation of a Python interface to facilitate the migration)\n\n- Migration of projects to a new Kubernetes server"
