@@ -35,6 +35,17 @@
         "meta_description": "Le tableau de bord de tous mes projets : idées, projets à réaliser, projets en cours et projets terminés.",
         "items": [
             {
+                "status": "i",
+                "name": "Tiroir médical intelligent",
+                "description": "Le tiroir indiquant quel médicament est rappelé, périmé, à quoi ils servent et dans quelle situation"
+            },
+            {
+                "status": "b",
+                "name": "Claria",
+                "description": "Application pour suivre ses transactions et faire ses comptes.",
+                "icons": ["python", "angular"]
+            },
+            {
                 "status": "d",
                 "name": "RealPrice",
                 "description": "Application Android de conversion de devises pour les voyageurs, avec prise en compte des frais bancaires.",
@@ -56,7 +67,8 @@
                 "status": "p",
                 "name": "Interface I20",
                 "description": "Interface auto-radio personnalisée pour ma voiture, une Hyundai i20 gen2.",
-                "icons": ["windowsembedded7", "cpp"]
+                "icons": ["windowsembedded7", "cpp"],
+                "route": "/projects/i20"
             },
             {
                 "status": "d",
@@ -66,14 +78,6 @@
                 "background": "/projects/assets/banners/portfolio.png",
                 "icons": ["vuejs", "javascript"],
                 "url": "https://github.com/Game-K-Hack"
-            },
-            {
-                "status": "b",
-                "name": "Projet à réaliser"
-            },
-            {
-                "status": "i",
-                "name": "Idée à creuser"
             },
             {
                 "status": "p",
@@ -90,12 +94,6 @@
                 "background": "/projects/assets/banners/freeze-ray.png",
                 "icons": ["csharp", "claude"],
                 "url": "https://github.com/Game-K-Hack/freeze-ray"
-            },
-            {
-                "status": "p",
-                "name": "Claria",
-                "description": "Application pour suivre ses transactions et faire ses comptes.",
-                "icons": ["python", "angular"]
             },
             {
                 "status": "d",
