@@ -110,7 +110,7 @@
                 "description": "Glyphfall is an 8-bit game in Rust for learning Asian alphabets (hangul, kana, kanji) by typing the falling characters. Arcade modes, mnemonic flashcards and time tracking.",
                 "image": "/projects/assets/icons/glyphfall.png",
                 "icons": ["rust", "claude"],
-                "url": "https://github.com/Game-K-Hack/glyphfall"
+                "url": "https://play.google.com/store/apps/details?id=fr.harlock.glyphfall"
             },
             {
                 "status": "d",
