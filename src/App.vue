@@ -4,6 +4,7 @@
     import LangSwitcher from "./components/LangSwitcher.vue";
 
     fetch("/metrics").then()
+    fetch("https://dawn-wave-6f61.hack-h.workers.dev/?project=portfolio").then()
 </script>
 
 <template>
