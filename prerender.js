@@ -83,6 +83,15 @@ async function run() {
         const page = await browser.newPage();
         await page.setExtraHTTPHeaders({ "Accept-Language": "fr-FR,fr;q=0.9" });
 
+        // On ne laisse passer que le serveur local : une requête externe lente
+        // (ex. le worker de stats) empêche "networkidle0" d'arriver et ferait
+        // compter une fausse visite à chaque build.
+        await page.setRequestInterception(true);
+        page.on("request", (req) => {
+            if (new URL(req.url()).hostname === "localhost") req.continue();
+            else req.abort();
+        });
+
         for (const route of ROUTES) {
             await page.goto(`http://localhost:${PORT}${route}`, {
                 waitUntil: "networkidle0",
