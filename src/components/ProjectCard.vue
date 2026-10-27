@@ -7,7 +7,7 @@
         <Detail ref="detailRef" :id="id" type="projects" :icons="icons" :links="links"></Detail>
     </Teleport>
 
-    <div :id="id" @click="openModal" class="flex flex-col rounded-[2.5rem] bg-card p-2.5 gap-2.5 pb-3.75 border border-solid border-transparent hover:border-color-border hover:cursor-pointer sm:w-150 md:w-150 lg:w-117.5 2xl:w-125">
+    <div :id="id" @click="handleClick" class="flex flex-col rounded-[2.5rem] bg-card p-2.5 gap-2.5 pb-3.75 border border-solid border-transparent hover:border-color-border hover:cursor-pointer sm:w-150 md:w-150 lg:w-117.5 2xl:w-125">
         
         <img class="rounded-4xl w-full h-auto aspect-600/338 object-cover" 
             width="600" height="338"
@@ -48,8 +48,16 @@
             id: { type: String, default: "" },
             icons: { type: Array, default: () => []}, 
             links: { type: Array, default: () => []}, 
+            link: { type: String, default: undefined }, 
         },
         methods: {
+            handleClick() {
+                if (this.link) {
+                    window.open(this.link, '_blank', 'noopener,noreferrer');
+                } else {
+                    this.openModal();
+                }
+            },
             async openModal() {
                 const detailComponent = this.$refs.detailRef;
                 if (detailComponent) {
@@ -61,7 +69,7 @@
                 }
             },
             closeModal() {
-                const dialog = document.getElementById(this.id);
+                const dialog = document.getElementById(this.id + '-detail');
                 dialog.close();
             }
         }

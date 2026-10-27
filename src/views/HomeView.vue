@@ -55,16 +55,23 @@
 
     <Section id="projects">
         <div class="mx-[2%] flex flex-row flex-wrap pt-5 gap-12 justify-around mb-25">
-            <ProjectCard id="realprice" :icons="['android', 'kotlin']" :links="[
-                { url: 'https://github.com/MathieuMarthy/RealPrice', icon: './images/githublink.webp' },
-                { url: 'https://play.google.com/store/apps/details?id=com.app.realprice', icon: './images/googleplay.webp' }
-            ]"></ProjectCard>
-            <ProjectCard id="i20" :icons="['windowsembedded7', 'cpp']"></ProjectCard>
-            <ProjectCard id="bkcrackgui" :icons="['qt', 'python']" :links="[
-                { url: 'https://github.com/Game-K-Hack/bkcrack-gui', icon: './images/githublink.webp' }
-            ]"></ProjectCard>
-            <RouterLink to="/projects"
-                class="flex items-center justify-center p-2.5 px-10 border-2 border-dashed text-center text-classic hover:cursor-pointer hover:border-solid rounded-[2.5rem] sm:w-150 md:w-150 lg:w-117.5 2xl:w-125">
+            <ProjectCard id="realprice"
+                :icons="['android', 'kotlin']"
+                :links="[{
+                    url: 'https://github.com/MathieuMarthy/RealPrice', 
+                    icon: './images/githublink.webp'
+                }, {
+                    url: 'https://play.google.com/store/apps/details?id=com.app.realprice',
+                    icon: './images/googleplay.webp'
+                }]"></ProjectCard>
+            <ProjectCard id="i20" :icons="['windowsembedded7', 'cpp', 'python', 'arduino']" link="/hyundev"></ProjectCard>
+            <ProjectCard id="bkcrackgui"
+                :icons="['qt', 'python']"
+                :links="[{
+                    url: 'https://github.com/Game-K-Hack/bkcrack-gui',
+                    icon: './images/githublink.webp'
+                }]"></ProjectCard>
+            <RouterLink to="/projects" class="flex items-center justify-center p-2.5 px-10 border-2 border-dashed text-center text-classic hover:cursor-pointer hover:border-solid rounded-[2.5rem] sm:w-150 md:w-150 lg:w-117.5 2xl:w-125">
                 {{ $t('allprojects.link') }}
             </RouterLink>
         </div>
