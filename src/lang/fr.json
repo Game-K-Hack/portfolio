@@ -65,10 +65,10 @@
             },
             {
                 "status": "p",
-                "name": "Interface I20",
+                "name": "Interface Hyundai I20",
                 "description": "Interface auto-radio personnalisée pour ma voiture, une Hyundai i20 gen2.",
                 "icons": ["windowsembedded7", "cpp"],
-                "route": "/projects/i20"
+                "route": "/hyundev"
             },
             {
                 "status": "d",
