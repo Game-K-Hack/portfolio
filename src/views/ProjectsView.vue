@@ -35,10 +35,25 @@
             description: item.description ? rt(item.description) : '',
             icons: item.icons ? item.icons.map((i) => rt(i)) : [],
             url: item.url ? rt(item.url) : '',
+            // `route` = destination interne au portfolio, rendue en RouterLink
+            // plutôt qu'en <a target="_blank">.
+            route: item.route ? rt(item.route) : '',
             image: item.image ? rt(item.image) : '',
             background: item.background ? rt(item.background) : '',
         }))
     );
+
+    // Un item peut mener nulle part, vers une page du portfolio (`route`) ou
+    // vers l'extérieur (`url`). On construit le jeu de props complet plutôt que
+    // de lier href/target au cas par cas : sur un RouterLink, un `href` lié à
+    // null écraserait le lien qu'il génère lui-même.
+    const linkTag = (item) => (item.route ? 'RouterLink' : (item.url ? 'a' : 'div'));
+
+    const linkAttrs = (item) => {
+        if (item.route) return { to: item.route };
+        if (item.url) return { href: item.url, target: '_blank', rel: 'noopener noreferrer' };
+        return {};
+    };
 
     const hideBrokenImage = (e) => { e.target.style.display = 'none'; };
 
@@ -90,12 +105,9 @@
             </p>
 
             <component v-for="(item, index) in itemsOf(column.id)" :key="index"
-                :is="item.url ? 'a' : 'div'"
-                :href="item.url || null"
-                :target="item.url ? '_blank' : null"
-                :rel="item.url ? 'noopener noreferrer' : null"
+                :is="linkTag(item)" v-bind="linkAttrs(item)"
                 class="relative overflow-hidden flex flex-col gap-2 rounded-3xl bg-background p-4 border border-solid border-transparent"
-                :class="item.url ? 'hover:border-color-border hover:cursor-pointer' : ''">
+                :class="item.route || item.url ? 'hover:border-color-border hover:cursor-pointer' : ''">
 
                 <img v-if="item.background" :src="item.background" alt="" aria-hidden="true"
                     loading="lazy" decoding="async" @error="hideBrokenImage"

@@ -147,6 +147,15 @@
                 "background": "/projects/assets/banners/ExeMorph.png",
                 "icons": ["python"],
                 "url": "https://github.com/Game-K-Hack/ExeMorph"
+            },
+            {
+                "status": "d",
+                "name": "Rush Hour",
+                "description": "ThinkFun's game vanished from the stores a long time ago. This is how I brought it back to life on a modern phone, from a plain port all the way to a fully redesigned version.",
+                "image": "/projects/assets/icons/rushhour.png",
+                "background": "/projects/assets/banners/rushhour.jpg",
+                "icons": ["android", "claude"],
+                "url": "/rushhour"
             }
         ]
     },

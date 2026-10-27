@@ -12,5 +12,10 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
+    // src/views/i20doc est une jonction vers le dépôt hyundev. Sans ceci, Vite
+    // résout le chemin réel (hors du projet) et ne trouve plus vue, @unhead/vue
+    // ni tailwind depuis ce fichier. Sans effet quand le dossier est un vrai
+    // répertoire, comme ce sera le cas en submodule.
+    preserveSymlinks: true,
   },
 })
