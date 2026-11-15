@@ -68,11 +68,11 @@ Pour proposer une amélioration, ouvrir une issue ou soumettre une pull request 
 
 ### Prochaine étape
 
-- [ ] Traduire l'interface dans d'autre langue
+- [ ] Traduire l'interface dans d'autres langues
 - [ ] Ajouter plus de headers dans le Yaml
 - [ ] Faire en sorte que si le programme bkcrack n'est pas installé alors ne pas pouvoir lancer une attaque
 - [ ] Faciliter l'attaque de fichier deflated dans un zip chiffré
 - [ ] Ajouter à la fin de l'attaque une option pour cracker le mot de passe du zip
-- [ ] Ajouter un cache avec les clées de chaque zip déchiffré afin de ne pas réattendre
-  - [ ] Vérifier que c'est bien le même zip (via un hash) et vérifier que les clées déchiffre bien le zip  
-  - [ ] (a réfléchir) partager le cache des clées afin de faire gagné du temps entre utilisateur
+- [ ] Ajouter un cache avec les clés de chaque zip déchiffré afin de ne pas réattendre
+  - [ ] Vérifier que c'est bien le même zip (via un hash) et vérifier que les clés déchiffrent bien le zip  
+  - [ ] (À réfléchir) partager le cache des clés afin de faire gagner du temps entre utilisateurs
